@@ -27,13 +27,20 @@ bookdown::gitbook:
       -  includeWebex/webex.js
   split_bib: FALSE  
   config:
+    before_body: "<script async src='https://www.googletagmanager.com/gtag/js?id=G-YKJD3496MG'></script>
+                 <script>
+                 window.dataLayer = window.dataLayer || [];
+                 function gtag(){dataLayer.push(arguments);}
+                 gtag('js', new Date());
+                 gtag('config', 'G-YKJD3496MG');
+                 </script>"
     toc:
       collapse: subsection
       before: |
         <li><a href="./">Loss Data Analytics</a></li>
       after: |
         <li><a href="https://github.com/OpenActTexts/Loss-Data-Analytics" target="blank">Loss Data Analytics on GitHub</a></li>
-  toc_depth: 3
+  toc_depth: 3                 
   edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
   download: null
   sharing:
