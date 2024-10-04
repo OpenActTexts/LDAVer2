@@ -1,7 +1,7 @@
 --- 
-#title: "Loss Data Analytics <br> \\newline Second Edition"
-#author: "An open text authored by the Actuarial Community"
-# Include title and author for HTML output
+title: "Loss Data Analytics <br> \\newline Second Edition"
+author: "An open text authored by the Actuarial Community"
+# Include title and author for HTML/Gitbook output
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook

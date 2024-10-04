@@ -23,17 +23,10 @@ bookdown::gitbook:
     -  includeWebex/webex.css
   includes:
     in_header: 
-      -  Format/ShowHide2022.js
+      -  Format/ShowHide2024GSTag.js
       -  includeWebex/webex.js
   split_bib: FALSE  
   config:
-    before_body: "<script async src='https://www.googletagmanager.com/gtag/js?id=G-YKJD3496MG'></script>
-                 <script>
-                 window.dataLayer = window.dataLayer || [];
-                 function gtag(){dataLayer.push(arguments);}
-                 gtag('js', new Date());
-                 gtag('config', 'G-YKJD3496MG');
-                 </script>"
     toc:
       collapse: subsection
       before: |
