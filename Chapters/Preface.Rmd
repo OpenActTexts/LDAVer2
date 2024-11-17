@@ -44,11 +44,15 @@ We thank Rob Hyndman, Monash University, for allowing us to use his excellent st
 
 We thank Yihui Xie and his colleagues at [Rstudio](https://www.rstudio.com/) for the [R bookdown](https://bookdown.org/yihui/bookdown/) package that allows us to produce this book.
 
-We also wish to acknowledge the support and sponsorship of the [International Association of Black Actuaries](http://www.blackactuaries.org/) in our joint efforts to provide actuarial educational content to all.
+We acknowledge the sponsorship of the [International Association of Black Actuaries](http://www.blackactuaries.org/).
 
 <center>
 ![](Figures\IABA.png){width=25%}
 </center>
+
+We also wish to acknowledge the support and sponsorship of the [ASTIN Academy](https://www.actuaries.org/IAA/IAA/Sections/ASTIN_NEW/Our_Activities.aspx?WebsiteKey=ff59269c-4928-4369-a169-03e74a6bd8ca&hkey=b94800cc-f36d-4bb0-a49c-0d0b1d761d7f&New_ContentCollectionOrganizerCommon=6#New_ContentCollectionOrganizerCommon) in our joint efforts to provide actuarial educational content to all. The Academy is an education initiative of the [ASTIN section](https://www.actuaries.org/iaa/IAA/Sections/ASTIN_NEW/IAA/Sections/ASTIN_NEW/ASTIN_HOME.aspx) which is the non-life section of the [International Actuarial Association](https://www.actuaries.org/iaa).
+
+
 
 ## Contributors {-}
 

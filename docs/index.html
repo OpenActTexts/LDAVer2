@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Loss Data Analytics Second Edition | Loss Data Analytics   Second Edition</title>
   <meta name="description" content="Loss Data Analytics is an interactive, online, freely available text. - The online version will contain many interactive objects (quizzes, computer demonstrations, interactive graphs, video, and the like) to promote deeper learning. - A subset of the book will be available in pdf format for low-cost printing. - The online text will be available in multiple languages to promote access to a worldwide audience." />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Loss Data Analytics Second Edition | Loss Data Analytics   Second Edition" />
   <meta property="og:type" content="book" />
@@ -1229,7 +1229,7 @@ div.csl-indent {
 <div id="preface" class="section level1 unnumbered hasAnchor">
 <h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p style="text-align:right;">
-<em>Date: 04 October 2024</em>
+<em>Date: 17 November 2024</em>
 </p>
 
 
@@ -1272,10 +1272,11 @@ div.csl-indent {
 <p>We acknowledge the Society of Actuaries for permission to use problems from their examinations.</p>
 <p>We thank Rob Hyndman, Monash University, for allowing us to use his excellent style files to produce the online version of the book.</p>
 <p>We thank Yihui Xie and his colleagues at <a href="https://www.rstudio.com/">Rstudio</a> for the <a href="https://bookdown.org/yihui/bookdown/">R bookdown</a> package that allows us to produce this book.</p>
-<p>We also wish to acknowledge the support and sponsorship of the <a href="http://www.blackactuaries.org/">International Association of Black Actuaries</a> in our joint efforts to provide actuarial educational content to all.</p>
+<p>We acknowledge the sponsorship of the <a href="http://www.blackactuaries.org/">International Association of Black Actuaries</a>.</p>
 <center>
 <img src="Figures/IABA.png" style="width:25.0%" />
 </center>
+<p>We also wish to acknowledge the support and sponsorship of the <a href="https://www.actuaries.org/IAA/IAA/Sections/ASTIN_NEW/Our_Activities.aspx?WebsiteKey=ff59269c-4928-4369-a169-03e74a6bd8ca&amp;hkey=b94800cc-f36d-4bb0-a49c-0d0b1d761d7f&amp;New_ContentCollectionOrganizerCommon=6#New_ContentCollectionOrganizerCommon">ASTIN Academy</a> in our joint efforts to provide actuarial educational content to all. The Academy is an education initiative of the <a href="https://www.actuaries.org/iaa/IAA/Sections/ASTIN_NEW/IAA/Sections/ASTIN_NEW/ASTIN_HOME.aspx">ASTIN section</a> which is the non-life section of the <a href="https://www.actuaries.org/iaa">International Actuarial Association</a>.</p>
 </div>
 <div id="contributors" class="section level2 unnumbered hasAnchor">
 <h2>Contributors<a href="index.html#contributors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -1451,9 +1452,9 @@ div.csl-indent {
 <a id="displayCode.SeverityFig.1Intro" href="javascript:togglecode('toggleCode.SeverityFig.1Intro','displayCode.SeverityFig.1Intro');"><i><strong>R Code for Frequency Table</strong></i></a>
 </h5>
 <div id="toggleCode.SeverityFig.1Intro" style="display: none">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Insample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>), <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-2"><a href="index.html#cb1-2" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
-<span id="cb1-3"><a href="index.html#cb1-3" tabindex="-1"></a><span class="fu">table</span>(Insample2010<span class="sc">$</span>Freq)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Insample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>), <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-2"><a href="index.html#cb1-2" aria-hidden="true" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
+<span id="cb1-3"><a href="index.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(Insample2010<span class="sc">$</span>Freq)</span></code></pre></div>
 </div>
 <p>We hide the code because we don’t want to insist that you use the <code>R</code> statistical software (although we like it). Still, we encourage you to try some statistical code as you read the book – we have opted to make it easy to learn <code>R</code> as you go. We have set up a separate <a href="https://openacttexts.github.io/LDARcode">R Code for Loss Data Analytics</a> site to explain more of the details of the code.</p>
 <p>Like any book, we have a set of notations and conventions. It will probably save you time if you regularly visit our Appendix Chapter <a href="ChapNotationConvention.html#ChapNotationConvention">21</a> to get used to ours.</p>
