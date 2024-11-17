@@ -14,6 +14,8 @@ The goal is to have the actuarial community author our textbooks in a collaborat
    *  The first edition of the book is available at [Online Version, Edition One](https://OpenActTexts.github.io/Loss-Data-Analytics/index.html)
 * A subset of the book is available for offline reading in pdf format.
 
+* *Unresolved Issue.* Loading KableExtra generates a conflict with other jquery dependencies. In principle (according to ChapGPT), one loads the jquery libraries first, then KableExtra. Efforts using this approach are so far unsuccessful. As a hack, we went to the 'lib' folder within the docs folder and renamed bsTable-3.3.7 to bsTable-3.3.7OLD, so it would not be called. What a hack but it seems to do the trick...
+
 
 ## Github Resources
 
