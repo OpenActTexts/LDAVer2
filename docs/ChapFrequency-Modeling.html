@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Frequency Modeling | Loss Data Analytics   Second Edition</title>
   <meta name="description" content="Loss Data Analytics is an interactive, online, freely available text. - The online version will contain many interactive objects (quizzes, computer demonstrations, interactive graphs, video, and the like) to promote deeper learning. - A subset of the book will be available in pdf format for low-cost printing. - The online text will be available in multiple languages to promote access to a worldwide audience." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Frequency Modeling | Loss Data Analytics   Second Edition" />
   <meta property="og:type" content="book" />
@@ -53,8 +53,6 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
-<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKJD3496MG"></script>
@@ -1323,7 +1321,7 @@ In the above, <span class="math inline">\(\lfloor \cdot \rfloor\)</span> denotes
 <span class="math display">\[
 M_N(t) = \mathrm{E}~{[e^{tN}]} = \sum^{\infty}_{k=0} ~e^{tk}~ p_N(k), \quad t\in \mathbb{R}.
 \]</span>
-We note that while <span class="math inline">\(M_N(\cdot)\)</span> is well defined as it is the expectation of a non-negative random variable (<span class="math inline">\(e^{tN}\)</span>), it can assume the value <span class="math inline">\(\infty\)</span>. Note that for a count random variable, <span class="math inline">\(M_N(\cdot)\)</span> is finite valued on <span class="math inline">\((-\infty,0]\)</span> with <span class="math inline">\(M_N(0)=1\)</span>. The following theorem, whose proof can be found in <span class="citation">Billingsley (<a href="bibliography.html#ref-billingsley" role="doc-biblioref">2008</a>)</span> (pages 285-6), encapsulates the reason for its name.</p>
+We note that while <span class="math inline">\(M_N(\cdot)\)</span> is well defined as it is the expectation of a non-negative random variable (<span class="math inline">\(e^{tN}\)</span>), it can assume the value <span class="math inline">\(\infty\)</span>. Note that for a count random variable, <span class="math inline">\(M_N(\cdot)\)</span> is finite valued on <span class="math inline">\((-\infty,0]\)</span> with <span class="math inline">\(M_N(0)=1\)</span>. The following theorem, whose proof can be found in <span class="citation">Billingsley (<a href="bibliography.html#ref-billingsley">2008</a>)</span> (pages 285-6), encapsulates the reason for its name.</p>
 <hr />
 <p><a id=thm:3.1></a></p>
 <p><strong><span id="thm:3.1">Theorem 3.1</span></strong>.<br />
@@ -1765,7 +1763,7 @@ Note the likelihood would be zero for values of <span class="math inline">\(m\)<
 </h5>
 <div id="toggleTheory.Binomial.2" style="display: none">
 <hr />
-<p>Towards specifying an algorithm to compute <span class="math inline">\(\hat{m}_{\rm MLE}\)</span>, we first point out that for some data sets <span class="math inline">\(\hat{m}_{\rm MLE}\)</span> could equal <span class="math inline">\(\infty\)</span>, indicating that a Poisson distribution would render a better fit than any binomial distribution. This is so as the binomial distribution with parameters <span class="math inline">\((m,\overline{x}/m)\)</span> approaches the Poisson distribution with parameter <span class="math inline">\(\overline{x}\)</span> with <span class="math inline">\(m\)</span> approaching infinity. The fact that some data sets <strong>prefer</strong> a Poisson distribution should not be surprising since in the above sense the set of Poisson distribution is on the boundary of the set of binomial distributions. Interestingly, in <span class="citation">Olkin, Petkau, and Zidek (<a href="bibliography.html#ref-olkin1981" role="doc-biblioref">1981</a>)</span> they show that if the sample mean is less than or equal to the sample variance then <span class="math inline">\(\hat{m}_{\rm MLE}=\infty\)</span>; otherwise, there exists a finite <span class="math inline">\(m\)</span> that maximizes equation <a href="ChapFrequency-Modeling.html#eq:binlikm">(3.3)</a>.</p>
+<p>Towards specifying an algorithm to compute <span class="math inline">\(\hat{m}_{\rm MLE}\)</span>, we first point out that for some data sets <span class="math inline">\(\hat{m}_{\rm MLE}\)</span> could equal <span class="math inline">\(\infty\)</span>, indicating that a Poisson distribution would render a better fit than any binomial distribution. This is so as the binomial distribution with parameters <span class="math inline">\((m,\overline{x}/m)\)</span> approaches the Poisson distribution with parameter <span class="math inline">\(\overline{x}\)</span> with <span class="math inline">\(m\)</span> approaching infinity. The fact that some data sets <strong>prefer</strong> a Poisson distribution should not be surprising since in the above sense the set of Poisson distribution is on the boundary of the set of binomial distributions. Interestingly, in <span class="citation">Olkin, Petkau, and Zidek (<a href="bibliography.html#ref-olkin1981">1981</a>)</span> they show that if the sample mean is less than or equal to the sample variance then <span class="math inline">\(\hat{m}_{\rm MLE}=\infty\)</span>; otherwise, there exists a finite <span class="math inline">\(m\)</span> that maximizes equation <a href="ChapFrequency-Modeling.html#eq:binlikm">(3.3)</a>.</p>
 <hr />
 </div>
 <p>In Figure <a href="ChapFrequency-Modeling.html#fig:Fig32">3.2</a> below we display the plot of <span class="math inline">\(L\left(m,\overline{x}/m\right)\)</span> for three different samples of size <span class="math inline">\(5\)</span>; they differ only in the value of the sample maximum. The first sample of <span class="math inline">\((2,2,2,4,5)\)</span> has the ratio of sample mean to sample variance greater than <span class="math inline">\(1\)</span> (<span class="math inline">\(1.875\)</span>), the second sample of <span class="math inline">\((2,2,2,4,6)\)</span> has the ratio equal to <span class="math inline">\(1.25\)</span> which is closer to <span class="math inline">\(1\)</span>, and the third sample of <span class="math inline">\((2,2,2,4,7)\)</span> has the ratio less than <span class="math inline">\(1\)</span> (<span class="math inline">\(0.885\)</span>). For these three samples, as shown in Figure <a href="ChapFrequency-Modeling.html#fig:Fig32">3.2</a>, <span class="math inline">\(\hat{m}_{\rm MLE}\)</span> equals <span class="math inline">\(7\)</span>, <span class="math inline">\(18\)</span> and <span class="math inline">\(\infty\)</span>, respectively. Note that the limiting value of <span class="math inline">\(L\left(m,\overline{x}/m\right)\)</span> as <span class="math inline">\(m\)</span> approaches infinity equals
@@ -1808,7 +1806,7 @@ The above reduces the two dimensional optimization problem to a one-dimensional 
 <span class="math display">\[
 l(r,\overline{x}/r)=\sum_{i=1}^n \log{r+x_i-1 \choose x_i} -n(r+\overline{x}) \log(1+\overline{x}/r) +n\overline{x}\log(\overline{x}/r),
 \]</span>
-with respect to <span class="math inline">\(r\)</span>, with the maximizing <span class="math inline">\(r\)</span> being its <em>mle</em> and <span class="math inline">\(\hat{\beta}_{MLE}=\overline{x}/\hat{r}_{MLE}\)</span>. In <span class="citation">Levin, Reeds, et al. (<a href="bibliography.html#ref-levin1977" role="doc-biblioref">1977</a>)</span> it is shown that if the sample variance is greater than the sample mean then there exists a unique <span class="math inline">\(r&gt;0\)</span> that maximizes <span class="math inline">\(l(r,\overline{x}/r)\)</span> and hence a unique
+with respect to <span class="math inline">\(r\)</span>, with the maximizing <span class="math inline">\(r\)</span> being its <em>mle</em> and <span class="math inline">\(\hat{\beta}_{MLE}=\overline{x}/\hat{r}_{MLE}\)</span>. In <span class="citation">Levin, Reeds, et al. (<a href="bibliography.html#ref-levin1977">1977</a>)</span> it is shown that if the sample variance is greater than the sample mean then there exists a unique <span class="math inline">\(r&gt;0\)</span> that maximizes <span class="math inline">\(l(r,\overline{x}/r)\)</span> and hence a unique
 <em>mle</em> for <span class="math inline">\(r\)</span> and <span class="math inline">\(\beta\)</span>. Also, they show that if <span class="math inline">\(\hat{\sigma}^2\leq \overline{x}\)</span>, then the negative binomial likelihood will be dominated by the Poisson likelihood with <span class="math inline">\(\hat{\lambda}=\overline{x}\)</span>. In other words, a Poisson distribution offers a better fit to the data. The guarantee in the case of <span class="math inline">\(\hat{\sigma}^2&gt;\hat{\mu}\)</span> permits us to use some algorithm to maximize <span class="math inline">\(l(r,\overline{x}/r)\)</span>. Towards an alternate method of computing the likelihood, we note that
 <span class="math display">\[
 \begin{array}{ll}
@@ -1846,26 +1844,26 @@ the rapid convergence seen above is typical of the Newton’s method. Hence in t
 </h5>
 <div id="toggleCode.Freq.1" style="display: none">
 <hr />
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="ChapFrequency-Modeling.html#cb31-1" aria-hidden="true" tabindex="-1"></a>Newton <span class="ot">&lt;-</span> <span class="cf">function</span>(x, abserr) {</span>
-<span id="cb31-2"><a href="ChapFrequency-Modeling.html#cb31-2" aria-hidden="true" tabindex="-1"></a>    mu <span class="ot">&lt;-</span> <span class="fu">mean</span>(x)</span>
-<span id="cb31-3"><a href="ChapFrequency-Modeling.html#cb31-3" aria-hidden="true" tabindex="-1"></a>    sigma2 <span class="ot">&lt;-</span> <span class="fu">mean</span>(x<span class="sc">^</span><span class="dv">2</span>) <span class="sc">-</span> mu<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb31-4"><a href="ChapFrequency-Modeling.html#cb31-4" aria-hidden="true" tabindex="-1"></a>    r <span class="ot">&lt;-</span> mu<span class="sc">^</span><span class="dv">2</span><span class="sc">/</span>(sigma2 <span class="sc">-</span> mu)</span>
-<span id="cb31-5"><a href="ChapFrequency-Modeling.html#cb31-5" aria-hidden="true" tabindex="-1"></a>    b <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
-<span id="cb31-6"><a href="ChapFrequency-Modeling.html#cb31-6" aria-hidden="true" tabindex="-1"></a>    iter <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb31-7"><a href="ChapFrequency-Modeling.html#cb31-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (b) {</span>
-<span id="cb31-8"><a href="ChapFrequency-Modeling.html#cb31-8" aria-hidden="true" tabindex="-1"></a>        tr <span class="ot">&lt;-</span> r</span>
-<span id="cb31-9"><a href="ChapFrequency-Modeling.html#cb31-9" aria-hidden="true" tabindex="-1"></a>        m1 <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">c</span>(x[x <span class="sc">==</span> <span class="dv">0</span>], <span class="fu">sapply</span>(x[x <span class="sc">&gt;</span> <span class="dv">0</span>], <span class="cf">function</span>(z) {</span>
-<span id="cb31-10"><a href="ChapFrequency-Modeling.html#cb31-10" aria-hidden="true" tabindex="-1"></a>            <span class="fu">sum</span>(<span class="dv">1</span><span class="sc">/</span>(tr<span class="sc">:</span>(tr <span class="sc">-</span> <span class="dv">1</span> <span class="sc">+</span> z)))</span>
-<span id="cb31-11"><a href="ChapFrequency-Modeling.html#cb31-11" aria-hidden="true" tabindex="-1"></a>        })))</span>
-<span id="cb31-12"><a href="ChapFrequency-Modeling.html#cb31-12" aria-hidden="true" tabindex="-1"></a>        m2 <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">c</span>(x[x <span class="sc">==</span> <span class="dv">0</span>], <span class="fu">sapply</span>(x[x <span class="sc">&gt;</span> <span class="dv">0</span>], <span class="cf">function</span>(z) {</span>
-<span id="cb31-13"><a href="ChapFrequency-Modeling.html#cb31-13" aria-hidden="true" tabindex="-1"></a>            <span class="fu">sum</span>(<span class="dv">1</span><span class="sc">/</span>(tr<span class="sc">:</span>(tr <span class="sc">-</span> <span class="dv">1</span> <span class="sc">+</span> z))<span class="sc">^</span><span class="dv">2</span>)</span>
-<span id="cb31-14"><a href="ChapFrequency-Modeling.html#cb31-14" aria-hidden="true" tabindex="-1"></a>        })))</span>
-<span id="cb31-15"><a href="ChapFrequency-Modeling.html#cb31-15" aria-hidden="true" tabindex="-1"></a>        r <span class="ot">&lt;-</span> tr <span class="sc">-</span> (m1 <span class="sc">-</span> <span class="fu">log</span>(<span class="dv">1</span> <span class="sc">+</span> mu<span class="sc">/</span>tr))<span class="sc">/</span>(mu<span class="sc">/</span>(tr <span class="sc">*</span> (tr <span class="sc">+</span> mu)) <span class="sc">-</span> m2)</span>
-<span id="cb31-16"><a href="ChapFrequency-Modeling.html#cb31-16" aria-hidden="true" tabindex="-1"></a>        b <span class="ot">&lt;-</span> <span class="sc">!</span>(<span class="fu">abs</span>(tr <span class="sc">-</span> r) <span class="sc">&lt;</span> abserr)</span>
-<span id="cb31-17"><a href="ChapFrequency-Modeling.html#cb31-17" aria-hidden="true" tabindex="-1"></a>        iter <span class="ot">&lt;-</span> iter <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb31-18"><a href="ChapFrequency-Modeling.html#cb31-18" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb31-19"><a href="ChapFrequency-Modeling.html#cb31-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(r, iter)</span>
-<span id="cb31-20"><a href="ChapFrequency-Modeling.html#cb31-20" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="ChapFrequency-Modeling.html#cb31-1" tabindex="-1"></a>Newton <span class="ot">&lt;-</span> <span class="cf">function</span>(x, abserr) {</span>
+<span id="cb31-2"><a href="ChapFrequency-Modeling.html#cb31-2" tabindex="-1"></a>    mu <span class="ot">&lt;-</span> <span class="fu">mean</span>(x)</span>
+<span id="cb31-3"><a href="ChapFrequency-Modeling.html#cb31-3" tabindex="-1"></a>    sigma2 <span class="ot">&lt;-</span> <span class="fu">mean</span>(x<span class="sc">^</span><span class="dv">2</span>) <span class="sc">-</span> mu<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb31-4"><a href="ChapFrequency-Modeling.html#cb31-4" tabindex="-1"></a>    r <span class="ot">&lt;-</span> mu<span class="sc">^</span><span class="dv">2</span><span class="sc">/</span>(sigma2 <span class="sc">-</span> mu)</span>
+<span id="cb31-5"><a href="ChapFrequency-Modeling.html#cb31-5" tabindex="-1"></a>    b <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb31-6"><a href="ChapFrequency-Modeling.html#cb31-6" tabindex="-1"></a>    iter <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb31-7"><a href="ChapFrequency-Modeling.html#cb31-7" tabindex="-1"></a>    <span class="cf">while</span> (b) {</span>
+<span id="cb31-8"><a href="ChapFrequency-Modeling.html#cb31-8" tabindex="-1"></a>        tr <span class="ot">&lt;-</span> r</span>
+<span id="cb31-9"><a href="ChapFrequency-Modeling.html#cb31-9" tabindex="-1"></a>        m1 <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">c</span>(x[x <span class="sc">==</span> <span class="dv">0</span>], <span class="fu">sapply</span>(x[x <span class="sc">&gt;</span> <span class="dv">0</span>], <span class="cf">function</span>(z) {</span>
+<span id="cb31-10"><a href="ChapFrequency-Modeling.html#cb31-10" tabindex="-1"></a>            <span class="fu">sum</span>(<span class="dv">1</span><span class="sc">/</span>(tr<span class="sc">:</span>(tr <span class="sc">-</span> <span class="dv">1</span> <span class="sc">+</span> z)))</span>
+<span id="cb31-11"><a href="ChapFrequency-Modeling.html#cb31-11" tabindex="-1"></a>        })))</span>
+<span id="cb31-12"><a href="ChapFrequency-Modeling.html#cb31-12" tabindex="-1"></a>        m2 <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">c</span>(x[x <span class="sc">==</span> <span class="dv">0</span>], <span class="fu">sapply</span>(x[x <span class="sc">&gt;</span> <span class="dv">0</span>], <span class="cf">function</span>(z) {</span>
+<span id="cb31-13"><a href="ChapFrequency-Modeling.html#cb31-13" tabindex="-1"></a>            <span class="fu">sum</span>(<span class="dv">1</span><span class="sc">/</span>(tr<span class="sc">:</span>(tr <span class="sc">-</span> <span class="dv">1</span> <span class="sc">+</span> z))<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb31-14"><a href="ChapFrequency-Modeling.html#cb31-14" tabindex="-1"></a>        })))</span>
+<span id="cb31-15"><a href="ChapFrequency-Modeling.html#cb31-15" tabindex="-1"></a>        r <span class="ot">&lt;-</span> tr <span class="sc">-</span> (m1 <span class="sc">-</span> <span class="fu">log</span>(<span class="dv">1</span> <span class="sc">+</span> mu<span class="sc">/</span>tr))<span class="sc">/</span>(mu<span class="sc">/</span>(tr <span class="sc">*</span> (tr <span class="sc">+</span> mu)) <span class="sc">-</span> m2)</span>
+<span id="cb31-16"><a href="ChapFrequency-Modeling.html#cb31-16" tabindex="-1"></a>        b <span class="ot">&lt;-</span> <span class="sc">!</span>(<span class="fu">abs</span>(tr <span class="sc">-</span> r) <span class="sc">&lt;</span> abserr)</span>
+<span id="cb31-17"><a href="ChapFrequency-Modeling.html#cb31-17" tabindex="-1"></a>        iter <span class="ot">&lt;-</span> iter <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb31-18"><a href="ChapFrequency-Modeling.html#cb31-18" tabindex="-1"></a>    }</span>
+<span id="cb31-19"><a href="ChapFrequency-Modeling.html#cb31-19" tabindex="-1"></a>    <span class="fu">c</span>(r, iter)</span>
+<span id="cb31-20"><a href="ChapFrequency-Modeling.html#cb31-20" tabindex="-1"></a>}</span></code></pre></div>
 <hr />
 </div>
 <p>To summarize our discussion of <a href="#" class="tooltip" style="color:green"><em>MLE</em><span style="font-size:8pt">Maximum likelihood estimate</span></a> for the <span class="math inline">\((a,b,0)\)</span> class of distributions, in Figure <a href="ChapFrequency-Modeling.html#fig:Fig33">3.3</a> below we plot the maximum value of the Poisson likelihood, <span class="math inline">\(L(m,\overline{x}/m)\)</span> for the binomial, and <span class="math inline">\(L(r,\overline{x}/r)\)</span> for the negative binomial, for the three samples of size <span class="math inline">\(5\)</span> given in <a href="ChapFrequency-Modeling.html#tab:3.1">Table 3.1</a>. The data was constructed to cover the three orderings of the sample mean and variance. As shown in the Figure <a href="ChapFrequency-Modeling.html#fig:Fig33">3.3</a>, and supported by theory, if <span class="math inline">\(\hat{\mu}&lt;\hat{\sigma}^2\)</span> then the negative binomial results in a higher maximum likelihood value; if <span class="math inline">\(\hat{\mu}=\hat{\sigma}^2\)</span> the Poisson has the highest likelihood value; and finally in the case that <span class="math inline">\(\hat{\mu}&gt;\hat{\sigma}^2\)</span> the binomial gives a better fit than the others. So before fitting a frequency data with an <span class="math inline">\((a,b,0)\)</span> distribution, it is best to start with examining the ordering of <span class="math inline">\(\hat{\mu}\)</span> and <span class="math inline">\(\hat{\sigma}^2\)</span>. We again emphasize that the Poisson is on the <strong>boundary</strong> of the negative binomial and binomial distributions. So in the case that <span class="math inline">\(\hat{\mu}\geq\hat{\sigma}^2\)</span> (<span class="math inline">\(\hat{\mu}\leq\hat{\sigma}^2\)</span>, resp.) the Poisson yields a better fit than the negative binomial
@@ -1922,7 +1920,7 @@ Figure 3.3: <strong>Plot of</strong> <span class="math inline">\((a,b,0)\)</span
 <li>Compute probabilities using the recursive relationship</li>
 </ul>
 <hr />
-<p>In the previous sections, we discussed three distributions with supports contained in the set of non-negative integers, which well cater to many insurance applications. Moreover, typically by allowing the parameters to be a function of known (to the insurer) <a href="#" class="tooltip" style="color:green"><em>explanatory variables</em><span style="font-size:8pt">In regression, the explanatory variable is the one that is supposed to “explain” the other.</span></a> such as age, sex, geographic location (territory), and so forth, these distributions allow us to explain claim probabilities in terms of these variables. The field of statistical study that studies such models is known as <a href="#" class="tooltip" style="color:green"><em>regression analysis</em><span style="font-size:8pt">A set of statistical processes for estimating the relationships among variables</span></a> - it is an important topic of actuarial interest that we will not pursue in this book; see <span class="citation">Frees (<a href="bibliography.html#ref-frees2009regression" role="doc-biblioref">2009</a>)</span>.</p>
+<p>In the previous sections, we discussed three distributions with supports contained in the set of non-negative integers, which well cater to many insurance applications. Moreover, typically by allowing the parameters to be a function of known (to the insurer) <a href="#" class="tooltip" style="color:green"><em>explanatory variables</em><span style="font-size:8pt">In regression, the explanatory variable is the one that is supposed to “explain” the other.</span></a> such as age, sex, geographic location (territory), and so forth, these distributions allow us to explain claim probabilities in terms of these variables. The field of statistical study that studies such models is known as <a href="#" class="tooltip" style="color:green"><em>regression analysis</em><span style="font-size:8pt">A set of statistical processes for estimating the relationships among variables</span></a> - it is an important topic of actuarial interest that we will not pursue in this book; see <span class="citation">Frees (<a href="bibliography.html#ref-frees2009regression">2009</a>)</span>.</p>
 <p>There are clearly infinitely many other count distributions, and more importantly the above distributions by themselves do not cater to all practical needs. In particular, one feature of some insurance data is that the proportion of zero counts can be out of place with the proportion of other counts to be explainable by the above distributions. In the following we modify the above distributions to allow for arbitrary probability for zero count irrespective of the assignment of relative probabilities for the other counts. Another feature of a data set which is naturally comprised of <a href="#" class="tooltip" style="color:green"><em>homogeneous</em><span style="font-size:8pt">Units of exposure that face approximately the same expected frequency and severity of loss.</span></a> subsets is that while the above distributions may provide good fits to each subset, they may fail to do so to the whole data set. Later we naturally extend the <span class="math inline">\((a,b,0)\)</span> distributions to be able to cater to, in particular, such data sets.</p>
 <div id="S:Sec351" class="section level3 hasAnchor" number="3.5.1">
 <h3><span class="header-section-number">3.5.1</span> Zero Truncation or Modification<a href="ChapFrequency-Modeling.html#S:Sec351" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -2236,78 +2234,54 @@ where <span class="math inline">\(\phi(\cdot)\)</span> represents the standard n
 </h5>
 <div id="toggleCode.Table34.Silly" style="display: none">
 <table>
-<caption>
-<span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…
-</caption>
+<caption><span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…</caption>
 <thead>
-<tr>
-<th style="text-align:right;">
-x
-</th>
+<tr class="header">
+<th align="right">x</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:right;">
-2
-</td>
+<tr class="odd">
+<td align="right">2</td>
 </tr>
 </tbody>
 </table>
 <table>
-<caption>
-<span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…
-</caption>
+<caption><span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…</caption>
 <thead>
-<tr>
-<th style="text-align:right;">
-x
-</th>
+<tr class="header">
+<th align="right">x</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:right;">
-2
-</td>
+<tr class="odd">
+<td align="right">2</td>
 </tr>
 </tbody>
 </table>
 <table>
-<caption>
-<span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…
-</caption>
+<caption><span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…</caption>
 <thead>
-<tr>
-<th style="text-align:right;">
-x
-</th>
+<tr class="header">
+<th align="right">x</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:right;">
-2
-</td>
+<tr class="odd">
+<td align="right">2</td>
 </tr>
 </tbody>
 </table>
 <table>
-<caption>
-<span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…
-</caption>
+<caption><span id="tab:unnamed-chunk-56">Table 3.1: </span>Silly. Create a table just to update the counter…</caption>
 <thead>
-<tr>
-<th style="text-align:right;">
-x
-</th>
+<tr class="header">
+<th align="right">x</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:right;">
-2
-</td>
+<tr class="odd">
+<td align="right">2</td>
 </tr>
 </tbody>
 </table>
@@ -2392,40 +2366,40 @@ Poisson Perc
 <a id="displayCode.Singapore.1" href="javascript:togglecode('toggleCode.Singapore.1','displayCode.Singapore.1');"><i><strong>Solutions for Exercise 3.13</strong></i></a>
 </h5>
 <div id="toggleCode.Singapore.1" style="display: none">
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="ChapFrequency-Modeling.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part a.</span></span>
-<span id="cb32-2"><a href="ChapFrequency-Modeling.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(CASdatasets)</span>
-<span id="cb32-3"><a href="ChapFrequency-Modeling.html#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(sgautonb)</span>
-<span id="cb32-4"><a href="ChapFrequency-Modeling.html#cb32-4" aria-hidden="true" tabindex="-1"></a>Clm_Count <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">table</span>(sgautonb<span class="sc">$</span>Clm_Count))</span>
-<span id="cb32-5"><a href="ChapFrequency-Modeling.html#cb32-5" aria-hidden="true" tabindex="-1"></a>lambdahat <span class="ot">&lt;-</span> <span class="fu">mean</span>(sgautonb<span class="sc">$</span>Clm_Count)</span>
-<span id="cb32-6"><a href="ChapFrequency-Modeling.html#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-7"><a href="ChapFrequency-Modeling.html#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Part b.</span></span>
-<span id="cb32-8"><a href="ChapFrequency-Modeling.html#cb32-8" aria-hidden="true" tabindex="-1"></a>perc.edf <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(Clm_Count)<span class="sc">/</span><span class="fu">sum</span>(Clm_Count)</span>
-<span id="cb32-9"><a href="ChapFrequency-Modeling.html#cb32-9" aria-hidden="true" tabindex="-1"></a>perc.Pois <span class="ot">&lt;-</span> <span class="fu">ppois</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">lambda =</span> lambdahat)</span>
-<span id="cb32-10"><a href="ChapFrequency-Modeling.html#cb32-10" aria-hidden="true" tabindex="-1"></a>tableout.b <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Clm_Count, perc.edf, perc.Pois)</span>
-<span id="cb32-11"><a href="ChapFrequency-Modeling.html#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(tableout.b) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Count&quot;</span>, <span class="st">&quot;Empirical Percentile&quot;</span>, <span class="st">&quot;Poisson Perc&quot;</span>)</span>
-<span id="cb32-12"><a href="ChapFrequency-Modeling.html#cb32-12" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tableout.b, <span class="at">digits =</span> <span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="ChapFrequency-Modeling.html#cb32-1" tabindex="-1"></a><span class="co"># Part a.</span></span>
+<span id="cb32-2"><a href="ChapFrequency-Modeling.html#cb32-2" tabindex="-1"></a><span class="fu">library</span>(CASdatasets)</span>
+<span id="cb32-3"><a href="ChapFrequency-Modeling.html#cb32-3" tabindex="-1"></a><span class="fu">data</span>(sgautonb)</span>
+<span id="cb32-4"><a href="ChapFrequency-Modeling.html#cb32-4" tabindex="-1"></a>Clm_Count <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">table</span>(sgautonb<span class="sc">$</span>Clm_Count))</span>
+<span id="cb32-5"><a href="ChapFrequency-Modeling.html#cb32-5" tabindex="-1"></a>lambdahat <span class="ot">&lt;-</span> <span class="fu">mean</span>(sgautonb<span class="sc">$</span>Clm_Count)</span>
+<span id="cb32-6"><a href="ChapFrequency-Modeling.html#cb32-6" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="ChapFrequency-Modeling.html#cb32-7" tabindex="-1"></a><span class="co"># Part b.</span></span>
+<span id="cb32-8"><a href="ChapFrequency-Modeling.html#cb32-8" tabindex="-1"></a>perc.edf <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(Clm_Count)<span class="sc">/</span><span class="fu">sum</span>(Clm_Count)</span>
+<span id="cb32-9"><a href="ChapFrequency-Modeling.html#cb32-9" tabindex="-1"></a>perc.Pois <span class="ot">&lt;-</span> <span class="fu">ppois</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">lambda =</span> lambdahat)</span>
+<span id="cb32-10"><a href="ChapFrequency-Modeling.html#cb32-10" tabindex="-1"></a>tableout.b <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Clm_Count, perc.edf, perc.Pois)</span>
+<span id="cb32-11"><a href="ChapFrequency-Modeling.html#cb32-11" tabindex="-1"></a><span class="fu">names</span>(tableout.b) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Count&quot;</span>, <span class="st">&quot;Empirical Percentile&quot;</span>, <span class="st">&quot;Poisson Perc&quot;</span>)</span>
+<span id="cb32-12"><a href="ChapFrequency-Modeling.html#cb32-12" tabindex="-1"></a><span class="fu">round</span>(tableout.b, <span class="at">digits =</span> <span class="dv">4</span>)</span></code></pre></div>
 <pre><code>  Claim Count Empirical Percentile Poisson Perc
 1        6996               0.9349       0.9325
 2         455               0.9957       0.9977
 3          28               0.9995       0.9999
 4           4               1.0000       1.0000</code></pre>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="ChapFrequency-Modeling.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part c.</span></span>
-<span id="cb34-2"><a href="ChapFrequency-Modeling.html#cb34-2" aria-hidden="true" tabindex="-1"></a>loglikNB <span class="ot">&lt;-</span> <span class="cf">function</span>(parms) {</span>
-<span id="cb34-3"><a href="ChapFrequency-Modeling.html#cb34-3" aria-hidden="true" tabindex="-1"></a>    r <span class="ot">&lt;-</span> parms[<span class="dv">1</span>]</span>
-<span id="cb34-4"><a href="ChapFrequency-Modeling.html#cb34-4" aria-hidden="true" tabindex="-1"></a>    beta <span class="ot">&lt;-</span> parms[<span class="dv">2</span>]</span>
-<span id="cb34-5"><a href="ChapFrequency-Modeling.html#cb34-5" aria-hidden="true" tabindex="-1"></a>    nloglike <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">sum</span>(<span class="fu">log</span>(<span class="fu">dnbinom</span>(sgautonb<span class="sc">$</span>Clm_Count, <span class="at">size =</span> r, <span class="at">mu =</span> r <span class="sc">*</span> beta)))</span>
-<span id="cb34-6"><a href="ChapFrequency-Modeling.html#cb34-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(nloglike)</span>
-<span id="cb34-7"><a href="ChapFrequency-Modeling.html#cb34-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb34-8"><a href="ChapFrequency-Modeling.html#cb34-8" aria-hidden="true" tabindex="-1"></a>ini.NB <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>)</span>
-<span id="cb34-9"><a href="ChapFrequency-Modeling.html#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="co"># zop.NB &lt;- nlminb(ini.NB, loglikNB, lower = c(1e-6, 1e-6), upper = c(Inf,</span></span>
-<span id="cb34-10"><a href="ChapFrequency-Modeling.html#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Inf))</span></span>
-<span id="cb34-11"><a href="ChapFrequency-Modeling.html#cb34-11" aria-hidden="true" tabindex="-1"></a>zop.NB <span class="ot">&lt;-</span> <span class="fu">optim</span>(ini.NB, loglikNB)</span>
-<span id="cb34-12"><a href="ChapFrequency-Modeling.html#cb34-12" aria-hidden="true" tabindex="-1"></a>rhat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">1</span>]</span>
-<span id="cb34-13"><a href="ChapFrequency-Modeling.html#cb34-13" aria-hidden="true" tabindex="-1"></a>betahat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">2</span>]</span>
-<span id="cb34-14"><a href="ChapFrequency-Modeling.html#cb34-14" aria-hidden="true" tabindex="-1"></a>perc.NB <span class="ot">&lt;-</span> <span class="fu">pnbinom</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">size =</span> rhat.NB, <span class="at">mu =</span> rhat.NB <span class="sc">*</span> betahat.NB)</span>
-<span id="cb34-15"><a href="ChapFrequency-Modeling.html#cb34-15" aria-hidden="true" tabindex="-1"></a>tableout.c <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Clm_Count, perc.edf, perc.Pois, perc.NB)</span>
-<span id="cb34-16"><a href="ChapFrequency-Modeling.html#cb34-16" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(tableout.c) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Count&quot;</span>, <span class="st">&quot;Empirical Percentile&quot;</span>, <span class="st">&quot;Poisson Perc&quot;</span>, <span class="st">&quot;Neg Binom Perc&quot;</span>)</span>
-<span id="cb34-17"><a href="ChapFrequency-Modeling.html#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tableout.c, <span class="at">digits =</span> <span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="ChapFrequency-Modeling.html#cb34-1" tabindex="-1"></a><span class="co"># Part c.</span></span>
+<span id="cb34-2"><a href="ChapFrequency-Modeling.html#cb34-2" tabindex="-1"></a>loglikNB <span class="ot">&lt;-</span> <span class="cf">function</span>(parms) {</span>
+<span id="cb34-3"><a href="ChapFrequency-Modeling.html#cb34-3" tabindex="-1"></a>    r <span class="ot">&lt;-</span> parms[<span class="dv">1</span>]</span>
+<span id="cb34-4"><a href="ChapFrequency-Modeling.html#cb34-4" tabindex="-1"></a>    beta <span class="ot">&lt;-</span> parms[<span class="dv">2</span>]</span>
+<span id="cb34-5"><a href="ChapFrequency-Modeling.html#cb34-5" tabindex="-1"></a>    nloglike <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">sum</span>(<span class="fu">log</span>(<span class="fu">dnbinom</span>(sgautonb<span class="sc">$</span>Clm_Count, <span class="at">size =</span> r, <span class="at">mu =</span> r <span class="sc">*</span> beta)))</span>
+<span id="cb34-6"><a href="ChapFrequency-Modeling.html#cb34-6" tabindex="-1"></a>    <span class="fu">return</span>(nloglike)</span>
+<span id="cb34-7"><a href="ChapFrequency-Modeling.html#cb34-7" tabindex="-1"></a>}</span>
+<span id="cb34-8"><a href="ChapFrequency-Modeling.html#cb34-8" tabindex="-1"></a>ini.NB <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb34-9"><a href="ChapFrequency-Modeling.html#cb34-9" tabindex="-1"></a><span class="co"># zop.NB &lt;- nlminb(ini.NB, loglikNB, lower = c(1e-6, 1e-6), upper = c(Inf,</span></span>
+<span id="cb34-10"><a href="ChapFrequency-Modeling.html#cb34-10" tabindex="-1"></a><span class="co"># Inf))</span></span>
+<span id="cb34-11"><a href="ChapFrequency-Modeling.html#cb34-11" tabindex="-1"></a>zop.NB <span class="ot">&lt;-</span> <span class="fu">optim</span>(ini.NB, loglikNB)</span>
+<span id="cb34-12"><a href="ChapFrequency-Modeling.html#cb34-12" tabindex="-1"></a>rhat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">1</span>]</span>
+<span id="cb34-13"><a href="ChapFrequency-Modeling.html#cb34-13" tabindex="-1"></a>betahat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">2</span>]</span>
+<span id="cb34-14"><a href="ChapFrequency-Modeling.html#cb34-14" tabindex="-1"></a>perc.NB <span class="ot">&lt;-</span> <span class="fu">pnbinom</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">size =</span> rhat.NB, <span class="at">mu =</span> rhat.NB <span class="sc">*</span> betahat.NB)</span>
+<span id="cb34-15"><a href="ChapFrequency-Modeling.html#cb34-15" tabindex="-1"></a>tableout.c <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Clm_Count, perc.edf, perc.Pois, perc.NB)</span>
+<span id="cb34-16"><a href="ChapFrequency-Modeling.html#cb34-16" tabindex="-1"></a><span class="fu">names</span>(tableout.c) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Count&quot;</span>, <span class="st">&quot;Empirical Percentile&quot;</span>, <span class="st">&quot;Poisson Perc&quot;</span>, <span class="st">&quot;Neg Binom Perc&quot;</span>)</span>
+<span id="cb34-17"><a href="ChapFrequency-Modeling.html#cb34-17" tabindex="-1"></a><span class="fu">round</span>(tableout.c, <span class="at">digits =</span> <span class="dv">4</span>)</span></code></pre></div>
 <pre><code>  Claim Count Empirical Percentile Poisson Perc Neg Binom Perc
 1        6996               0.9349       0.9325         0.9350
 2         455               0.9957       0.9977         0.9955
@@ -2445,43 +2419,43 @@ Poisson Perc
 <a id="displayCode.Travel.1" href="javascript:togglecode('toggleCode.Travel.1','displayCode.Travel.1');"><i><strong>Solutions for Exercise 3.14</strong></i></a>
 </h5>
 <div id="toggleCode.Travel.1" style="display: none">
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="ChapFrequency-Modeling.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part a.</span></span>
-<span id="cb36-2"><a href="ChapFrequency-Modeling.html#cb36-2" aria-hidden="true" tabindex="-1"></a>TravelClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data</span><span class="sc">\\</span><span class="st">ANUTravelClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
-<span id="cb36-3"><a href="ChapFrequency-Modeling.html#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co"># TravelClaims &lt;- subset(TravelClaims, UW.Year &lt; 2020)</span></span>
-<span id="cb36-4"><a href="ChapFrequency-Modeling.html#cb36-4" aria-hidden="true" tabindex="-1"></a>Clm_Count <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">table</span>(TravelClaims<span class="sc">$</span>UW.Year))</span>
-<span id="cb36-5"><a href="ChapFrequency-Modeling.html#cb36-5" aria-hidden="true" tabindex="-1"></a>lambdahat <span class="ot">&lt;-</span> <span class="fu">sum</span>(Clm_Count)<span class="sc">/</span><span class="fu">length</span>(Clm_Count)</span>
-<span id="cb36-6"><a href="ChapFrequency-Modeling.html#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-7"><a href="ChapFrequency-Modeling.html#cb36-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Part b.</span></span>
-<span id="cb36-8"><a href="ChapFrequency-Modeling.html#cb36-8" aria-hidden="true" tabindex="-1"></a>loglikNB <span class="ot">&lt;-</span> <span class="cf">function</span>(parms) {</span>
-<span id="cb36-9"><a href="ChapFrequency-Modeling.html#cb36-9" aria-hidden="true" tabindex="-1"></a>    r <span class="ot">&lt;-</span> parms[<span class="dv">1</span>]</span>
-<span id="cb36-10"><a href="ChapFrequency-Modeling.html#cb36-10" aria-hidden="true" tabindex="-1"></a>    beta <span class="ot">&lt;-</span> parms[<span class="dv">2</span>]</span>
-<span id="cb36-11"><a href="ChapFrequency-Modeling.html#cb36-11" aria-hidden="true" tabindex="-1"></a>    nloglike <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">sum</span>(<span class="fu">log</span>(<span class="fu">dnbinom</span>(Clm_Count, <span class="at">size =</span> r, <span class="at">mu =</span> r <span class="sc">*</span> beta)))</span>
-<span id="cb36-12"><a href="ChapFrequency-Modeling.html#cb36-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(nloglike)</span>
-<span id="cb36-13"><a href="ChapFrequency-Modeling.html#cb36-13" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb36-14"><a href="ChapFrequency-Modeling.html#cb36-14" aria-hidden="true" tabindex="-1"></a>ini.NB <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">5</span>)</span>
-<span id="cb36-15"><a href="ChapFrequency-Modeling.html#cb36-15" aria-hidden="true" tabindex="-1"></a><span class="co"># zop.NB &lt;- nlminb(ini.NB, loglikNB, lower = c(1e-6, 1e-6), upper = c(Inf,</span></span>
-<span id="cb36-16"><a href="ChapFrequency-Modeling.html#cb36-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Inf))</span></span>
-<span id="cb36-17"><a href="ChapFrequency-Modeling.html#cb36-17" aria-hidden="true" tabindex="-1"></a>zop.NB <span class="ot">&lt;-</span> <span class="fu">optim</span>(ini.NB, loglikNB)</span>
-<span id="cb36-18"><a href="ChapFrequency-Modeling.html#cb36-18" aria-hidden="true" tabindex="-1"></a>rhat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">1</span>]</span>
-<span id="cb36-19"><a href="ChapFrequency-Modeling.html#cb36-19" aria-hidden="true" tabindex="-1"></a>betahat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">2</span>]</span>
-<span id="cb36-20"><a href="ChapFrequency-Modeling.html#cb36-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-21"><a href="ChapFrequency-Modeling.html#cb36-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Part c.</span></span>
-<span id="cb36-22"><a href="ChapFrequency-Modeling.html#cb36-22" aria-hidden="true" tabindex="-1"></a>fit.nb <span class="ot">&lt;-</span> fitdistrplus<span class="sc">::</span><span class="fu">fitdist</span>(Clm_Count, <span class="st">&quot;nbinom&quot;</span>)</span>
-<span id="cb36-23"><a href="ChapFrequency-Modeling.html#cb36-23" aria-hidden="true" tabindex="-1"></a>fit.nb<span class="sc">$</span>estimate[<span class="dv">1</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="ChapFrequency-Modeling.html#cb36-1" tabindex="-1"></a><span class="co"># Part a.</span></span>
+<span id="cb36-2"><a href="ChapFrequency-Modeling.html#cb36-2" tabindex="-1"></a>TravelClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data</span><span class="sc">\\</span><span class="st">ANUTravelClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
+<span id="cb36-3"><a href="ChapFrequency-Modeling.html#cb36-3" tabindex="-1"></a><span class="co"># TravelClaims &lt;- subset(TravelClaims, UW.Year &lt; 2020)</span></span>
+<span id="cb36-4"><a href="ChapFrequency-Modeling.html#cb36-4" tabindex="-1"></a>Clm_Count <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">table</span>(TravelClaims<span class="sc">$</span>UW.Year))</span>
+<span id="cb36-5"><a href="ChapFrequency-Modeling.html#cb36-5" tabindex="-1"></a>lambdahat <span class="ot">&lt;-</span> <span class="fu">sum</span>(Clm_Count)<span class="sc">/</span><span class="fu">length</span>(Clm_Count)</span>
+<span id="cb36-6"><a href="ChapFrequency-Modeling.html#cb36-6" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="ChapFrequency-Modeling.html#cb36-7" tabindex="-1"></a><span class="co"># Part b.</span></span>
+<span id="cb36-8"><a href="ChapFrequency-Modeling.html#cb36-8" tabindex="-1"></a>loglikNB <span class="ot">&lt;-</span> <span class="cf">function</span>(parms) {</span>
+<span id="cb36-9"><a href="ChapFrequency-Modeling.html#cb36-9" tabindex="-1"></a>    r <span class="ot">&lt;-</span> parms[<span class="dv">1</span>]</span>
+<span id="cb36-10"><a href="ChapFrequency-Modeling.html#cb36-10" tabindex="-1"></a>    beta <span class="ot">&lt;-</span> parms[<span class="dv">2</span>]</span>
+<span id="cb36-11"><a href="ChapFrequency-Modeling.html#cb36-11" tabindex="-1"></a>    nloglike <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">sum</span>(<span class="fu">log</span>(<span class="fu">dnbinom</span>(Clm_Count, <span class="at">size =</span> r, <span class="at">mu =</span> r <span class="sc">*</span> beta)))</span>
+<span id="cb36-12"><a href="ChapFrequency-Modeling.html#cb36-12" tabindex="-1"></a>    <span class="fu">return</span>(nloglike)</span>
+<span id="cb36-13"><a href="ChapFrequency-Modeling.html#cb36-13" tabindex="-1"></a>}</span>
+<span id="cb36-14"><a href="ChapFrequency-Modeling.html#cb36-14" tabindex="-1"></a>ini.NB <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">5</span>)</span>
+<span id="cb36-15"><a href="ChapFrequency-Modeling.html#cb36-15" tabindex="-1"></a><span class="co"># zop.NB &lt;- nlminb(ini.NB, loglikNB, lower = c(1e-6, 1e-6), upper = c(Inf,</span></span>
+<span id="cb36-16"><a href="ChapFrequency-Modeling.html#cb36-16" tabindex="-1"></a><span class="co"># Inf))</span></span>
+<span id="cb36-17"><a href="ChapFrequency-Modeling.html#cb36-17" tabindex="-1"></a>zop.NB <span class="ot">&lt;-</span> <span class="fu">optim</span>(ini.NB, loglikNB)</span>
+<span id="cb36-18"><a href="ChapFrequency-Modeling.html#cb36-18" tabindex="-1"></a>rhat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">1</span>]</span>
+<span id="cb36-19"><a href="ChapFrequency-Modeling.html#cb36-19" tabindex="-1"></a>betahat.NB <span class="ot">&lt;-</span> zop.NB<span class="sc">$</span>par[<span class="dv">2</span>]</span>
+<span id="cb36-20"><a href="ChapFrequency-Modeling.html#cb36-20" tabindex="-1"></a></span>
+<span id="cb36-21"><a href="ChapFrequency-Modeling.html#cb36-21" tabindex="-1"></a><span class="co"># Part c.</span></span>
+<span id="cb36-22"><a href="ChapFrequency-Modeling.html#cb36-22" tabindex="-1"></a>fit.nb <span class="ot">&lt;-</span> fitdistrplus<span class="sc">::</span><span class="fu">fitdist</span>(Clm_Count, <span class="st">&quot;nbinom&quot;</span>)</span>
+<span id="cb36-23"><a href="ChapFrequency-Modeling.html#cb36-23" tabindex="-1"></a>fit.nb<span class="sc">$</span>estimate[<span class="dv">1</span>]</span></code></pre></div>
 <pre><code>    size 
 1.751471 </code></pre>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="ChapFrequency-Modeling.html#cb38-1" aria-hidden="true" tabindex="-1"></a>fit.nb<span class="sc">$</span>estimate[<span class="dv">2</span>]<span class="sc">/</span>fit.nb<span class="sc">$</span>estimate[<span class="dv">1</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="ChapFrequency-Modeling.html#cb38-1" tabindex="-1"></a>fit.nb<span class="sc">$</span>estimate[<span class="dv">2</span>]<span class="sc">/</span>fit.nb<span class="sc">$</span>estimate[<span class="dv">1</span>]</span></code></pre></div>
 <pre><code>      mu 
 75.17949 </code></pre>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="ChapFrequency-Modeling.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part d.</span></span>
-<span id="cb40-2"><a href="ChapFrequency-Modeling.html#cb40-2" aria-hidden="true" tabindex="-1"></a>Clm_Count <span class="ot">&lt;-</span> Clm_Count[<span class="fu">order</span>(Clm_Count)]</span>
-<span id="cb40-3"><a href="ChapFrequency-Modeling.html#cb40-3" aria-hidden="true" tabindex="-1"></a>temp <span class="ot">&lt;-</span> <span class="fu">ecdf</span>(Clm_Count)</span>
-<span id="cb40-4"><a href="ChapFrequency-Modeling.html#cb40-4" aria-hidden="true" tabindex="-1"></a>perc.edf <span class="ot">&lt;-</span> <span class="fu">temp</span>(Clm_Count)</span>
-<span id="cb40-5"><a href="ChapFrequency-Modeling.html#cb40-5" aria-hidden="true" tabindex="-1"></a>perc.NB <span class="ot">&lt;-</span> <span class="fu">pnbinom</span>(Clm_Count, <span class="at">size =</span> rhat.NB, <span class="at">mu =</span> rhat.NB <span class="sc">*</span> betahat.NB)</span>
-<span id="cb40-6"><a href="ChapFrequency-Modeling.html#cb40-6" aria-hidden="true" tabindex="-1"></a>perc.Pois <span class="ot">&lt;-</span> <span class="fu">ppois</span>(Clm_Count, <span class="at">lambda =</span> lambdahat)</span>
-<span id="cb40-7"><a href="ChapFrequency-Modeling.html#cb40-7" aria-hidden="true" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Clm_Count, perc.edf, perc.Pois, perc.NB)</span>
-<span id="cb40-8"><a href="ChapFrequency-Modeling.html#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Count&quot;</span>, <span class="st">&quot;Empirical Percentile&quot;</span>, <span class="st">&quot;Poisson Perc&quot;</span>, <span class="st">&quot;Neg Binom Perc&quot;</span>)</span>
-<span id="cb40-9"><a href="ChapFrequency-Modeling.html#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tableout, <span class="at">digits =</span> <span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="ChapFrequency-Modeling.html#cb40-1" tabindex="-1"></a><span class="co"># Part d.</span></span>
+<span id="cb40-2"><a href="ChapFrequency-Modeling.html#cb40-2" tabindex="-1"></a>Clm_Count <span class="ot">&lt;-</span> Clm_Count[<span class="fu">order</span>(Clm_Count)]</span>
+<span id="cb40-3"><a href="ChapFrequency-Modeling.html#cb40-3" tabindex="-1"></a>temp <span class="ot">&lt;-</span> <span class="fu">ecdf</span>(Clm_Count)</span>
+<span id="cb40-4"><a href="ChapFrequency-Modeling.html#cb40-4" tabindex="-1"></a>perc.edf <span class="ot">&lt;-</span> <span class="fu">temp</span>(Clm_Count)</span>
+<span id="cb40-5"><a href="ChapFrequency-Modeling.html#cb40-5" tabindex="-1"></a>perc.NB <span class="ot">&lt;-</span> <span class="fu">pnbinom</span>(Clm_Count, <span class="at">size =</span> rhat.NB, <span class="at">mu =</span> rhat.NB <span class="sc">*</span> betahat.NB)</span>
+<span id="cb40-6"><a href="ChapFrequency-Modeling.html#cb40-6" tabindex="-1"></a>perc.Pois <span class="ot">&lt;-</span> <span class="fu">ppois</span>(Clm_Count, <span class="at">lambda =</span> lambdahat)</span>
+<span id="cb40-7"><a href="ChapFrequency-Modeling.html#cb40-7" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Clm_Count, perc.edf, perc.Pois, perc.NB)</span>
+<span id="cb40-8"><a href="ChapFrequency-Modeling.html#cb40-8" tabindex="-1"></a><span class="fu">names</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Count&quot;</span>, <span class="st">&quot;Empirical Percentile&quot;</span>, <span class="st">&quot;Poisson Perc&quot;</span>, <span class="st">&quot;Neg Binom Perc&quot;</span>)</span>
+<span id="cb40-9"><a href="ChapFrequency-Modeling.html#cb40-9" tabindex="-1"></a><span class="fu">round</span>(tableout, <span class="at">digits =</span> <span class="dv">4</span>)</span></code></pre></div>
 <pre><code>   Claim Count Empirical Percentile Poisson Perc Neg Binom Perc
 1            1               0.0625       0.0000         0.0014
 2           32               0.1250       0.0000         0.1124
@@ -2521,55 +2495,55 @@ Poisson Perc
 <a id="displayCode.Freq.2" href="javascript:togglecode('toggleCode.Freq.2','displayCode.Freq.2');"><i><strong>Show R Code</strong></i></a>
 </h5>
 <div id="toggleCode.Freq.2" style="display: none">
-<div class="sourceCode" id="cb42"><pre class="sourceCode default"><code class="sourceCode default"><span id="cb42-1"><a href="ChapFrequency-Modeling.html#cb42-1" aria-hidden="true" tabindex="-1"></a>likm&lt;-function(m){</span>
-<span id="cb42-2"><a href="ChapFrequency-Modeling.html#cb42-2" aria-hidden="true" tabindex="-1"></a>  prod((dbinom(x,m,mean(x)/m)))</span>
-<span id="cb42-3"><a href="ChapFrequency-Modeling.html#cb42-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb42-4"><a href="ChapFrequency-Modeling.html#cb42-4" aria-hidden="true" tabindex="-1"></a>x&lt;-c(2,2,2,4,5);</span>
-<span id="cb42-5"><a href="ChapFrequency-Modeling.html#cb42-5" aria-hidden="true" tabindex="-1"></a>n&lt;-(5:100);</span>
-<span id="cb42-6"><a href="ChapFrequency-Modeling.html#cb42-6" aria-hidden="true" tabindex="-1"></a># Computing the Likelihood </span>
-<span id="cb42-7"><a href="ChapFrequency-Modeling.html#cb42-7" aria-hidden="true" tabindex="-1"></a>ll&lt;-sapply(n,likm); </span>
-<span id="cb42-8"><a href="ChapFrequency-Modeling.html#cb42-8" aria-hidden="true" tabindex="-1"></a># Computing the MLE</span>
-<span id="cb42-9"><a href="ChapFrequency-Modeling.html#cb42-9" aria-hidden="true" tabindex="-1"></a>n[ll==max(ll)]</span>
-<span id="cb42-10"><a href="ChapFrequency-Modeling.html#cb42-10" aria-hidden="true" tabindex="-1"></a># Storing the Likelihood Curve</span>
-<span id="cb42-11"><a href="ChapFrequency-Modeling.html#cb42-11" aria-hidden="true" tabindex="-1"></a>y&lt;-cbind(n,ll);</span>
-<span id="cb42-12"><a href="ChapFrequency-Modeling.html#cb42-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-13"><a href="ChapFrequency-Modeling.html#cb42-13" aria-hidden="true" tabindex="-1"></a># Second Dataset</span>
-<span id="cb42-14"><a href="ChapFrequency-Modeling.html#cb42-14" aria-hidden="true" tabindex="-1"></a>x&lt;-c(2,2,2,4,6);</span>
-<span id="cb42-15"><a href="ChapFrequency-Modeling.html#cb42-15" aria-hidden="true" tabindex="-1"></a>ll&lt;-sapply(n,likm);</span>
-<span id="cb42-16"><a href="ChapFrequency-Modeling.html#cb42-16" aria-hidden="true" tabindex="-1"></a>n[ll==max(ll)]</span>
-<span id="cb42-17"><a href="ChapFrequency-Modeling.html#cb42-17" aria-hidden="true" tabindex="-1"></a>y&lt;-cbind(y,ll);</span>
-<span id="cb42-18"><a href="ChapFrequency-Modeling.html#cb42-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-19"><a href="ChapFrequency-Modeling.html#cb42-19" aria-hidden="true" tabindex="-1"></a># Third Dataset</span>
-<span id="cb42-20"><a href="ChapFrequency-Modeling.html#cb42-20" aria-hidden="true" tabindex="-1"></a>x&lt;-c(2,2,2,4,7);</span>
-<span id="cb42-21"><a href="ChapFrequency-Modeling.html#cb42-21" aria-hidden="true" tabindex="-1"></a>ll&lt;-sapply(n,likm);</span>
-<span id="cb42-22"><a href="ChapFrequency-Modeling.html#cb42-22" aria-hidden="true" tabindex="-1"></a>n[ll==max(ll)]</span>
-<span id="cb42-23"><a href="ChapFrequency-Modeling.html#cb42-23" aria-hidden="true" tabindex="-1"></a>y&lt;-cbind(y,ll);</span>
-<span id="cb42-24"><a href="ChapFrequency-Modeling.html#cb42-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-25"><a href="ChapFrequency-Modeling.html#cb42-25" aria-hidden="true" tabindex="-1"></a>colnames(y)&lt;-c(&quot;m&quot;,&quot;$\\tilde{x}=(2,2,2,4,5)$&quot;,</span>
-<span id="cb42-26"><a href="ChapFrequency-Modeling.html#cb42-26" aria-hidden="true" tabindex="-1"></a>               &quot;$\\tilde{x}=(2,2,2,4,6)$&quot;,</span>
-<span id="cb42-27"><a href="ChapFrequency-Modeling.html#cb42-27" aria-hidden="true" tabindex="-1"></a>               &quot;$\\tilde{x}=(2,2,2,4,7)$&quot;);</span>
-<span id="cb42-28"><a href="ChapFrequency-Modeling.html#cb42-28" aria-hidden="true" tabindex="-1"></a>dy&lt;-data.frame(y);</span>
-<span id="cb42-29"><a href="ChapFrequency-Modeling.html#cb42-29" aria-hidden="true" tabindex="-1"></a>library(tikzDevice);</span>
-<span id="cb42-30"><a href="ChapFrequency-Modeling.html#cb42-30" aria-hidden="true" tabindex="-1"></a>library(ggplot2);</span>
-<span id="cb42-31"><a href="ChapFrequency-Modeling.html#cb42-31" aria-hidden="true" tabindex="-1"></a>options(tikzMetricPackages = </span>
-<span id="cb42-32"><a href="ChapFrequency-Modeling.html#cb42-32" aria-hidden="true" tabindex="-1"></a>          c(&quot;\\usepackage[utf8]{inputenc}&quot;,&quot;\\usepackage[T1]{fontenc}&quot;,</span>
-<span id="cb42-33"><a href="ChapFrequency-Modeling.html#cb42-33" aria-hidden="true" tabindex="-1"></a>            &quot;\\usetikzlibrary{calc}&quot;, &quot;\\usepackage{amssymb}&quot;,</span>
-<span id="cb42-34"><a href="ChapFrequency-Modeling.html#cb42-34" aria-hidden="true" tabindex="-1"></a>            &quot;\\usepackage{amsmath}&quot;,&quot;\\usepackage[active]{preview}&quot;))</span>
-<span id="cb42-35"><a href="ChapFrequency-Modeling.html#cb42-35" aria-hidden="true" tabindex="-1"></a>tikz(file = &quot;plot_test.tex&quot;, width = 6.25, height = 3.125);</span>
-<span id="cb42-36"><a href="ChapFrequency-Modeling.html#cb42-36" aria-hidden="true" tabindex="-1"></a>ggplot(dy) + </span>
-<span id="cb42-37"><a href="ChapFrequency-Modeling.html#cb42-37" aria-hidden="true" tabindex="-1"></a>  geom_point(aes(x=m, y=(X..tilde.x...2.2.2.4.5..),</span>
-<span id="cb42-38"><a href="ChapFrequency-Modeling.html#cb42-38" aria-hidden="true" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,5):\\hat{m}=7$&quot;), size=0.75) + </span>
-<span id="cb42-39"><a href="ChapFrequency-Modeling.html#cb42-39" aria-hidden="true" tabindex="-1"></a>  geom_point(aes(x=m, y=(X..tilde.x...2.2.2.4.6..),</span>
-<span id="cb42-40"><a href="ChapFrequency-Modeling.html#cb42-40" aria-hidden="true" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,6):\\hat{m}=18$&quot;),size=0.75) +</span>
-<span id="cb42-41"><a href="ChapFrequency-Modeling.html#cb42-41" aria-hidden="true" tabindex="-1"></a>  geom_point(aes(x=m, y=(X..tilde.x...2.2.2.4.7..),</span>
-<span id="cb42-42"><a href="ChapFrequency-Modeling.html#cb42-42" aria-hidden="true" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,7):\\hat{m}=\\infty$&quot;),size=0.75) +</span>
-<span id="cb42-43"><a href="ChapFrequency-Modeling.html#cb42-43" aria-hidden="true" tabindex="-1"></a>  geom_point(aes(x=c(7),y=dy$X..tilde.x...2.2.2.4.5..[3],colour=&quot;$\\hat{m}$&quot;,</span>
-<span id="cb42-44"><a href="ChapFrequency-Modeling.html#cb42-44" aria-hidden="true" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,5):\\hat{m}=7$&quot;),size=0.75) +</span>
-<span id="cb42-45"><a href="ChapFrequency-Modeling.html#cb42-45" aria-hidden="true" tabindex="-1"></a>  geom_point(aes(x=c(18),y=dy$X..tilde.x...2.2.2.4.6..[14],colour=&quot;$\\hat{m}$&quot;,</span>
-<span id="cb42-46"><a href="ChapFrequency-Modeling.html#cb42-46" aria-hidden="true" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,6):\\hat{m}=18$&quot;),size=0.75)+</span>
-<span id="cb42-47"><a href="ChapFrequency-Modeling.html#cb42-47" aria-hidden="true" tabindex="-1"></a>  labs(x=&quot;m&quot;,y=&quot;$L(m,\\overline{x}/m)$&quot;,</span>
-<span id="cb42-48"><a href="ChapFrequency-Modeling.html#cb42-48" aria-hidden="true" tabindex="-1"></a>       title=&quot;MLE for $m$: Non-Robustness of MLE &quot;); </span>
-<span id="cb42-49"><a href="ChapFrequency-Modeling.html#cb42-49" aria-hidden="true" tabindex="-1"></a>dev.off();</span></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode default"><code class="sourceCode default"><span id="cb42-1"><a href="ChapFrequency-Modeling.html#cb42-1" tabindex="-1"></a>likm&lt;-function(m){</span>
+<span id="cb42-2"><a href="ChapFrequency-Modeling.html#cb42-2" tabindex="-1"></a>  prod((dbinom(x,m,mean(x)/m)))</span>
+<span id="cb42-3"><a href="ChapFrequency-Modeling.html#cb42-3" tabindex="-1"></a>}</span>
+<span id="cb42-4"><a href="ChapFrequency-Modeling.html#cb42-4" tabindex="-1"></a>x&lt;-c(2,2,2,4,5);</span>
+<span id="cb42-5"><a href="ChapFrequency-Modeling.html#cb42-5" tabindex="-1"></a>n&lt;-(5:100);</span>
+<span id="cb42-6"><a href="ChapFrequency-Modeling.html#cb42-6" tabindex="-1"></a># Computing the Likelihood </span>
+<span id="cb42-7"><a href="ChapFrequency-Modeling.html#cb42-7" tabindex="-1"></a>ll&lt;-sapply(n,likm); </span>
+<span id="cb42-8"><a href="ChapFrequency-Modeling.html#cb42-8" tabindex="-1"></a># Computing the MLE</span>
+<span id="cb42-9"><a href="ChapFrequency-Modeling.html#cb42-9" tabindex="-1"></a>n[ll==max(ll)]</span>
+<span id="cb42-10"><a href="ChapFrequency-Modeling.html#cb42-10" tabindex="-1"></a># Storing the Likelihood Curve</span>
+<span id="cb42-11"><a href="ChapFrequency-Modeling.html#cb42-11" tabindex="-1"></a>y&lt;-cbind(n,ll);</span>
+<span id="cb42-12"><a href="ChapFrequency-Modeling.html#cb42-12" tabindex="-1"></a></span>
+<span id="cb42-13"><a href="ChapFrequency-Modeling.html#cb42-13" tabindex="-1"></a># Second Dataset</span>
+<span id="cb42-14"><a href="ChapFrequency-Modeling.html#cb42-14" tabindex="-1"></a>x&lt;-c(2,2,2,4,6);</span>
+<span id="cb42-15"><a href="ChapFrequency-Modeling.html#cb42-15" tabindex="-1"></a>ll&lt;-sapply(n,likm);</span>
+<span id="cb42-16"><a href="ChapFrequency-Modeling.html#cb42-16" tabindex="-1"></a>n[ll==max(ll)]</span>
+<span id="cb42-17"><a href="ChapFrequency-Modeling.html#cb42-17" tabindex="-1"></a>y&lt;-cbind(y,ll);</span>
+<span id="cb42-18"><a href="ChapFrequency-Modeling.html#cb42-18" tabindex="-1"></a></span>
+<span id="cb42-19"><a href="ChapFrequency-Modeling.html#cb42-19" tabindex="-1"></a># Third Dataset</span>
+<span id="cb42-20"><a href="ChapFrequency-Modeling.html#cb42-20" tabindex="-1"></a>x&lt;-c(2,2,2,4,7);</span>
+<span id="cb42-21"><a href="ChapFrequency-Modeling.html#cb42-21" tabindex="-1"></a>ll&lt;-sapply(n,likm);</span>
+<span id="cb42-22"><a href="ChapFrequency-Modeling.html#cb42-22" tabindex="-1"></a>n[ll==max(ll)]</span>
+<span id="cb42-23"><a href="ChapFrequency-Modeling.html#cb42-23" tabindex="-1"></a>y&lt;-cbind(y,ll);</span>
+<span id="cb42-24"><a href="ChapFrequency-Modeling.html#cb42-24" tabindex="-1"></a></span>
+<span id="cb42-25"><a href="ChapFrequency-Modeling.html#cb42-25" tabindex="-1"></a>colnames(y)&lt;-c(&quot;m&quot;,&quot;$\\tilde{x}=(2,2,2,4,5)$&quot;,</span>
+<span id="cb42-26"><a href="ChapFrequency-Modeling.html#cb42-26" tabindex="-1"></a>               &quot;$\\tilde{x}=(2,2,2,4,6)$&quot;,</span>
+<span id="cb42-27"><a href="ChapFrequency-Modeling.html#cb42-27" tabindex="-1"></a>               &quot;$\\tilde{x}=(2,2,2,4,7)$&quot;);</span>
+<span id="cb42-28"><a href="ChapFrequency-Modeling.html#cb42-28" tabindex="-1"></a>dy&lt;-data.frame(y);</span>
+<span id="cb42-29"><a href="ChapFrequency-Modeling.html#cb42-29" tabindex="-1"></a>library(tikzDevice);</span>
+<span id="cb42-30"><a href="ChapFrequency-Modeling.html#cb42-30" tabindex="-1"></a>library(ggplot2);</span>
+<span id="cb42-31"><a href="ChapFrequency-Modeling.html#cb42-31" tabindex="-1"></a>options(tikzMetricPackages = </span>
+<span id="cb42-32"><a href="ChapFrequency-Modeling.html#cb42-32" tabindex="-1"></a>          c(&quot;\\usepackage[utf8]{inputenc}&quot;,&quot;\\usepackage[T1]{fontenc}&quot;,</span>
+<span id="cb42-33"><a href="ChapFrequency-Modeling.html#cb42-33" tabindex="-1"></a>            &quot;\\usetikzlibrary{calc}&quot;, &quot;\\usepackage{amssymb}&quot;,</span>
+<span id="cb42-34"><a href="ChapFrequency-Modeling.html#cb42-34" tabindex="-1"></a>            &quot;\\usepackage{amsmath}&quot;,&quot;\\usepackage[active]{preview}&quot;))</span>
+<span id="cb42-35"><a href="ChapFrequency-Modeling.html#cb42-35" tabindex="-1"></a>tikz(file = &quot;plot_test.tex&quot;, width = 6.25, height = 3.125);</span>
+<span id="cb42-36"><a href="ChapFrequency-Modeling.html#cb42-36" tabindex="-1"></a>ggplot(dy) + </span>
+<span id="cb42-37"><a href="ChapFrequency-Modeling.html#cb42-37" tabindex="-1"></a>  geom_point(aes(x=m, y=(X..tilde.x...2.2.2.4.5..),</span>
+<span id="cb42-38"><a href="ChapFrequency-Modeling.html#cb42-38" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,5):\\hat{m}=7$&quot;), size=0.75) + </span>
+<span id="cb42-39"><a href="ChapFrequency-Modeling.html#cb42-39" tabindex="-1"></a>  geom_point(aes(x=m, y=(X..tilde.x...2.2.2.4.6..),</span>
+<span id="cb42-40"><a href="ChapFrequency-Modeling.html#cb42-40" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,6):\\hat{m}=18$&quot;),size=0.75) +</span>
+<span id="cb42-41"><a href="ChapFrequency-Modeling.html#cb42-41" tabindex="-1"></a>  geom_point(aes(x=m, y=(X..tilde.x...2.2.2.4.7..),</span>
+<span id="cb42-42"><a href="ChapFrequency-Modeling.html#cb42-42" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,7):\\hat{m}=\\infty$&quot;),size=0.75) +</span>
+<span id="cb42-43"><a href="ChapFrequency-Modeling.html#cb42-43" tabindex="-1"></a>  geom_point(aes(x=c(7),y=dy$X..tilde.x...2.2.2.4.5..[3],colour=&quot;$\\hat{m}$&quot;,</span>
+<span id="cb42-44"><a href="ChapFrequency-Modeling.html#cb42-44" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,5):\\hat{m}=7$&quot;),size=0.75) +</span>
+<span id="cb42-45"><a href="ChapFrequency-Modeling.html#cb42-45" tabindex="-1"></a>  geom_point(aes(x=c(18),y=dy$X..tilde.x...2.2.2.4.6..[14],colour=&quot;$\\hat{m}$&quot;,</span>
+<span id="cb42-46"><a href="ChapFrequency-Modeling.html#cb42-46" tabindex="-1"></a>                 shape=&quot;$\\tilde{x}=(2,2,2,4,6):\\hat{m}=18$&quot;),size=0.75)+</span>
+<span id="cb42-47"><a href="ChapFrequency-Modeling.html#cb42-47" tabindex="-1"></a>  labs(x=&quot;m&quot;,y=&quot;$L(m,\\overline{x}/m)$&quot;,</span>
+<span id="cb42-48"><a href="ChapFrequency-Modeling.html#cb42-48" tabindex="-1"></a>       title=&quot;MLE for $m$: Non-Robustness of MLE &quot;); </span>
+<span id="cb42-49"><a href="ChapFrequency-Modeling.html#cb42-49" tabindex="-1"></a>dev.off();</span></code></pre></div>
 </div>
 <hr />
 <p><strong>Code for Figure <a href="ChapFrequency-Modeling.html#fig:Fig33">3.3</a>:</strong></p>
@@ -2577,88 +2551,88 @@ Poisson Perc
 <a id="displayCode.Freq.3" href="javascript:togglecode('toggleCode.Freq.3','displayCode.Freq.3');"><i><strong>Show R Code</strong></i></a>
 </h5>
 <div id="toggleCode.Freq.3" style="display: none">
-<div class="sourceCode" id="cb43"><pre class="sourceCode default"><code class="sourceCode default"><span id="cb43-1"><a href="ChapFrequency-Modeling.html#cb43-1" aria-hidden="true" tabindex="-1"></a>likbinm&lt;-function(m){ </span>
-<span id="cb43-2"><a href="ChapFrequency-Modeling.html#cb43-2" aria-hidden="true" tabindex="-1"></a>  # binomial likelihood maximized w.r.t. p</span>
-<span id="cb43-3"><a href="ChapFrequency-Modeling.html#cb43-3" aria-hidden="true" tabindex="-1"></a>  prod((dbinom(x,m,mean(x)/m)))</span>
-<span id="cb43-4"><a href="ChapFrequency-Modeling.html#cb43-4" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb43-5"><a href="ChapFrequency-Modeling.html#cb43-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-6"><a href="ChapFrequency-Modeling.html#cb43-6" aria-hidden="true" tabindex="-1"></a>liknbinm&lt;-function(r){</span>
-<span id="cb43-7"><a href="ChapFrequency-Modeling.html#cb43-7" aria-hidden="true" tabindex="-1"></a>  # negative binomial likelihood maximized w.r.t. beta</span>
-<span id="cb43-8"><a href="ChapFrequency-Modeling.html#cb43-8" aria-hidden="true" tabindex="-1"></a>  prod(dnbinom(x,r,1-mean(x)/(mean(x)+r)))</span>
-<span id="cb43-9"><a href="ChapFrequency-Modeling.html#cb43-9" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb43-10"><a href="ChapFrequency-Modeling.html#cb43-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-11"><a href="ChapFrequency-Modeling.html#cb43-11" aria-hidden="true" tabindex="-1"></a># Data Matrix; Three Samples, one in each Column; </span>
-<span id="cb43-12"><a href="ChapFrequency-Modeling.html#cb43-12" aria-hidden="true" tabindex="-1"></a># First Sample has Var&lt;Mean</span>
-<span id="cb43-13"><a href="ChapFrequency-Modeling.html#cb43-13" aria-hidden="true" tabindex="-1"></a># Second Sample has Var=Mean</span>
-<span id="cb43-14"><a href="ChapFrequency-Modeling.html#cb43-14" aria-hidden="true" tabindex="-1"></a># Third Sample has Var&gt;Mean</span>
-<span id="cb43-15"><a href="ChapFrequency-Modeling.html#cb43-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-16"><a href="ChapFrequency-Modeling.html#cb43-16" aria-hidden="true" tabindex="-1"></a>  X&lt;-cbind(c(2,5,6,8,9)+2,c(2,5,6,8,9),c(2,3,6,8,9)) </span>
-<span id="cb43-17"><a href="ChapFrequency-Modeling.html#cb43-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-18"><a href="ChapFrequency-Modeling.html#cb43-18" aria-hidden="true" tabindex="-1"></a># Used for creating the labels in the z matrix</span>
-<span id="cb43-19"><a href="ChapFrequency-Modeling.html#cb43-19" aria-hidden="true" tabindex="-1"></a>  ord_char&lt;-c(&quot;&lt;&quot;,&quot;=&quot;,&quot;&gt;&quot;) </span>
-<span id="cb43-20"><a href="ChapFrequency-Modeling.html#cb43-20" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb43-21"><a href="ChapFrequency-Modeling.html#cb43-21" aria-hidden="true" tabindex="-1"></a># Empty matrices; </span>
-<span id="cb43-22"><a href="ChapFrequency-Modeling.html#cb43-22" aria-hidden="true" tabindex="-1"></a>  Y&lt;-matrix(1,ncol=2,nrow=0) </span>
-<span id="cb43-23"><a href="ChapFrequency-Modeling.html#cb43-23" aria-hidden="true" tabindex="-1"></a>  Z&lt;-matrix(1,ncol=2,nrow=0) </span>
-<span id="cb43-24"><a href="ChapFrequency-Modeling.html#cb43-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-25"><a href="ChapFrequency-Modeling.html#cb43-25" aria-hidden="true" tabindex="-1"></a>for (i in (1:3)) {</span>
-<span id="cb43-26"><a href="ChapFrequency-Modeling.html#cb43-26" aria-hidden="true" tabindex="-1"></a>  # Work with data in the i-th sample</span>
-<span id="cb43-27"><a href="ChapFrequency-Modeling.html#cb43-27" aria-hidden="true" tabindex="-1"></a>    x&lt;-X[,i]</span>
-<span id="cb43-28"><a href="ChapFrequency-Modeling.html#cb43-28" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb43-29"><a href="ChapFrequency-Modeling.html#cb43-29" aria-hidden="true" tabindex="-1"></a>  # Binomial Likelihood</span>
-<span id="cb43-30"><a href="ChapFrequency-Modeling.html#cb43-30" aria-hidden="true" tabindex="-1"></a>      # Interval of n values covering the MLE</span>
-<span id="cb43-31"><a href="ChapFrequency-Modeling.html#cb43-31" aria-hidden="true" tabindex="-1"></a>        n&lt;-(9:100)</span>
-<span id="cb43-32"><a href="ChapFrequency-Modeling.html#cb43-32" aria-hidden="true" tabindex="-1"></a>      # Evaluating the Likelihood at various values of n</span>
-<span id="cb43-33"><a href="ChapFrequency-Modeling.html#cb43-33" aria-hidden="true" tabindex="-1"></a>        ll&lt;-sapply(n,likbinm) </span>
-<span id="cb43-34"><a href="ChapFrequency-Modeling.html#cb43-34" aria-hidden="true" tabindex="-1"></a>      # Finding the MLE of n</span>
-<span id="cb43-35"><a href="ChapFrequency-Modeling.html#cb43-35" aria-hidden="true" tabindex="-1"></a>        n[ll==max(ll[!is.na(ll)])] </span>
-<span id="cb43-36"><a href="ChapFrequency-Modeling.html#cb43-36" aria-hidden="true" tabindex="-1"></a>      # Storing the data and the labels</span>
-<span id="cb43-37"><a href="ChapFrequency-Modeling.html#cb43-37" aria-hidden="true" tabindex="-1"></a>        Y&lt;-rbind(Y,cbind(n,ll))</span>
-<span id="cb43-38"><a href="ChapFrequency-Modeling.html#cb43-38" aria-hidden="true" tabindex="-1"></a>        Z&lt;-rbind(Z,cbind(rep(paste(&quot;$\\hat{\\sigma}^2&quot;,ord_char[i],</span>
-<span id="cb43-39"><a href="ChapFrequency-Modeling.html#cb43-39" aria-hidden="true" tabindex="-1"></a>                &quot;\\hat{\\mu}$&quot;),length(n)),rep(&quot;Binomial - L(m,\\overline{x}/m)$&quot;,</span>
-<span id="cb43-40"><a href="ChapFrequency-Modeling.html#cb43-40" aria-hidden="true" tabindex="-1"></a>                length(n))))</span>
-<span id="cb43-41"><a href="ChapFrequency-Modeling.html#cb43-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-42"><a href="ChapFrequency-Modeling.html#cb43-42" aria-hidden="true" tabindex="-1"></a>  # Negative Binomial Likelihood</span>
-<span id="cb43-43"><a href="ChapFrequency-Modeling.html#cb43-43" aria-hidden="true" tabindex="-1"></a>    # Interval of r values </span>
-<span id="cb43-44"><a href="ChapFrequency-Modeling.html#cb43-44" aria-hidden="true" tabindex="-1"></a>      r&lt;-(1:100)</span>
-<span id="cb43-45"><a href="ChapFrequency-Modeling.html#cb43-45" aria-hidden="true" tabindex="-1"></a>    # Evaluating the Likelihood at various values of r</span>
-<span id="cb43-46"><a href="ChapFrequency-Modeling.html#cb43-46" aria-hidden="true" tabindex="-1"></a>      ll&lt;-sapply(r,liknbinm) </span>
-<span id="cb43-47"><a href="ChapFrequency-Modeling.html#cb43-47" aria-hidden="true" tabindex="-1"></a>    # Finding the MLE of r</span>
-<span id="cb43-48"><a href="ChapFrequency-Modeling.html#cb43-48" aria-hidden="true" tabindex="-1"></a>      ll[is.na(ll)]=0</span>
-<span id="cb43-49"><a href="ChapFrequency-Modeling.html#cb43-49" aria-hidden="true" tabindex="-1"></a>      r[ll==max(ll[!is.na(ll)])] </span>
-<span id="cb43-50"><a href="ChapFrequency-Modeling.html#cb43-50" aria-hidden="true" tabindex="-1"></a>    # Storing the data and the labels</span>
-<span id="cb43-51"><a href="ChapFrequency-Modeling.html#cb43-51" aria-hidden="true" tabindex="-1"></a>      Y&lt;-rbind(Y,cbind(r,ll))</span>
-<span id="cb43-52"><a href="ChapFrequency-Modeling.html#cb43-52" aria-hidden="true" tabindex="-1"></a>      Z&lt;-rbind(Z,cbind(rep(paste(&quot;$\\hat{\\sigma}^2&quot;,ord_char[i],</span>
-<span id="cb43-53"><a href="ChapFrequency-Modeling.html#cb43-53" aria-hidden="true" tabindex="-1"></a>              &quot;\\hat{\\mu}$&quot;),length(r)),rep(&quot;Neg.Binomial -$L(r,\\overline{x}/r)$&quot;,</span>
-<span id="cb43-54"><a href="ChapFrequency-Modeling.html#cb43-54" aria-hidden="true" tabindex="-1"></a>                                             length(r))))</span>
-<span id="cb43-55"><a href="ChapFrequency-Modeling.html#cb43-55" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb43-56"><a href="ChapFrequency-Modeling.html#cb43-56" aria-hidden="true" tabindex="-1"></a>  # Poisson Likelihood</span>
-<span id="cb43-57"><a href="ChapFrequency-Modeling.html#cb43-57" aria-hidden="true" tabindex="-1"></a>    # Storing the data and the labels</span>
-<span id="cb43-58"><a href="ChapFrequency-Modeling.html#cb43-58" aria-hidden="true" tabindex="-1"></a>    # In the Poisson case MLE is the sample mean</span>
-<span id="cb43-59"><a href="ChapFrequency-Modeling.html#cb43-59" aria-hidden="true" tabindex="-1"></a>      Y&lt;-rbind(Y,cbind(r,rep(prod(dpois(x,mean(x))),length(r))))</span>
-<span id="cb43-60"><a href="ChapFrequency-Modeling.html#cb43-60" aria-hidden="true" tabindex="-1"></a>      Z&lt;-rbind(Z,cbind(rep(paste(&quot;$\\hat{\\sigma}^2&quot;,ord_char[i],&quot;\\hat{\\mu}$&quot;),</span>
-<span id="cb43-61"><a href="ChapFrequency-Modeling.html#cb43-61" aria-hidden="true" tabindex="-1"></a>          length(r)),rep(&quot;Poisson - $L(\\overline{x})$&quot;,length(r))))</span>
-<span id="cb43-62"><a href="ChapFrequency-Modeling.html#cb43-62" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb43-63"><a href="ChapFrequency-Modeling.html#cb43-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-64"><a href="ChapFrequency-Modeling.html#cb43-64" aria-hidden="true" tabindex="-1"></a>  # Assigning Column Names</span>
-<span id="cb43-65"><a href="ChapFrequency-Modeling.html#cb43-65" aria-hidden="true" tabindex="-1"></a>    colnames(Y)&lt;-c(&quot;x&quot;,&quot;lik&quot;)</span>
-<span id="cb43-66"><a href="ChapFrequency-Modeling.html#cb43-66" aria-hidden="true" tabindex="-1"></a>    colnames(Z)&lt;-c(&quot;dataset&quot;,&quot;Distribution&quot;)</span>
-<span id="cb43-67"><a href="ChapFrequency-Modeling.html#cb43-67" aria-hidden="true" tabindex="-1"></a>  # Creating a Dataframe for using ggplot</span>
-<span id="cb43-68"><a href="ChapFrequency-Modeling.html#cb43-68" aria-hidden="true" tabindex="-1"></a>    dy&lt;-cbind(data.frame(Y),data.frame(Z))</span>
-<span id="cb43-69"><a href="ChapFrequency-Modeling.html#cb43-69" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb43-70"><a href="ChapFrequency-Modeling.html#cb43-70" aria-hidden="true" tabindex="-1"></a>library(tikzDevice)</span>
-<span id="cb43-71"><a href="ChapFrequency-Modeling.html#cb43-71" aria-hidden="true" tabindex="-1"></a>library(ggplot2)</span>
-<span id="cb43-72"><a href="ChapFrequency-Modeling.html#cb43-72" aria-hidden="true" tabindex="-1"></a>options(tikzMetricPackages = c(&quot;\\usepackage[utf8]{inputenc}&quot;,</span>
-<span id="cb43-73"><a href="ChapFrequency-Modeling.html#cb43-73" aria-hidden="true" tabindex="-1"></a>                               &quot;\\usepackage[T1]{fontenc}&quot;,</span>
-<span id="cb43-74"><a href="ChapFrequency-Modeling.html#cb43-74" aria-hidden="true" tabindex="-1"></a>                               &quot;\\usetikzlibrary{calc}&quot;, </span>
-<span id="cb43-75"><a href="ChapFrequency-Modeling.html#cb43-75" aria-hidden="true" tabindex="-1"></a>                               &quot;\\usepackage{amssymb}&quot;,</span>
-<span id="cb43-76"><a href="ChapFrequency-Modeling.html#cb43-76" aria-hidden="true" tabindex="-1"></a>                               &quot;\\usepackage{amsmath}&quot;,</span>
-<span id="cb43-77"><a href="ChapFrequency-Modeling.html#cb43-77" aria-hidden="true" tabindex="-1"></a>                               &quot;\\usepackage[active]{preview}&quot;) )</span>
-<span id="cb43-78"><a href="ChapFrequency-Modeling.html#cb43-78" aria-hidden="true" tabindex="-1"></a>tikz(file = &quot;plot_test_2.tex&quot;, width = 6.25, height = 6.25)</span>
-<span id="cb43-79"><a href="ChapFrequency-Modeling.html#cb43-79" aria-hidden="true" tabindex="-1"></a>ggplot(data=dy,aes(x=x,y=lik,col=Distribution)) + </span>
-<span id="cb43-80"><a href="ChapFrequency-Modeling.html#cb43-80" aria-hidden="true" tabindex="-1"></a>  geom_point(size=0.25) + facet_grid(dataset~.) +</span>
-<span id="cb43-81"><a href="ChapFrequency-Modeling.html#cb43-81" aria-hidden="true" tabindex="-1"></a>  labs(x=&quot;m/r&quot;,y=&quot;Likelihood&quot;,title=&quot;&quot;) </span>
-<span id="cb43-82"><a href="ChapFrequency-Modeling.html#cb43-82" aria-hidden="true" tabindex="-1"></a>dev.off()</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode default"><code class="sourceCode default"><span id="cb43-1"><a href="ChapFrequency-Modeling.html#cb43-1" tabindex="-1"></a>likbinm&lt;-function(m){ </span>
+<span id="cb43-2"><a href="ChapFrequency-Modeling.html#cb43-2" tabindex="-1"></a>  # binomial likelihood maximized w.r.t. p</span>
+<span id="cb43-3"><a href="ChapFrequency-Modeling.html#cb43-3" tabindex="-1"></a>  prod((dbinom(x,m,mean(x)/m)))</span>
+<span id="cb43-4"><a href="ChapFrequency-Modeling.html#cb43-4" tabindex="-1"></a>  }</span>
+<span id="cb43-5"><a href="ChapFrequency-Modeling.html#cb43-5" tabindex="-1"></a></span>
+<span id="cb43-6"><a href="ChapFrequency-Modeling.html#cb43-6" tabindex="-1"></a>liknbinm&lt;-function(r){</span>
+<span id="cb43-7"><a href="ChapFrequency-Modeling.html#cb43-7" tabindex="-1"></a>  # negative binomial likelihood maximized w.r.t. beta</span>
+<span id="cb43-8"><a href="ChapFrequency-Modeling.html#cb43-8" tabindex="-1"></a>  prod(dnbinom(x,r,1-mean(x)/(mean(x)+r)))</span>
+<span id="cb43-9"><a href="ChapFrequency-Modeling.html#cb43-9" tabindex="-1"></a>  }</span>
+<span id="cb43-10"><a href="ChapFrequency-Modeling.html#cb43-10" tabindex="-1"></a></span>
+<span id="cb43-11"><a href="ChapFrequency-Modeling.html#cb43-11" tabindex="-1"></a># Data Matrix; Three Samples, one in each Column; </span>
+<span id="cb43-12"><a href="ChapFrequency-Modeling.html#cb43-12" tabindex="-1"></a># First Sample has Var&lt;Mean</span>
+<span id="cb43-13"><a href="ChapFrequency-Modeling.html#cb43-13" tabindex="-1"></a># Second Sample has Var=Mean</span>
+<span id="cb43-14"><a href="ChapFrequency-Modeling.html#cb43-14" tabindex="-1"></a># Third Sample has Var&gt;Mean</span>
+<span id="cb43-15"><a href="ChapFrequency-Modeling.html#cb43-15" tabindex="-1"></a></span>
+<span id="cb43-16"><a href="ChapFrequency-Modeling.html#cb43-16" tabindex="-1"></a>  X&lt;-cbind(c(2,5,6,8,9)+2,c(2,5,6,8,9),c(2,3,6,8,9)) </span>
+<span id="cb43-17"><a href="ChapFrequency-Modeling.html#cb43-17" tabindex="-1"></a></span>
+<span id="cb43-18"><a href="ChapFrequency-Modeling.html#cb43-18" tabindex="-1"></a># Used for creating the labels in the z matrix</span>
+<span id="cb43-19"><a href="ChapFrequency-Modeling.html#cb43-19" tabindex="-1"></a>  ord_char&lt;-c(&quot;&lt;&quot;,&quot;=&quot;,&quot;&gt;&quot;) </span>
+<span id="cb43-20"><a href="ChapFrequency-Modeling.html#cb43-20" tabindex="-1"></a>  </span>
+<span id="cb43-21"><a href="ChapFrequency-Modeling.html#cb43-21" tabindex="-1"></a># Empty matrices; </span>
+<span id="cb43-22"><a href="ChapFrequency-Modeling.html#cb43-22" tabindex="-1"></a>  Y&lt;-matrix(1,ncol=2,nrow=0) </span>
+<span id="cb43-23"><a href="ChapFrequency-Modeling.html#cb43-23" tabindex="-1"></a>  Z&lt;-matrix(1,ncol=2,nrow=0) </span>
+<span id="cb43-24"><a href="ChapFrequency-Modeling.html#cb43-24" tabindex="-1"></a></span>
+<span id="cb43-25"><a href="ChapFrequency-Modeling.html#cb43-25" tabindex="-1"></a>for (i in (1:3)) {</span>
+<span id="cb43-26"><a href="ChapFrequency-Modeling.html#cb43-26" tabindex="-1"></a>  # Work with data in the i-th sample</span>
+<span id="cb43-27"><a href="ChapFrequency-Modeling.html#cb43-27" tabindex="-1"></a>    x&lt;-X[,i]</span>
+<span id="cb43-28"><a href="ChapFrequency-Modeling.html#cb43-28" tabindex="-1"></a>  </span>
+<span id="cb43-29"><a href="ChapFrequency-Modeling.html#cb43-29" tabindex="-1"></a>  # Binomial Likelihood</span>
+<span id="cb43-30"><a href="ChapFrequency-Modeling.html#cb43-30" tabindex="-1"></a>      # Interval of n values covering the MLE</span>
+<span id="cb43-31"><a href="ChapFrequency-Modeling.html#cb43-31" tabindex="-1"></a>        n&lt;-(9:100)</span>
+<span id="cb43-32"><a href="ChapFrequency-Modeling.html#cb43-32" tabindex="-1"></a>      # Evaluating the Likelihood at various values of n</span>
+<span id="cb43-33"><a href="ChapFrequency-Modeling.html#cb43-33" tabindex="-1"></a>        ll&lt;-sapply(n,likbinm) </span>
+<span id="cb43-34"><a href="ChapFrequency-Modeling.html#cb43-34" tabindex="-1"></a>      # Finding the MLE of n</span>
+<span id="cb43-35"><a href="ChapFrequency-Modeling.html#cb43-35" tabindex="-1"></a>        n[ll==max(ll[!is.na(ll)])] </span>
+<span id="cb43-36"><a href="ChapFrequency-Modeling.html#cb43-36" tabindex="-1"></a>      # Storing the data and the labels</span>
+<span id="cb43-37"><a href="ChapFrequency-Modeling.html#cb43-37" tabindex="-1"></a>        Y&lt;-rbind(Y,cbind(n,ll))</span>
+<span id="cb43-38"><a href="ChapFrequency-Modeling.html#cb43-38" tabindex="-1"></a>        Z&lt;-rbind(Z,cbind(rep(paste(&quot;$\\hat{\\sigma}^2&quot;,ord_char[i],</span>
+<span id="cb43-39"><a href="ChapFrequency-Modeling.html#cb43-39" tabindex="-1"></a>                &quot;\\hat{\\mu}$&quot;),length(n)),rep(&quot;Binomial - L(m,\\overline{x}/m)$&quot;,</span>
+<span id="cb43-40"><a href="ChapFrequency-Modeling.html#cb43-40" tabindex="-1"></a>                length(n))))</span>
+<span id="cb43-41"><a href="ChapFrequency-Modeling.html#cb43-41" tabindex="-1"></a></span>
+<span id="cb43-42"><a href="ChapFrequency-Modeling.html#cb43-42" tabindex="-1"></a>  # Negative Binomial Likelihood</span>
+<span id="cb43-43"><a href="ChapFrequency-Modeling.html#cb43-43" tabindex="-1"></a>    # Interval of r values </span>
+<span id="cb43-44"><a href="ChapFrequency-Modeling.html#cb43-44" tabindex="-1"></a>      r&lt;-(1:100)</span>
+<span id="cb43-45"><a href="ChapFrequency-Modeling.html#cb43-45" tabindex="-1"></a>    # Evaluating the Likelihood at various values of r</span>
+<span id="cb43-46"><a href="ChapFrequency-Modeling.html#cb43-46" tabindex="-1"></a>      ll&lt;-sapply(r,liknbinm) </span>
+<span id="cb43-47"><a href="ChapFrequency-Modeling.html#cb43-47" tabindex="-1"></a>    # Finding the MLE of r</span>
+<span id="cb43-48"><a href="ChapFrequency-Modeling.html#cb43-48" tabindex="-1"></a>      ll[is.na(ll)]=0</span>
+<span id="cb43-49"><a href="ChapFrequency-Modeling.html#cb43-49" tabindex="-1"></a>      r[ll==max(ll[!is.na(ll)])] </span>
+<span id="cb43-50"><a href="ChapFrequency-Modeling.html#cb43-50" tabindex="-1"></a>    # Storing the data and the labels</span>
+<span id="cb43-51"><a href="ChapFrequency-Modeling.html#cb43-51" tabindex="-1"></a>      Y&lt;-rbind(Y,cbind(r,ll))</span>
+<span id="cb43-52"><a href="ChapFrequency-Modeling.html#cb43-52" tabindex="-1"></a>      Z&lt;-rbind(Z,cbind(rep(paste(&quot;$\\hat{\\sigma}^2&quot;,ord_char[i],</span>
+<span id="cb43-53"><a href="ChapFrequency-Modeling.html#cb43-53" tabindex="-1"></a>              &quot;\\hat{\\mu}$&quot;),length(r)),rep(&quot;Neg.Binomial -$L(r,\\overline{x}/r)$&quot;,</span>
+<span id="cb43-54"><a href="ChapFrequency-Modeling.html#cb43-54" tabindex="-1"></a>                                             length(r))))</span>
+<span id="cb43-55"><a href="ChapFrequency-Modeling.html#cb43-55" tabindex="-1"></a>      </span>
+<span id="cb43-56"><a href="ChapFrequency-Modeling.html#cb43-56" tabindex="-1"></a>  # Poisson Likelihood</span>
+<span id="cb43-57"><a href="ChapFrequency-Modeling.html#cb43-57" tabindex="-1"></a>    # Storing the data and the labels</span>
+<span id="cb43-58"><a href="ChapFrequency-Modeling.html#cb43-58" tabindex="-1"></a>    # In the Poisson case MLE is the sample mean</span>
+<span id="cb43-59"><a href="ChapFrequency-Modeling.html#cb43-59" tabindex="-1"></a>      Y&lt;-rbind(Y,cbind(r,rep(prod(dpois(x,mean(x))),length(r))))</span>
+<span id="cb43-60"><a href="ChapFrequency-Modeling.html#cb43-60" tabindex="-1"></a>      Z&lt;-rbind(Z,cbind(rep(paste(&quot;$\\hat{\\sigma}^2&quot;,ord_char[i],&quot;\\hat{\\mu}$&quot;),</span>
+<span id="cb43-61"><a href="ChapFrequency-Modeling.html#cb43-61" tabindex="-1"></a>          length(r)),rep(&quot;Poisson - $L(\\overline{x})$&quot;,length(r))))</span>
+<span id="cb43-62"><a href="ChapFrequency-Modeling.html#cb43-62" tabindex="-1"></a>  }</span>
+<span id="cb43-63"><a href="ChapFrequency-Modeling.html#cb43-63" tabindex="-1"></a></span>
+<span id="cb43-64"><a href="ChapFrequency-Modeling.html#cb43-64" tabindex="-1"></a>  # Assigning Column Names</span>
+<span id="cb43-65"><a href="ChapFrequency-Modeling.html#cb43-65" tabindex="-1"></a>    colnames(Y)&lt;-c(&quot;x&quot;,&quot;lik&quot;)</span>
+<span id="cb43-66"><a href="ChapFrequency-Modeling.html#cb43-66" tabindex="-1"></a>    colnames(Z)&lt;-c(&quot;dataset&quot;,&quot;Distribution&quot;)</span>
+<span id="cb43-67"><a href="ChapFrequency-Modeling.html#cb43-67" tabindex="-1"></a>  # Creating a Dataframe for using ggplot</span>
+<span id="cb43-68"><a href="ChapFrequency-Modeling.html#cb43-68" tabindex="-1"></a>    dy&lt;-cbind(data.frame(Y),data.frame(Z))</span>
+<span id="cb43-69"><a href="ChapFrequency-Modeling.html#cb43-69" tabindex="-1"></a>    </span>
+<span id="cb43-70"><a href="ChapFrequency-Modeling.html#cb43-70" tabindex="-1"></a>library(tikzDevice)</span>
+<span id="cb43-71"><a href="ChapFrequency-Modeling.html#cb43-71" tabindex="-1"></a>library(ggplot2)</span>
+<span id="cb43-72"><a href="ChapFrequency-Modeling.html#cb43-72" tabindex="-1"></a>options(tikzMetricPackages = c(&quot;\\usepackage[utf8]{inputenc}&quot;,</span>
+<span id="cb43-73"><a href="ChapFrequency-Modeling.html#cb43-73" tabindex="-1"></a>                               &quot;\\usepackage[T1]{fontenc}&quot;,</span>
+<span id="cb43-74"><a href="ChapFrequency-Modeling.html#cb43-74" tabindex="-1"></a>                               &quot;\\usetikzlibrary{calc}&quot;, </span>
+<span id="cb43-75"><a href="ChapFrequency-Modeling.html#cb43-75" tabindex="-1"></a>                               &quot;\\usepackage{amssymb}&quot;,</span>
+<span id="cb43-76"><a href="ChapFrequency-Modeling.html#cb43-76" tabindex="-1"></a>                               &quot;\\usepackage{amsmath}&quot;,</span>
+<span id="cb43-77"><a href="ChapFrequency-Modeling.html#cb43-77" tabindex="-1"></a>                               &quot;\\usepackage[active]{preview}&quot;) )</span>
+<span id="cb43-78"><a href="ChapFrequency-Modeling.html#cb43-78" tabindex="-1"></a>tikz(file = &quot;plot_test_2.tex&quot;, width = 6.25, height = 6.25)</span>
+<span id="cb43-79"><a href="ChapFrequency-Modeling.html#cb43-79" tabindex="-1"></a>ggplot(data=dy,aes(x=x,y=lik,col=Distribution)) + </span>
+<span id="cb43-80"><a href="ChapFrequency-Modeling.html#cb43-80" tabindex="-1"></a>  geom_point(size=0.25) + facet_grid(dataset~.) +</span>
+<span id="cb43-81"><a href="ChapFrequency-Modeling.html#cb43-81" tabindex="-1"></a>  labs(x=&quot;m/r&quot;,y=&quot;Likelihood&quot;,title=&quot;&quot;) </span>
+<span id="cb43-82"><a href="ChapFrequency-Modeling.html#cb43-82" tabindex="-1"></a>dev.off()</span></code></pre></div>
 <hr />
 </div>
 
@@ -2682,7 +2656,7 @@ We note that <span class="math inline">\(\mu_N\)</span> is the expected value of
 We note that <span class="math inline">\(\mu_N&#39;(\cdot)\)</span> is a well-defined non-decreasing function taking values in <span class="math inline">\([0,\infty]\)</span>, as <span class="math inline">\(\Pr(N\in\{0, 1, \ldots \})=1\)</span>; also, note that <span class="math inline">\(\mu_N=\mu_N&#39;(1)\)</span>. In the following, when we refer to a moment it will be implicit that it is finite unless mentioned otherwise.<a href="ChapFrequency-Modeling.html#fnref2" class="footnote-back">↩︎</a></p></li>
 <li id="fn3"><p><span class="math inline">\(0^0 = 1\)</span><a href="ChapFrequency-Modeling.html#fnref3" class="footnote-back">↩︎</a></p></li>
 <li id="fn4"><p>In the following we suppress the reference to <span class="math inline">\(N\)</span> and denote the <em>pmf</em> by the sequence <span class="math inline">\(\{p_k\}_{k\geq 0}\)</span>, instead of the function <span class="math inline">\(p_N(\cdot)\)</span>.<a href="ChapFrequency-Modeling.html#fnref4" class="footnote-back">↩︎</a></p></li>
-<li id="fn5"><p>For the theoretical basis underlying the above argument, see <span class="citation">Billingsley (<a href="bibliography.html#ref-billingsley" role="doc-biblioref">2008</a>)</span>.<a href="ChapFrequency-Modeling.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>For the theoretical basis underlying the above argument, see <span class="citation">Billingsley (<a href="bibliography.html#ref-billingsley">2008</a>)</span>.<a href="ChapFrequency-Modeling.html#fnref5" class="footnote-back">↩︎</a></p></li>
 <li id="fn6"><p>The set of maximizers of <span class="math inline">\(L(\cdot)\)</span> are the same as the set of maximizers of any strictly increasing function of <span class="math inline">\(L(\cdot)\)</span>, and hence the same as those for <span class="math inline">\(l(\cdot)\)</span>.<a href="ChapFrequency-Modeling.html#fnref6" class="footnote-back">↩︎</a></p></li>
 <li id="fn7"><p>A slight benefit of working with <span class="math inline">\(l(\cdot)\)</span> is that constant terms in <span class="math inline">\(L(\cdot)\)</span> do not appear in <span class="math inline">\(l&#39;(\cdot)\)</span> whereas they do in <span class="math inline">\(L&#39;(\cdot)\)</span>.<a href="ChapFrequency-Modeling.html#fnref7" class="footnote-back">↩︎</a></p></li>
 <li id="fn8"><p>This in particular lays out a way to simulate from a mixture distribution that makes use of efficient simulation schemes that may exist for the component distributions.<a href="ChapFrequency-Modeling.html#fnref8" class="footnote-back">↩︎</a></p></li>

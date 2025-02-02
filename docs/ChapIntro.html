@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 1 Loss Data and Insurance Activities | Loss Data Analytics   Second Edition</title>
   <meta name="description" content="Loss Data Analytics is an interactive, online, freely available text. - The online version will contain many interactive objects (quizzes, computer demonstrations, interactive graphs, video, and the like) to promote deeper learning. - A subset of the book will be available in pdf format for low-cost printing. - The online text will be available in multiple languages to promote access to a worldwide audience." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 1 Loss Data and Insurance Activities | Loss Data Analytics   Second Edition" />
   <meta property="og:type" content="book" />
@@ -53,8 +53,6 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
-<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKJD3496MG"></script>
@@ -1242,7 +1240,7 @@ div.csl-indent {
 <p>One way to think about the nature of insurance is who buys it. Renters, homeowners, and auto insurance are examples of <a href="#" class="tooltip" style="color:green"><em>personal insurance</em><span style="font-size:8pt">Insurance purchased by a person</span></a> in that these are policies issued to people. Businesses also buy insurance, such as coverage on their properties, and this is known as <a href="#" class="tooltip" style="color:green"><em>commercial insurance</em><span style="font-size:8pt"></span></a>. The seller, an insurance company, is also known as an insurer. Even insurance companies need insurance; this is known as <a href="#" class="tooltip" style="color:green"><em>reinsurance</em><span style="font-size:8pt">Insurance purchased by an insurer</span></a>.</p>
 <p>Another way to think about the nature of insurance is the type of risk being covered. In the U.S., policies such as renters and homeowners are known as
 <a href="#" class="tooltip" style="color:green"><em>property insurance</em><span style="font-size:8pt">Property insurance is a policy that protects the insured against loss or damage to real or personal property. the cause of loss might be fire, lightening, business interruption, loss of rents, glass breakage, tornado, windstorm, hail, water damage, explosion, riot, civil commotion, rain, or damage from aircraft or vehicles.</span></a> whereas a policy such as auto that covers medical damages to people is known as <a href="#" class="tooltip" style="color:green"><em>casualty insurance</em><span style="font-size:8pt">Causalty insurance is a form of liability insurance providing coverage for negligent acts and omissions. examples include workers compensation, errors and omissions, fidelity, crime, glass, boiler, and various malpractice coverages.</span></a>. In the rest of the world, these are both known as <a href="#" class="tooltip" style="color:green"><em>non-life</em><span style="font-size:8pt">Non-life insurance is any type of insurance where payments are not based on the death (or survivorship) of a named insured. examples include automobile, homeowners, and so on. also known as property and casualty or general insurance.</span></a> or general insurance, to distinguish them from <a href="#" class="tooltip" style="color:green"><em>life insurance</em><span style="font-size:8pt">Life insurance is a contract where the insurer promises to pay upon the death of an insured person. the person being paid is the beneficiary. </span></a>.</p>
-<p>Both life and non-life insurances are important components of the world economy. The <span class="citation">The Organization for Economic Cooperation and Development (OECD) (<a href="bibliography.html#ref-OECD2022" role="doc-biblioref">2021</a>)</span> estimates that direct insurance premiums in the OECD (Organization for Economic Cooperation and Development) countries for 2020 was 2,520,220 for life and 2,704,799 for non-life; these figures are in <em>millions of U.S. dollars</em>. The total represents 9.447% of the OECD gross domestic product (GDP). As examples, premiums accounted for 30.9% of GDP in Luxembourg and 17.0% of GDP in Chinese Taipei (the two highest in the study) and represented 12.5% of GDP in the United States. Both life and non-life insurances represent important economic activities.</p>
+<p>Both life and non-life insurances are important components of the world economy. The <span class="citation">The Organization for Economic Cooperation and Development (OECD) (<a href="bibliography.html#ref-OECD2022">2021</a>)</span> estimates that direct insurance premiums in the OECD (Organization for Economic Cooperation and Development) countries for 2020 was 2,520,220 for life and 2,704,799 for non-life; these figures are in <em>millions of U.S. dollars</em>. The total represents 9.447% of the OECD gross domestic product (GDP). As examples, premiums accounted for 30.9% of GDP in Luxembourg and 17.0% of GDP in Chinese Taipei (the two highest in the study) and represented 12.5% of GDP in the United States. Both life and non-life insurances represent important economic activities.</p>
 <p>Insurance affects the financial livelihoods of many and, by almost any measure, insurance is a major economic activity. As noted earlier, on a global level insurance premiums comprised nearly 9.5% of GDP in 2020. On a personal level, almost everyone owning a home has insurance to protect themselves in the event of a fire, hailstorm, or some other calamitous event. Almost every country requires insurance for those driving a car. In sum, insurance plays an important role in the economies of nations and the lives of individuals.</p>
 </div>
 <div id="S:DataDriven" class="section level3 hasAnchor" number="1.1.2">
@@ -1377,14 +1375,14 @@ for a market-consistent pricing structure of products. However, for many lines o
 place to start for a price. (If you have studied finance, then you will recall that an expectation is the optimal price for a risk-neutral insurer.) It has been traditional in insurance pricing to begin with the expected cost. Insurers then add margins to this, to account for the product’s riskiness,
 expenses incurred in servicing the product, and an allowance for profit/surplus of the company.</p>
 <p>Use of expected costs as a foundation for pricing is prevalent in some lines of the insurance business. These include automobile and homeowners insurance. For these lines, analytics has served to sharpen the market by making the
-calculation of the product’s expected cost more precise. The increasing availability of the internet to consumers has also promoted transparency in pricing; in today’s marketplace, consumers have ready access to competing quotes from a host of insurers. Insurers seek to increase their market share by refining their <a href="#" class="tooltip" style="color:green"><em>risk classification</em><span style="font-size:8pt">Risk classification is the process of grouping policyholders into categories, or classes, where each insured in the class has a risk profile that is similar to others in the class.</span></a> systems, thus achieving a better approximation of the products’ prices and enabling cream-skimming underwriting strategies (“cream-skimming” is a phrase used when the insurer underwrites only the best risks). Surveys (e.g., <span class="citation">Earnix (<a href="bibliography.html#ref-survey2013" role="doc-biblioref">2013</a>)</span>) indicate that pricing is the most common use of analytics among insurers.</p>
+calculation of the product’s expected cost more precise. The increasing availability of the internet to consumers has also promoted transparency in pricing; in today’s marketplace, consumers have ready access to competing quotes from a host of insurers. Insurers seek to increase their market share by refining their <a href="#" class="tooltip" style="color:green"><em>risk classification</em><span style="font-size:8pt">Risk classification is the process of grouping policyholders into categories, or classes, where each insured in the class has a risk profile that is similar to others in the class.</span></a> systems, thus achieving a better approximation of the products’ prices and enabling cream-skimming underwriting strategies (“cream-skimming” is a phrase used when the insurer underwrites only the best risks). Surveys (e.g., <span class="citation">Earnix (<a href="bibliography.html#ref-survey2013">2013</a>)</span>) indicate that pricing is the most common use of analytics among insurers.</p>
 <p><em>Underwriting</em>, the process of classifying risks into homogeneous
 categories and assigning policyholders to these categories, lies at the
 core of ratemaking. Policyholders within a class (category) have similar risk
 profiles and so are charged the same insurance price. This is the
 concept of an actuarially fair premium; it is fair to charge
 different rates to policyholders only if they can be separated by
-identifiable risk factors. An early article, <em>Two Studies in Automobile Insurance Ratemaking</em> <span class="citation">(<a href="bibliography.html#ref-bailey1960" role="doc-biblioref">Bailey and LeRoy 1960</a>)</span>, provided a catalyst to the acceptance of analytic methods in the insurance industry. This paper addresses the problem of classification ratemaking.
+identifiable risk factors. An early article, <em>Two Studies in Automobile Insurance Ratemaking</em> <span class="citation">(<a href="bibliography.html#ref-bailey1960">Bailey and LeRoy 1960</a>)</span>, provided a catalyst to the acceptance of analytic methods in the insurance industry. This paper addresses the problem of classification ratemaking.
 It describes an example of automobile insurance that has five use
 classes cross-classified with four merit rating classes. At that time,
 the contribution to premiums for use and merit rating classes were
@@ -1417,7 +1415,7 @@ premium is provided to the policyholder in the event of favorable (to the insure
 <h3><span class="header-section-number">1.2.3</span> Claims and Product Management<a href="ChapIntro.html#claims-and-product-management" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In some of types of insurance, the process of paying claims for insured events is relatively straightforward. For example, in life insurance, a simple death certificate is all that is needed to pay the benefit amount as provided in the contract. However, in non-life areas such as property and casualty insurance, the process can be much more complex. Think about a relatively simple insured event such as an automobile accident. Here, it is often required to determine which party is at fault and then one needs to assess damage to all of the vehicles and people involved in the incident, both insured and non-insured. Further, the expenses incurred in assessing the damages must be assessed, and so forth. The process of determining coverage, legal liability, and settling claims is known as <a href="#" class="tooltip" style="color:green"><em>claims adjustment</em><span style="font-size:8pt">Claims adjustment is the process of determining coverage, legal liability, and settling claims.</span></a>.</p>
 <p>Insurance managers sometimes use the phrase <a href="#" class="tooltip" style="color:green"><em>claims leakage</em><span style="font-size:8pt">Claims leakage respresents money lost through claims management inefficiencies.</span></a> to mean dollars lost through claims management inefficiencies. There are many
-ways in which analytics can help manage the claims process, c.f., <span class="citation">Gorman and Swenson (<a href="bibliography.html#ref-SASsurvey" role="doc-biblioref">2013</a>)</span>. Historically, the most important has been fraud detection.
+ways in which analytics can help manage the claims process, c.f., <span class="citation">Gorman and Swenson (<a href="bibliography.html#ref-SASsurvey">2013</a>)</span>. Historically, the most important has been fraud detection.
 The claim adjusting process involves reducing information asymmetry (the claimant knows what happened; the company knows some of what happened). Mitigating fraud is an important part of the claims management process.</p>
 <p>Fraud detection is only one aspect of managing claims. More broadly, one can think about claims management as consisting of the following components:</p>
 <ul>
@@ -1441,7 +1439,7 @@ the need for analytics in underwriting, that is, risk classification at the init
 <li>In addition to regulators, other stakeholders such as insurance company management, investors, and customers make decisions that depend on company loss reserves. Whereas regulators and customers appreciate conservative estimates of unpaid claims, managers and investors seek more unbiased estimates to represent the true financial health of the company.</li>
 </ol>
 <p>Loss reserving is a topic where there are substantive differences between life and general (also known as property and casualty, or non-life) insurance. In life insurance, the severity (amount of loss) is often not a source of uncertainty as payouts are specified in the contract. The frequency, driven by mortality of the insured, is a concern. However, because of the lengthy time for settlement of life insurance contracts, the time value of money uncertainty as measured
-from issue to date of payment can dominate frequency concerns. For example, for an insured who purchases a life contract at age 20, it would not be unusual for the contract to still be open in 60 years time, when the insured celebrates his or her 80th birthday. See, for example, <span class="citation">Bowers et al. (<a href="bibliography.html#ref-bowers1986actuarial" role="doc-biblioref">1986</a>)</span> or <span class="citation">Dickson, Hardy, and Waters (<a href="bibliography.html#ref-dickson2013actuarial" role="doc-biblioref">2013</a>)</span> for introductions to reserving for life insurance. In contrast, for most lines of non-life business, severity is a major source of uncertainty and contract durations tend to be shorter.</p>
+from issue to date of payment can dominate frequency concerns. For example, for an insured who purchases a life contract at age 20, it would not be unusual for the contract to still be open in 60 years time, when the insured celebrates his or her 80th birthday. See, for example, <span class="citation">Bowers et al. (<a href="bibliography.html#ref-bowers1986actuarial">1986</a>)</span> or <span class="citation">Dickson, Hardy, and Waters (<a href="bibliography.html#ref-dickson2013actuarial">2013</a>)</span> for introductions to reserving for life insurance. In contrast, for most lines of non-life business, severity is a major source of uncertainty and contract durations tend to be shorter.</p>
 <div id="surveyElement12">
 
 </div>
@@ -1642,24 +1640,24 @@ Proportion
 <a id="displayCode.Tab11.Hide" href="javascript:togglecode('toggleCode.Tab11.Hide','displayCode.Tab11.Hide');"><i><strong>R Code for Frequency Table</strong></i></a>
 </h5>
 <div id="toggleCode.Tab11.Hide" style="display: none">
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="ChapIntro.html#cb2-1" aria-hidden="true" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
-<span id="cb2-2"><a href="ChapIntro.html#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb2-3"><a href="ChapIntro.html#cb2-3" aria-hidden="true" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
-<span id="cb2-4"><a href="ChapIntro.html#cb2-4" aria-hidden="true" tabindex="-1"></a>temp <span class="ot">&lt;-</span> <span class="fu">table</span>(Insample2010<span class="sc">$</span>Freq)</span>
-<span id="cb2-5"><a href="ChapIntro.html#cb2-5" aria-hidden="true" tabindex="-1"></a>TotFreq <span class="ot">&lt;-</span> <span class="fu">length</span>(Insample2010<span class="sc">$</span>Freq)</span>
-<span id="cb2-6"><a href="ChapIntro.html#cb2-6" aria-hidden="true" tabindex="-1"></a>Freq <span class="ot">&lt;-</span> temp[<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>]</span>
-<span id="cb2-7"><a href="ChapIntro.html#cb2-7" aria-hidden="true" tabindex="-1"></a>NinePlusFreq <span class="ot">&lt;-</span> TotFreq <span class="sc">-</span> <span class="fu">sum</span>(Freq)</span>
-<span id="cb2-8"><a href="ChapIntro.html#cb2-8" aria-hidden="true" tabindex="-1"></a>Number <span class="ot">&lt;-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">8</span></span>
-<span id="cb2-9"><a href="ChapIntro.html#cb2-9" aria-hidden="true" tabindex="-1"></a>Claims <span class="ot">&lt;-</span> Number <span class="sc">*</span> Freq</span>
-<span id="cb2-10"><a href="ChapIntro.html#cb2-10" aria-hidden="true" tabindex="-1"></a>TotClaims <span class="ot">&lt;-</span> <span class="fu">sum</span>(Insample2010<span class="sc">$</span>Freq)</span>
-<span id="cb2-11"><a href="ChapIntro.html#cb2-11" aria-hidden="true" tabindex="-1"></a>NinePlusClaims <span class="ot">&lt;-</span> TotClaims <span class="sc">-</span> <span class="fu">sum</span>(Claims)</span>
-<span id="cb2-12"><a href="ChapIntro.html#cb2-12" aria-hidden="true" tabindex="-1"></a>ProportionRow <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">c</span>(Freq<span class="sc">/</span>TotFreq, NinePlusFreq<span class="sc">/</span>TotFreq, <span class="dv">1</span>), <span class="at">digits =</span> <span class="dv">3</span>)</span>
-<span id="cb2-13"><a href="ChapIntro.html#cb2-13" aria-hidden="true" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">rbind</span>(<span class="fu">c</span>(<span class="st">&quot;Number&quot;</span>, Number, <span class="st">&quot;9 or more&quot;</span>, <span class="st">&quot;Sum&quot;</span>), <span class="fu">c</span>(<span class="st">&quot;Policies&quot;</span>, Freq, NinePlusFreq,</span>
-<span id="cb2-14"><a href="ChapIntro.html#cb2-14" aria-hidden="true" tabindex="-1"></a>    TotFreq), <span class="fu">c</span>(<span class="st">&quot;Claims&quot;</span>, Claims, NinePlusClaims, TotClaims), <span class="fu">c</span>(<span class="st">&quot;Proportion&quot;</span>, ProportionRow))</span>
-<span id="cb2-15"><a href="ChapIntro.html#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="ChapIntro.html#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(tableout) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb2-17"><a href="ChapIntro.html#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;2010 Claims Frequency Distribution&quot;</span>,</span>
-<span id="cb2-18"><a href="ChapIntro.html#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">ColWidth =</span> ColWidth10)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="ChapIntro.html#cb2-1" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
+<span id="cb2-2"><a href="ChapIntro.html#cb2-2" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-3"><a href="ChapIntro.html#cb2-3" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
+<span id="cb2-4"><a href="ChapIntro.html#cb2-4" tabindex="-1"></a>temp <span class="ot">&lt;-</span> <span class="fu">table</span>(Insample2010<span class="sc">$</span>Freq)</span>
+<span id="cb2-5"><a href="ChapIntro.html#cb2-5" tabindex="-1"></a>TotFreq <span class="ot">&lt;-</span> <span class="fu">length</span>(Insample2010<span class="sc">$</span>Freq)</span>
+<span id="cb2-6"><a href="ChapIntro.html#cb2-6" tabindex="-1"></a>Freq <span class="ot">&lt;-</span> temp[<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>]</span>
+<span id="cb2-7"><a href="ChapIntro.html#cb2-7" tabindex="-1"></a>NinePlusFreq <span class="ot">&lt;-</span> TotFreq <span class="sc">-</span> <span class="fu">sum</span>(Freq)</span>
+<span id="cb2-8"><a href="ChapIntro.html#cb2-8" tabindex="-1"></a>Number <span class="ot">&lt;-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">8</span></span>
+<span id="cb2-9"><a href="ChapIntro.html#cb2-9" tabindex="-1"></a>Claims <span class="ot">&lt;-</span> Number <span class="sc">*</span> Freq</span>
+<span id="cb2-10"><a href="ChapIntro.html#cb2-10" tabindex="-1"></a>TotClaims <span class="ot">&lt;-</span> <span class="fu">sum</span>(Insample2010<span class="sc">$</span>Freq)</span>
+<span id="cb2-11"><a href="ChapIntro.html#cb2-11" tabindex="-1"></a>NinePlusClaims <span class="ot">&lt;-</span> TotClaims <span class="sc">-</span> <span class="fu">sum</span>(Claims)</span>
+<span id="cb2-12"><a href="ChapIntro.html#cb2-12" tabindex="-1"></a>ProportionRow <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">c</span>(Freq<span class="sc">/</span>TotFreq, NinePlusFreq<span class="sc">/</span>TotFreq, <span class="dv">1</span>), <span class="at">digits =</span> <span class="dv">3</span>)</span>
+<span id="cb2-13"><a href="ChapIntro.html#cb2-13" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">rbind</span>(<span class="fu">c</span>(<span class="st">&quot;Number&quot;</span>, Number, <span class="st">&quot;9 or more&quot;</span>, <span class="st">&quot;Sum&quot;</span>), <span class="fu">c</span>(<span class="st">&quot;Policies&quot;</span>, Freq, NinePlusFreq,</span>
+<span id="cb2-14"><a href="ChapIntro.html#cb2-14" tabindex="-1"></a>    TotFreq), <span class="fu">c</span>(<span class="st">&quot;Claims&quot;</span>, Claims, NinePlusClaims, TotClaims), <span class="fu">c</span>(<span class="st">&quot;Proportion&quot;</span>, ProportionRow))</span>
+<span id="cb2-15"><a href="ChapIntro.html#cb2-15" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="ChapIntro.html#cb2-16" tabindex="-1"></a><span class="fu">colnames</span>(tableout) <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb2-17"><a href="ChapIntro.html#cb2-17" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;2010 Claims Frequency Distribution&quot;</span>,</span>
+<span id="cb2-18"><a href="ChapIntro.html#cb2-18" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">ColWidth =</span> ColWidth10)</span></code></pre></div>
 </div>
 <p>For the severity distribution, a common approach is to examine the distribution of the sample of 1,377 claims. However, another common approach is to examine the distribution of the average claims of those policyholders with claims. In our 2010 sample, there were 403 (=1110-707) such policyholders. For 209 of these policyholders with one claim, the average claim equals the only claim they experienced. For the policyholder with highest frequency, the average claim is an average over 239 separately reported claim events.</p>
 <p>Table <a href="ChapIntro.html#tab:Tab12">1.2</a> summarizes the sample distribution of average severities from the 403 policyholders who made a claim; it shows that the average claim amount was 56,330 (all amounts are in U.S. Dollars). However, the average gives only a limited look at the distribution. More information can be gleaned from the summary statistics which show a very large claim in the amount of 12,920,000. Figure <a href="ChapIntro.html#fig:SeverityFig">1.2</a> provides further information about the distribution of sample claims, showing a distribution that is dominated by this single large claim so that the histogram is not very helpful. Even when removing the large claim, you will find a distribution that is skewed to the right. A generally accepted technique is to work with claims in logarithmic units especially for graphical purposes; the corresponding figure in the right-hand panel is much easier to interpret.</p>
@@ -1716,16 +1714,16 @@ Maximum
 <a id="displayCode.Tab12.Hide" href="javascript:togglecode('toggleCode.Tab12.Hide','displayCode.Tab12.Hide');"><i><strong>R Code for Average Severity Distribution</strong></i></a>
 </h5>
 <div id="toggleCode.Tab12.Hide" style="display: none">
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="ChapIntro.html#cb3-1" aria-hidden="true" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
-<span id="cb3-2"><a href="ChapIntro.html#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb3-3"><a href="ChapIntro.html#cb3-3" aria-hidden="true" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
-<span id="cb3-4"><a href="ChapIntro.html#cb3-4" aria-hidden="true" tabindex="-1"></a>InsamplePos2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample2010, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
-<span id="cb3-5"><a href="ChapIntro.html#cb3-5" aria-hidden="true" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">summary</span>(InsamplePos2010<span class="sc">$</span>yAvg)</span>
-<span id="cb3-6"><a href="ChapIntro.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Minimum&quot;</span>, <span class="st">&quot;First Quartile&quot;</span>, <span class="st">&quot;Median&quot;</span>, <span class="st">&quot;Mean&quot;</span>, <span class="st">&quot;Third Quartile&quot;</span>,</span>
-<span id="cb3-7"><a href="ChapIntro.html#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Maximum&quot;</span>)</span>
-<span id="cb3-8"><a href="ChapIntro.html#cb3-8" aria-hidden="true" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout, <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb3-9"><a href="ChapIntro.html#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> <span class="fu">t</span>(tableout), <span class="at">TextTitle =</span> <span class="st">&quot;2010 Average Severity Distribution&quot;</span>,</span>
-<span id="cb3-10"><a href="ChapIntro.html#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">0</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="ChapIntro.html#cb3-1" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
+<span id="cb3-2"><a href="ChapIntro.html#cb3-2" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb3-3"><a href="ChapIntro.html#cb3-3" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
+<span id="cb3-4"><a href="ChapIntro.html#cb3-4" tabindex="-1"></a>InsamplePos2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample2010, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb3-5"><a href="ChapIntro.html#cb3-5" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">summary</span>(InsamplePos2010<span class="sc">$</span>yAvg)</span>
+<span id="cb3-6"><a href="ChapIntro.html#cb3-6" tabindex="-1"></a><span class="fu">names</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Minimum&quot;</span>, <span class="st">&quot;First Quartile&quot;</span>, <span class="st">&quot;Median&quot;</span>, <span class="st">&quot;Mean&quot;</span>, <span class="st">&quot;Third Quartile&quot;</span>,</span>
+<span id="cb3-7"><a href="ChapIntro.html#cb3-7" tabindex="-1"></a>    <span class="st">&quot;Maximum&quot;</span>)</span>
+<span id="cb3-8"><a href="ChapIntro.html#cb3-8" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout, <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb3-9"><a href="ChapIntro.html#cb3-9" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> <span class="fu">t</span>(tableout), <span class="at">TextTitle =</span> <span class="st">&quot;2010 Average Severity Distribution&quot;</span>,</span>
+<span id="cb3-10"><a href="ChapIntro.html#cb3-10" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">0</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
 </div>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:SeverityFig"></span>
@@ -1738,17 +1736,17 @@ Figure 1.2: <strong>Distribution of Positive Average Severities</strong>
 <a id="displayCode.SeverityFig.1" href="javascript:togglecode('toggleCode.SeverityFig.1','displayCode.SeverityFig.1');"><i><strong>R Code for Severity Distribution Table and Figures</strong></i></a>
 </h5>
 <div id="toggleCode.SeverityFig.1" style="display: none">
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="ChapIntro.html#cb4-1" aria-hidden="true" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
-<span id="cb4-2"><a href="ChapIntro.html#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-3"><a href="ChapIntro.html#cb4-3" aria-hidden="true" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
-<span id="cb4-4"><a href="ChapIntro.html#cb4-4" aria-hidden="true" tabindex="-1"></a>InsamplePos2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample2010, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
-<span id="cb4-5"><a href="ChapIntro.html#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Table</span></span>
-<span id="cb4-6"><a href="ChapIntro.html#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(InsamplePos2010<span class="sc">$</span>yAvg)</span>
-<span id="cb4-7"><a href="ChapIntro.html#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(InsamplePos2010<span class="sc">$</span>yAvg)</span>
-<span id="cb4-8"><a href="ChapIntro.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Figures</span></span>
-<span id="cb4-9"><a href="ChapIntro.html#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
-<span id="cb4-10"><a href="ChapIntro.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(InsamplePos2010<span class="sc">$</span>yAvg, <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Average Claims&quot;</span>)</span>
-<span id="cb4-11"><a href="ChapIntro.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(<span class="fu">log</span>(InsamplePos2010<span class="sc">$</span>yAvg), <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Logarithmic Average Claims&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="ChapIntro.html#cb4-1" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
+<span id="cb4-2"><a href="ChapIntro.html#cb4-2" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-3"><a href="ChapIntro.html#cb4-3" tabindex="-1"></a>Insample2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Year <span class="sc">==</span> <span class="dv">2010</span>)</span>
+<span id="cb4-4"><a href="ChapIntro.html#cb4-4" tabindex="-1"></a>InsamplePos2010 <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample2010, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb4-5"><a href="ChapIntro.html#cb4-5" tabindex="-1"></a><span class="co"># Table</span></span>
+<span id="cb4-6"><a href="ChapIntro.html#cb4-6" tabindex="-1"></a><span class="fu">summary</span>(InsamplePos2010<span class="sc">$</span>yAvg)</span>
+<span id="cb4-7"><a href="ChapIntro.html#cb4-7" tabindex="-1"></a><span class="fu">length</span>(InsamplePos2010<span class="sc">$</span>yAvg)</span>
+<span id="cb4-8"><a href="ChapIntro.html#cb4-8" tabindex="-1"></a><span class="co"># Figures</span></span>
+<span id="cb4-9"><a href="ChapIntro.html#cb4-9" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb4-10"><a href="ChapIntro.html#cb4-10" tabindex="-1"></a><span class="fu">hist</span>(InsamplePos2010<span class="sc">$</span>yAvg, <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Average Claims&quot;</span>)</span>
+<span id="cb4-11"><a href="ChapIntro.html#cb4-11" tabindex="-1"></a><span class="fu">hist</span>(<span class="fu">log</span>(InsamplePos2010<span class="sc">$</span>yAvg), <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Logarithmic Average Claims&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 <div id="S:FundVariables" class="section level3 hasAnchor" number="1.3.2">
@@ -1891,25 +1889,25 @@ Number of Policyholders
 <a id="displayCode.Tab13.Hide" href="javascript:togglecode('toggleCode.Tab13.Hide','displayCode.Tab13.Hide');"><i><strong>R Code for Claims Summary by Policyholder</strong></i></a>
 </h5>
 <div id="toggleCode.Tab13.Hide" style="display: none">
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="ChapIntro.html#cb5-1" aria-hidden="true" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
-<span id="cb5-2"><a href="ChapIntro.html#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb5-3"><a href="ChapIntro.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(doBy)</span>
-<span id="cb5-4"><a href="ChapIntro.html#cb5-4" aria-hidden="true" tabindex="-1"></a>T1A <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Freq <span class="sc">~</span> Year, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-5"><a href="ChapIntro.html#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
-<span id="cb5-6"><a href="ChapIntro.html#cb5-6" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb5-7"><a href="ChapIntro.html#cb5-7" aria-hidden="true" tabindex="-1"></a>T1B <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> Year, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-8"><a href="ChapIntro.html#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
-<span id="cb5-9"><a href="ChapIntro.html#cb5-9" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb5-10"><a href="ChapIntro.html#cb5-10" aria-hidden="true" tabindex="-1"></a>T1C <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(BCcov <span class="sc">~</span> Year, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-11"><a href="ChapIntro.html#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
-<span id="cb5-12"><a href="ChapIntro.html#cb5-12" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb5-13"><a href="ChapIntro.html#cb5-13" aria-hidden="true" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">cbind</span>(T1A[<span class="dv">1</span>], T1A[<span class="dv">2</span>], T1B[<span class="dv">2</span>], T1C[<span class="dv">2</span>], T1A[<span class="dv">3</span>])</span>
-<span id="cb5-14"><a href="ChapIntro.html#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Year&quot;</span>, <span class="st">&quot;Average Frequency&quot;</span>, <span class="st">&quot;Average Severity&quot;</span>, <span class="st">&quot;Average&quot;</span>,</span>
-<span id="cb5-15"><a href="ChapIntro.html#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Number of Policyholders&quot;</span>)</span>
-<span id="cb5-16"><a href="ChapIntro.html#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="ChapIntro.html#cb5-17" aria-hidden="true" tabindex="-1"></a>tableout[, <span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout[, <span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>], <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb5-18"><a href="ChapIntro.html#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Policyholder&quot;</span>, <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>,</span>
-<span id="cb5-19"><a href="ChapIntro.html#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="ChapIntro.html#cb5-1" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
+<span id="cb5-2"><a href="ChapIntro.html#cb5-2" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-3"><a href="ChapIntro.html#cb5-3" tabindex="-1"></a><span class="fu">library</span>(doBy)</span>
+<span id="cb5-4"><a href="ChapIntro.html#cb5-4" tabindex="-1"></a>T1A <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Freq <span class="sc">~</span> Year, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb5-5"><a href="ChapIntro.html#cb5-5" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
+<span id="cb5-6"><a href="ChapIntro.html#cb5-6" tabindex="-1"></a>})</span>
+<span id="cb5-7"><a href="ChapIntro.html#cb5-7" tabindex="-1"></a>T1B <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> Year, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb5-8"><a href="ChapIntro.html#cb5-8" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
+<span id="cb5-9"><a href="ChapIntro.html#cb5-9" tabindex="-1"></a>})</span>
+<span id="cb5-10"><a href="ChapIntro.html#cb5-10" tabindex="-1"></a>T1C <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(BCcov <span class="sc">~</span> Year, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb5-11"><a href="ChapIntro.html#cb5-11" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
+<span id="cb5-12"><a href="ChapIntro.html#cb5-12" tabindex="-1"></a>})</span>
+<span id="cb5-13"><a href="ChapIntro.html#cb5-13" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">cbind</span>(T1A[<span class="dv">1</span>], T1A[<span class="dv">2</span>], T1B[<span class="dv">2</span>], T1C[<span class="dv">2</span>], T1A[<span class="dv">3</span>])</span>
+<span id="cb5-14"><a href="ChapIntro.html#cb5-14" tabindex="-1"></a><span class="fu">names</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Year&quot;</span>, <span class="st">&quot;Average Frequency&quot;</span>, <span class="st">&quot;Average Severity&quot;</span>, <span class="st">&quot;Average&quot;</span>,</span>
+<span id="cb5-15"><a href="ChapIntro.html#cb5-15" tabindex="-1"></a>    <span class="st">&quot;Number of Policyholders&quot;</span>)</span>
+<span id="cb5-16"><a href="ChapIntro.html#cb5-16" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="ChapIntro.html#cb5-17" tabindex="-1"></a>tableout[, <span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout[, <span class="dv">3</span><span class="sc">:</span><span class="dv">5</span>], <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb5-18"><a href="ChapIntro.html#cb5-18" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Policyholder&quot;</span>, <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>,</span>
+<span id="cb5-19"><a href="ChapIntro.html#cb5-19" tabindex="-1"></a>    <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
 </div>
 <p>Table <a href="ChapIntro.html#tab:Tab13">1.3</a> shows that the average claim varies over time,
 especially with the high 2010 value (that we saw was due to a single large claim)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. The
@@ -2024,33 +2022,33 @@ Coverage (000’s)
 <a id="displayCode.Tab14.Hide" href="javascript:togglecode('toggleCode.Tab14.Hide','displayCode.Tab14.Hide');"><i><strong>R Code for Summary of Claim Frequency and Severity, Deductibles, and Coverages</strong></i></a>
 </h5>
 <div id="toggleCode.Tab14.Hide" style="display: none">
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="ChapIntro.html#cb6-1" aria-hidden="true" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
-<span id="cb6-2"><a href="ChapIntro.html#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb6-3"><a href="ChapIntro.html#cb6-3" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(doBy<span class="sc">::</span><span class="fu">summaryBy</span>(Freq <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb6-4"><a href="ChapIntro.html#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
-<span id="cb6-5"><a href="ChapIntro.html#cb6-5" aria-hidden="true" tabindex="-1"></a>}))</span>
-<span id="cb6-6"><a href="ChapIntro.html#cb6-6" aria-hidden="true" tabindex="-1"></a>t2 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb6-7"><a href="ChapIntro.html#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
-<span id="cb6-8"><a href="ChapIntro.html#cb6-8" aria-hidden="true" tabindex="-1"></a>}))</span>
-<span id="cb6-9"><a href="ChapIntro.html#cb6-9" aria-hidden="true" tabindex="-1"></a>t3 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">summaryBy</span>(Deduct <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb6-10"><a href="ChapIntro.html#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
-<span id="cb6-11"><a href="ChapIntro.html#cb6-11" aria-hidden="true" tabindex="-1"></a>}))</span>
-<span id="cb6-12"><a href="ChapIntro.html#cb6-12" aria-hidden="true" tabindex="-1"></a>t4 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">summaryBy</span>(BCcov <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb6-13"><a href="ChapIntro.html#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
-<span id="cb6-14"><a href="ChapIntro.html#cb6-14" aria-hidden="true" tabindex="-1"></a>}))<span class="sc">/</span><span class="dv">1000</span></span>
-<span id="cb6-15"><a href="ChapIntro.html#cb6-15" aria-hidden="true" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">rbind</span>(t1, t2, t3, t4)</span>
-<span id="cb6-16"><a href="ChapIntro.html#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="ChapIntro.html#cb6-17" aria-hidden="true" tabindex="-1"></a>tableout[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(tableout[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">1</span>], <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb6-18"><a href="ChapIntro.html#cb6-18" aria-hidden="true" tabindex="-1"></a>tableout[<span class="dv">1</span>, <span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(tableout[<span class="dv">1</span>, <span class="dv">3</span>], <span class="at">digits =</span> <span class="dv">3</span>)</span>
-<span id="cb6-19"><a href="ChapIntro.html#cb6-19" aria-hidden="true" tabindex="-1"></a>tableout[<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout[<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>], <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb6-20"><a href="ChapIntro.html#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-21"><a href="ChapIntro.html#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Minimum&quot;</span>, <span class="st">&quot;Median&quot;</span>, <span class="st">&quot;Average&quot;</span>, <span class="st">&quot;Maximum&quot;</span>)</span>
-<span id="cb6-22"><a href="ChapIntro.html#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Frequency&quot;</span>, <span class="st">&quot;Claim Severity&quot;</span>, <span class="st">&quot;Deductible&quot;</span>, <span class="st">&quot;Coverage (000&#39;s)&quot;</span>)</span>
-<span id="cb6-23"><a href="ChapIntro.html#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-24"><a href="ChapIntro.html#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;Summary of Claim Frequency and Severity, Deductibles, and Coverages&quot;</span>,</span>
-<span id="cb6-25"><a href="ChapIntro.html#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="ChapIntro.html#cb6-1" tabindex="-1"></a>Insample <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/PropertyFundInsample.csv&quot;</span>, <span class="at">header =</span> T, <span class="at">na.strings =</span> <span class="fu">c</span>(<span class="st">&quot;.&quot;</span>),</span>
+<span id="cb6-2"><a href="ChapIntro.html#cb6-2" tabindex="-1"></a>    <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb6-3"><a href="ChapIntro.html#cb6-3" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(doBy<span class="sc">::</span><span class="fu">summaryBy</span>(Freq <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb6-4"><a href="ChapIntro.html#cb6-4" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
+<span id="cb6-5"><a href="ChapIntro.html#cb6-5" tabindex="-1"></a>}))</span>
+<span id="cb6-6"><a href="ChapIntro.html#cb6-6" tabindex="-1"></a>t2 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb6-7"><a href="ChapIntro.html#cb6-7" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
+<span id="cb6-8"><a href="ChapIntro.html#cb6-8" tabindex="-1"></a>}))</span>
+<span id="cb6-9"><a href="ChapIntro.html#cb6-9" tabindex="-1"></a>t3 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">summaryBy</span>(Deduct <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb6-10"><a href="ChapIntro.html#cb6-10" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
+<span id="cb6-11"><a href="ChapIntro.html#cb6-11" tabindex="-1"></a>}))</span>
+<span id="cb6-12"><a href="ChapIntro.html#cb6-12" tabindex="-1"></a>t4 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">summaryBy</span>(BCcov <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> Insample, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb6-13"><a href="ChapIntro.html#cb6-13" tabindex="-1"></a>    <span class="fu">c</span>(<span class="at">ma =</span> <span class="fu">min</span>(x), <span class="at">m1 =</span> <span class="fu">median</span>(x), <span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">mb =</span> <span class="fu">max</span>(x))</span>
+<span id="cb6-14"><a href="ChapIntro.html#cb6-14" tabindex="-1"></a>}))<span class="sc">/</span><span class="dv">1000</span></span>
+<span id="cb6-15"><a href="ChapIntro.html#cb6-15" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">rbind</span>(t1, t2, t3, t4)</span>
+<span id="cb6-16"><a href="ChapIntro.html#cb6-16" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="ChapIntro.html#cb6-17" tabindex="-1"></a>tableout[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(tableout[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="dv">1</span>], <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb6-18"><a href="ChapIntro.html#cb6-18" tabindex="-1"></a>tableout[<span class="dv">1</span>, <span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(tableout[<span class="dv">1</span>, <span class="dv">3</span>], <span class="at">digits =</span> <span class="dv">3</span>)</span>
+<span id="cb6-19"><a href="ChapIntro.html#cb6-19" tabindex="-1"></a>tableout[<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout[<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>], <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb6-20"><a href="ChapIntro.html#cb6-20" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="ChapIntro.html#cb6-21" tabindex="-1"></a><span class="fu">colnames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Minimum&quot;</span>, <span class="st">&quot;Median&quot;</span>, <span class="st">&quot;Average&quot;</span>, <span class="st">&quot;Maximum&quot;</span>)</span>
+<span id="cb6-22"><a href="ChapIntro.html#cb6-22" tabindex="-1"></a><span class="fu">rownames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claim Frequency&quot;</span>, <span class="st">&quot;Claim Severity&quot;</span>, <span class="st">&quot;Deductible&quot;</span>, <span class="st">&quot;Coverage (000&#39;s)&quot;</span>)</span>
+<span id="cb6-23"><a href="ChapIntro.html#cb6-23" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="ChapIntro.html#cb6-24" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;Summary of Claim Frequency and Severity, Deductibles, and Coverages&quot;</span>,</span>
+<span id="cb6-25"><a href="ChapIntro.html#cb6-25" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
 </div>
-<p><a href="ChapIntro.html#tab:1.5">Table 1.5</a> describes the rating variables considered in this chapter. Hopefully, these are variables that you think might naturally be related to claims outcomes. You can learn more about them in <span class="citation">Frees, Lee, and Yang (<a href="bibliography.html#ref-frees2016multivariate" role="doc-biblioref">2016b</a>)</span>. To handle the skewness, we henceforth focus on logarithmic transformations of coverage and deductibles.</p>
+<p><a href="ChapIntro.html#tab:1.5">Table 1.5</a> describes the rating variables considered in this chapter. Hopefully, these are variables that you think might naturally be related to claims outcomes. You can learn more about them in <span class="citation">Frees, Lee, and Yang (<a href="bibliography.html#ref-frees2016multivariate">2016b</a>)</span>. To handle the skewness, we henceforth focus on logarithmic transformations of coverage and deductibles.</p>
 <div style="page-break-after: always;"></div>
 <p><a id=tab:1.5></a></p>
 <p><span id="tab:1.5">Table 1.5</span>. <strong>Description of Rating Variables</strong></p>
@@ -2076,21 +2074,15 @@ Variable    &amp; Description \\
 </h5>
 <div id="toggleCode.Tab15.2Silly" style="display: none">
 <table>
-<caption>
-<span id="tab:unnamed-chunk-35">Table 1.5: </span>Silly. Create a table just to update the counter…
-</caption>
+<caption><span id="tab:unnamed-chunk-35">Table 1.5: </span>Silly. Create a table just to update the counter…</caption>
 <thead>
-<tr>
-<th style="text-align:right;">
-x
-</th>
+<tr class="header">
+<th align="right">x</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:right;">
-2
-</td>
+<tr class="odd">
+<td align="right">2</td>
 </tr>
 </tbody>
 </table>
@@ -2278,48 +2270,48 @@ Total
 <a id="displayCode.Tab16.Hide" href="javascript:togglecode('toggleCode.Tab16.Hide','displayCode.Tab16.Hide');"><i><strong>R Code for Claims Summary by Entity Type, Fire Class, and No Claim Credit</strong></i></a>
 </h5>
 <div id="toggleCode.Tab16.Hide" style="display: none">
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="ChapIntro.html#cb7-1" aria-hidden="true" tabindex="-1"></a>ByVarSumm <span class="ot">&lt;-</span> <span class="cf">function</span>(datasub) {</span>
-<span id="cb7-2"><a href="ChapIntro.html#cb7-2" aria-hidden="true" tabindex="-1"></a>    tempA <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Freq <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> datasub, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb7-3"><a href="ChapIntro.html#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
-<span id="cb7-4"><a href="ChapIntro.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb7-5"><a href="ChapIntro.html#cb7-5" aria-hidden="true" tabindex="-1"></a>    datasub1 <span class="ot">&lt;-</span> <span class="fu">subset</span>(datasub, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
-<span id="cb7-6"><a href="ChapIntro.html#cb7-6" aria-hidden="true" tabindex="-1"></a>    tempB <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> datasub1, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb7-7"><a href="ChapIntro.html#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x))</span>
-<span id="cb7-8"><a href="ChapIntro.html#cb7-8" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb7-9"><a href="ChapIntro.html#cb7-9" aria-hidden="true" tabindex="-1"></a>    tempC <span class="ot">&lt;-</span> <span class="fu">merge</span>(tempA, tempB, <span class="at">all.x =</span> T)[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>)]</span>
-<span id="cb7-10"><a href="ChapIntro.html#cb7-10" aria-hidden="true" tabindex="-1"></a>    tempC1 <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(tempC)</span>
-<span id="cb7-11"><a href="ChapIntro.html#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(tempC1)</span>
-<span id="cb7-12"><a href="ChapIntro.html#cb7-12" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-13"><a href="ChapIntro.html#cb7-13" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeVillage <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-14"><a href="ChapIntro.html#cb7-14" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-15"><a href="ChapIntro.html#cb7-15" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCity <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-16"><a href="ChapIntro.html#cb7-16" aria-hidden="true" tabindex="-1"></a>t2 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-17"><a href="ChapIntro.html#cb7-17" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCounty <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-18"><a href="ChapIntro.html#cb7-18" aria-hidden="true" tabindex="-1"></a>t3 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-19"><a href="ChapIntro.html#cb7-19" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeMisc <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-20"><a href="ChapIntro.html#cb7-20" aria-hidden="true" tabindex="-1"></a>t4 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-21"><a href="ChapIntro.html#cb7-21" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeSchool <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-22"><a href="ChapIntro.html#cb7-22" aria-hidden="true" tabindex="-1"></a>t5 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-23"><a href="ChapIntro.html#cb7-23" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeTown <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-24"><a href="ChapIntro.html#cb7-24" aria-hidden="true" tabindex="-1"></a>t6 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-25"><a href="ChapIntro.html#cb7-25" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Fire5 <span class="sc">==</span> <span class="dv">0</span>)</span>
-<span id="cb7-26"><a href="ChapIntro.html#cb7-26" aria-hidden="true" tabindex="-1"></a>t7 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-27"><a href="ChapIntro.html#cb7-27" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Fire5 <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-28"><a href="ChapIntro.html#cb7-28" aria-hidden="true" tabindex="-1"></a>t8 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-29"><a href="ChapIntro.html#cb7-29" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Insample<span class="sc">$</span>NoClaimCredit <span class="sc">==</span> <span class="dv">0</span>)</span>
-<span id="cb7-30"><a href="ChapIntro.html#cb7-30" aria-hidden="true" tabindex="-1"></a>t9 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-31"><a href="ChapIntro.html#cb7-31" aria-hidden="true" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Insample<span class="sc">$</span>NoClaimCredit <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb7-32"><a href="ChapIntro.html#cb7-32" aria-hidden="true" tabindex="-1"></a>t10 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb7-33"><a href="ChapIntro.html#cb7-33" aria-hidden="true" tabindex="-1"></a>t11 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(Insample)</span>
-<span id="cb7-34"><a href="ChapIntro.html#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-35"><a href="ChapIntro.html#cb7-35" aria-hidden="true" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">rbind</span>(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11)</span>
-<span id="cb7-36"><a href="ChapIntro.html#cb7-36" aria-hidden="true" tabindex="-1"></a>tableout[, <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(tableout[, <span class="dv">2</span>], <span class="at">digits =</span> <span class="dv">3</span>)</span>
-<span id="cb7-37"><a href="ChapIntro.html#cb7-37" aria-hidden="true" tabindex="-1"></a>tableout[, <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout[, <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)], <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb7-38"><a href="ChapIntro.html#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Village&quot;</span>, <span class="st">&quot;City&quot;</span>, <span class="st">&quot;County&quot;</span>, <span class="st">&quot;Misc&quot;</span>, <span class="st">&quot;School&quot;</span>, <span class="st">&quot;Town&quot;</span>, <span class="st">&quot;Fire5--No&quot;</span>,</span>
-<span id="cb7-39"><a href="ChapIntro.html#cb7-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Fire5--Yes&quot;</span>, <span class="st">&quot;NoClaimCredit--No&quot;</span>, <span class="st">&quot;NoClaimCredit--Yes&quot;</span>, <span class="st">&quot;Total&quot;</span>)</span>
-<span id="cb7-40"><a href="ChapIntro.html#cb7-40" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Number of Policies&quot;</span>, <span class="st">&quot;Claim Frequency&quot;</span>, <span class="st">&quot;Average Severity&quot;</span>)</span>
-<span id="cb7-41"><a href="ChapIntro.html#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Entity Type, Fire Class, and No Claim Credit&quot;</span>,</span>
-<span id="cb7-42"><a href="ChapIntro.html#cb7-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="ChapIntro.html#cb7-1" tabindex="-1"></a>ByVarSumm <span class="ot">&lt;-</span> <span class="cf">function</span>(datasub) {</span>
+<span id="cb7-2"><a href="ChapIntro.html#cb7-2" tabindex="-1"></a>    tempA <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Freq <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> datasub, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb7-3"><a href="ChapIntro.html#cb7-3" tabindex="-1"></a>        <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
+<span id="cb7-4"><a href="ChapIntro.html#cb7-4" tabindex="-1"></a>    })</span>
+<span id="cb7-5"><a href="ChapIntro.html#cb7-5" tabindex="-1"></a>    datasub1 <span class="ot">&lt;-</span> <span class="fu">subset</span>(datasub, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb7-6"><a href="ChapIntro.html#cb7-6" tabindex="-1"></a>    tempB <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> datasub1, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb7-7"><a href="ChapIntro.html#cb7-7" tabindex="-1"></a>        <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x))</span>
+<span id="cb7-8"><a href="ChapIntro.html#cb7-8" tabindex="-1"></a>    })</span>
+<span id="cb7-9"><a href="ChapIntro.html#cb7-9" tabindex="-1"></a>    tempC <span class="ot">&lt;-</span> <span class="fu">merge</span>(tempA, tempB, <span class="at">all.x =</span> T)[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>)]</span>
+<span id="cb7-10"><a href="ChapIntro.html#cb7-10" tabindex="-1"></a>    tempC1 <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(tempC)</span>
+<span id="cb7-11"><a href="ChapIntro.html#cb7-11" tabindex="-1"></a>    <span class="fu">return</span>(tempC1)</span>
+<span id="cb7-12"><a href="ChapIntro.html#cb7-12" tabindex="-1"></a>}</span>
+<span id="cb7-13"><a href="ChapIntro.html#cb7-13" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeVillage <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-14"><a href="ChapIntro.html#cb7-14" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-15"><a href="ChapIntro.html#cb7-15" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCity <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-16"><a href="ChapIntro.html#cb7-16" tabindex="-1"></a>t2 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-17"><a href="ChapIntro.html#cb7-17" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCounty <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-18"><a href="ChapIntro.html#cb7-18" tabindex="-1"></a>t3 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-19"><a href="ChapIntro.html#cb7-19" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeMisc <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-20"><a href="ChapIntro.html#cb7-20" tabindex="-1"></a>t4 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-21"><a href="ChapIntro.html#cb7-21" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeSchool <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-22"><a href="ChapIntro.html#cb7-22" tabindex="-1"></a>t5 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-23"><a href="ChapIntro.html#cb7-23" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeTown <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-24"><a href="ChapIntro.html#cb7-24" tabindex="-1"></a>t6 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-25"><a href="ChapIntro.html#cb7-25" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Fire5 <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb7-26"><a href="ChapIntro.html#cb7-26" tabindex="-1"></a>t7 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-27"><a href="ChapIntro.html#cb7-27" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Fire5 <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-28"><a href="ChapIntro.html#cb7-28" tabindex="-1"></a>t8 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-29"><a href="ChapIntro.html#cb7-29" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Insample<span class="sc">$</span>NoClaimCredit <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb7-30"><a href="ChapIntro.html#cb7-30" tabindex="-1"></a>t9 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-31"><a href="ChapIntro.html#cb7-31" tabindex="-1"></a>datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, Insample<span class="sc">$</span>NoClaimCredit <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb7-32"><a href="ChapIntro.html#cb7-32" tabindex="-1"></a>t10 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb7-33"><a href="ChapIntro.html#cb7-33" tabindex="-1"></a>t11 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(Insample)</span>
+<span id="cb7-34"><a href="ChapIntro.html#cb7-34" tabindex="-1"></a></span>
+<span id="cb7-35"><a href="ChapIntro.html#cb7-35" tabindex="-1"></a>tableout <span class="ot">&lt;-</span> <span class="fu">rbind</span>(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11)</span>
+<span id="cb7-36"><a href="ChapIntro.html#cb7-36" tabindex="-1"></a>tableout[, <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(tableout[, <span class="dv">2</span>], <span class="at">digits =</span> <span class="dv">3</span>)</span>
+<span id="cb7-37"><a href="ChapIntro.html#cb7-37" tabindex="-1"></a>tableout[, <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(tableout[, <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)], <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb7-38"><a href="ChapIntro.html#cb7-38" tabindex="-1"></a><span class="fu">rownames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Village&quot;</span>, <span class="st">&quot;City&quot;</span>, <span class="st">&quot;County&quot;</span>, <span class="st">&quot;Misc&quot;</span>, <span class="st">&quot;School&quot;</span>, <span class="st">&quot;Town&quot;</span>, <span class="st">&quot;Fire5--No&quot;</span>,</span>
+<span id="cb7-39"><a href="ChapIntro.html#cb7-39" tabindex="-1"></a>    <span class="st">&quot;Fire5--Yes&quot;</span>, <span class="st">&quot;NoClaimCredit--No&quot;</span>, <span class="st">&quot;NoClaimCredit--Yes&quot;</span>, <span class="st">&quot;Total&quot;</span>)</span>
+<span id="cb7-40"><a href="ChapIntro.html#cb7-40" tabindex="-1"></a><span class="fu">colnames</span>(tableout) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Number of Policies&quot;</span>, <span class="st">&quot;Claim Frequency&quot;</span>, <span class="st">&quot;Average Severity&quot;</span>)</span>
+<span id="cb7-41"><a href="ChapIntro.html#cb7-41" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> tableout, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Entity Type, Fire Class, and No Claim Credit&quot;</span>,</span>
+<span id="cb7-42"><a href="ChapIntro.html#cb7-42" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">ColWidth =</span> ColWidth5)</span></code></pre></div>
 </div>
 <p>Tables <a href="ChapIntro.html#tab:Tab17">1.7</a> and <a href="ChapIntro.html#tab:Tab18">1.8</a> show the claims experience by alarm credit.
 It underscores the difficulty of examining variables individually. For
@@ -2721,64 +2713,64 @@ Total
 <a id="displayCode.Tab17.Hide" href="javascript:togglecode('toggleCode.Tab17.Hide','displayCode.Tab17.Hide');"><i><strong>R Code for Claims Summary by Entity Type, Fire Class, and No Claim Credit</strong></i></a>
 </h5>
 <div id="toggleCode.Tab17.Hide" style="display: none">
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="ChapIntro.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Claims Summary by Entity Type and Alarm Credit</span></span>
-<span id="cb8-2"><a href="ChapIntro.html#cb8-2" aria-hidden="true" tabindex="-1"></a>ByVarSumm <span class="ot">&lt;-</span> <span class="cf">function</span>(datasub) {</span>
-<span id="cb8-3"><a href="ChapIntro.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    tempA <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Freq <span class="sc">~</span> AC00, <span class="at">data =</span> datasub, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb8-4"><a href="ChapIntro.html#cb8-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
-<span id="cb8-5"><a href="ChapIntro.html#cb8-5" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb8-6"><a href="ChapIntro.html#cb8-6" aria-hidden="true" tabindex="-1"></a>    datasub1 <span class="ot">&lt;-</span> <span class="fu">subset</span>(datasub, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
-<span id="cb8-7"><a href="ChapIntro.html#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">nrow</span>(datasub1) <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb8-8"><a href="ChapIntro.html#cb8-8" aria-hidden="true" tabindex="-1"></a>        n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(datasub)</span>
-<span id="cb8-9"><a href="ChapIntro.html#cb8-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">return</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, n))</span>
-<span id="cb8-10"><a href="ChapIntro.html#cb8-10" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb8-11"><a href="ChapIntro.html#cb8-11" aria-hidden="true" tabindex="-1"></a>        tempB <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> AC00, <span class="at">data =</span> datasub1, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb8-12"><a href="ChapIntro.html#cb8-12" aria-hidden="true" tabindex="-1"></a>            <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x))</span>
-<span id="cb8-13"><a href="ChapIntro.html#cb8-13" aria-hidden="true" tabindex="-1"></a>        })</span>
-<span id="cb8-14"><a href="ChapIntro.html#cb8-14" aria-hidden="true" tabindex="-1"></a>        tempC <span class="ot">&lt;-</span> <span class="fu">merge</span>(tempA, tempB, <span class="at">all.x =</span> T)[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>)]</span>
-<span id="cb8-15"><a href="ChapIntro.html#cb8-15" aria-hidden="true" tabindex="-1"></a>        tempC1 <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(tempC)</span>
-<span id="cb8-16"><a href="ChapIntro.html#cb8-16" aria-hidden="true" tabindex="-1"></a>        <span class="fu">return</span>(tempC1)</span>
-<span id="cb8-17"><a href="ChapIntro.html#cb8-17" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb8-18"><a href="ChapIntro.html#cb8-18" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb8-19"><a href="ChapIntro.html#cb8-19" aria-hidden="true" tabindex="-1"></a>AlarmC <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC00 <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC05 <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">+</span> <span class="dv">3</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC10 <span class="sc">==</span></span>
-<span id="cb8-20"><a href="ChapIntro.html#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>) <span class="sc">+</span> <span class="dv">4</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC15 <span class="sc">==</span> <span class="dv">1</span>)</span>
-<span id="cb8-21"><a href="ChapIntro.html#cb8-21" aria-hidden="true" tabindex="-1"></a>ByVarCredit <span class="ot">&lt;-</span> <span class="cf">function</span>(ACnum) {</span>
-<span id="cb8-22"><a href="ChapIntro.html#cb8-22" aria-hidden="true" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeVillage <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
-<span id="cb8-23"><a href="ChapIntro.html#cb8-23" aria-hidden="true" tabindex="-1"></a>    t1 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb8-24"><a href="ChapIntro.html#cb8-24" aria-hidden="true" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCity <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
-<span id="cb8-25"><a href="ChapIntro.html#cb8-25" aria-hidden="true" tabindex="-1"></a>    t2 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb8-26"><a href="ChapIntro.html#cb8-26" aria-hidden="true" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCounty <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
-<span id="cb8-27"><a href="ChapIntro.html#cb8-27" aria-hidden="true" tabindex="-1"></a>    t3 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb8-28"><a href="ChapIntro.html#cb8-28" aria-hidden="true" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeMisc <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
-<span id="cb8-29"><a href="ChapIntro.html#cb8-29" aria-hidden="true" tabindex="-1"></a>    t4 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb8-30"><a href="ChapIntro.html#cb8-30" aria-hidden="true" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeSchool <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
-<span id="cb8-31"><a href="ChapIntro.html#cb8-31" aria-hidden="true" tabindex="-1"></a>    t5 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb8-32"><a href="ChapIntro.html#cb8-32" aria-hidden="true" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeTown <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
-<span id="cb8-33"><a href="ChapIntro.html#cb8-33" aria-hidden="true" tabindex="-1"></a>    t6 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb8-34"><a href="ChapIntro.html#cb8-34" aria-hidden="true" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, AlarmC <span class="sc">==</span> ACnum)</span>
-<span id="cb8-35"><a href="ChapIntro.html#cb8-35" aria-hidden="true" tabindex="-1"></a>    t7 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
-<span id="cb8-36"><a href="ChapIntro.html#cb8-36" aria-hidden="true" tabindex="-1"></a>    Tablea <span class="ot">&lt;-</span> <span class="fu">rbind</span>(t1, t2, t3, t4, t5, t6, t7)</span>
-<span id="cb8-37"><a href="ChapIntro.html#cb8-37" aria-hidden="true" tabindex="-1"></a>    Table4 <span class="ot">&lt;-</span> <span class="fu">round</span>(Tablea, <span class="dv">3</span>)</span>
-<span id="cb8-38"><a href="ChapIntro.html#cb8-38" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb8-39"><a href="ChapIntro.html#cb8-39" aria-hidden="true" tabindex="-1"></a>Table4a <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">1</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==00</span></span>
-<span id="cb8-40"><a href="ChapIntro.html#cb8-40" aria-hidden="true" tabindex="-1"></a>Table4b <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">2</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==05 </span></span>
-<span id="cb8-41"><a href="ChapIntro.html#cb8-41" aria-hidden="true" tabindex="-1"></a>Table4c <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">3</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==10</span></span>
-<span id="cb8-42"><a href="ChapIntro.html#cb8-42" aria-hidden="true" tabindex="-1"></a>Table4d <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">4</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==15</span></span>
-<span id="cb8-43"><a href="ChapIntro.html#cb8-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-44"><a href="ChapIntro.html#cb8-44" aria-hidden="true" tabindex="-1"></a>Table17A <span class="ot">&lt;-</span> <span class="fu">cbind</span>(Table4a, Table4b)</span>
-<span id="cb8-45"><a href="ChapIntro.html#cb8-45" aria-hidden="true" tabindex="-1"></a>Table17A[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(Table17A[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)], <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb8-46"><a href="ChapIntro.html#cb8-46" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(Table17A) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Village&quot;</span>, <span class="st">&quot;City&quot;</span>, <span class="st">&quot;County&quot;</span>, <span class="st">&quot;Misc&quot;</span>, <span class="st">&quot;School&quot;</span>, <span class="st">&quot;Town&quot;</span>, <span class="st">&quot;Total&quot;</span>)</span>
-<span id="cb8-47"><a href="ChapIntro.html#cb8-47" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(Table17A) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;AC0 Claim Frequency&quot;</span>, <span class="st">&quot;AC0 Avg. Severity&quot;</span>, <span class="st">&quot;AC0 Num. Policies&quot;</span>,</span>
-<span id="cb8-48"><a href="ChapIntro.html#cb8-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;AC5 Claim Frequency&quot;</span>, <span class="st">&quot;AC5 Avg. Severity&quot;</span>, <span class="st">&quot;AC5 Num. Policies&quot;</span>)</span>
-<span id="cb8-49"><a href="ChapIntro.html#cb8-49" aria-hidden="true" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> Table17A, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Entity Type and Alarm Credit (AC) Categories 0 and 5&quot;</span>,</span>
-<span id="cb8-50"><a href="ChapIntro.html#cb8-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">ColWidth =</span> ColWidth6)</span></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="ChapIntro.html#cb9-1" aria-hidden="true" tabindex="-1"></a>Table17B <span class="ot">&lt;-</span> <span class="fu">cbind</span>(Table4c, Table4d)</span>
-<span id="cb9-2"><a href="ChapIntro.html#cb9-2" aria-hidden="true" tabindex="-1"></a>Table17B[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(Table17B[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)], <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb9-3"><a href="ChapIntro.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(Table17B) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Village&quot;</span>, <span class="st">&quot;City&quot;</span>, <span class="st">&quot;County&quot;</span>, <span class="st">&quot;Misc&quot;</span>, <span class="st">&quot;School&quot;</span>, <span class="st">&quot;Town&quot;</span>, <span class="st">&quot;Total&quot;</span>)</span>
-<span id="cb9-4"><a href="ChapIntro.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(Table17B) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;AC10 Claim Frequency&quot;</span>, <span class="st">&quot;AC10 Avg. Severity&quot;</span>, <span class="st">&quot;AC10 Num. Policies&quot;</span>,</span>
-<span id="cb9-5"><a href="ChapIntro.html#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;AC15 Claim Frequency&quot;</span>, <span class="st">&quot;AC15 Avg. Severity&quot;</span>, <span class="st">&quot;AC15 Num. Policies&quot;</span>)</span>
-<span id="cb9-6"><a href="ChapIntro.html#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> Table17B, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Entity Type and Alarm Credit (AC)</span></span>
-<span id="cb9-7"><a href="ChapIntro.html#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="st">Categories 10 and 15&quot;</span>,</span>
-<span id="cb9-8"><a href="ChapIntro.html#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">ColWidth =</span> ColWidth6)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="ChapIntro.html#cb8-1" tabindex="-1"></a><span class="co"># Claims Summary by Entity Type and Alarm Credit</span></span>
+<span id="cb8-2"><a href="ChapIntro.html#cb8-2" tabindex="-1"></a>ByVarSumm <span class="ot">&lt;-</span> <span class="cf">function</span>(datasub) {</span>
+<span id="cb8-3"><a href="ChapIntro.html#cb8-3" tabindex="-1"></a>    tempA <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Freq <span class="sc">~</span> AC00, <span class="at">data =</span> datasub, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb8-4"><a href="ChapIntro.html#cb8-4" tabindex="-1"></a>        <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x), <span class="at">num =</span> <span class="fu">length</span>(x))</span>
+<span id="cb8-5"><a href="ChapIntro.html#cb8-5" tabindex="-1"></a>    })</span>
+<span id="cb8-6"><a href="ChapIntro.html#cb8-6" tabindex="-1"></a>    datasub1 <span class="ot">&lt;-</span> <span class="fu">subset</span>(datasub, yAvg <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb8-7"><a href="ChapIntro.html#cb8-7" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">nrow</span>(datasub1) <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb8-8"><a href="ChapIntro.html#cb8-8" tabindex="-1"></a>        n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(datasub)</span>
+<span id="cb8-9"><a href="ChapIntro.html#cb8-9" tabindex="-1"></a>        <span class="fu">return</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, n))</span>
+<span id="cb8-10"><a href="ChapIntro.html#cb8-10" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb8-11"><a href="ChapIntro.html#cb8-11" tabindex="-1"></a>        tempB <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(yAvg <span class="sc">~</span> AC00, <span class="at">data =</span> datasub1, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb8-12"><a href="ChapIntro.html#cb8-12" tabindex="-1"></a>            <span class="fu">c</span>(<span class="at">m =</span> <span class="fu">mean</span>(x))</span>
+<span id="cb8-13"><a href="ChapIntro.html#cb8-13" tabindex="-1"></a>        })</span>
+<span id="cb8-14"><a href="ChapIntro.html#cb8-14" tabindex="-1"></a>        tempC <span class="ot">&lt;-</span> <span class="fu">merge</span>(tempA, tempB, <span class="at">all.x =</span> T)[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>)]</span>
+<span id="cb8-15"><a href="ChapIntro.html#cb8-15" tabindex="-1"></a>        tempC1 <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(tempC)</span>
+<span id="cb8-16"><a href="ChapIntro.html#cb8-16" tabindex="-1"></a>        <span class="fu">return</span>(tempC1)</span>
+<span id="cb8-17"><a href="ChapIntro.html#cb8-17" tabindex="-1"></a>    }</span>
+<span id="cb8-18"><a href="ChapIntro.html#cb8-18" tabindex="-1"></a>}</span>
+<span id="cb8-19"><a href="ChapIntro.html#cb8-19" tabindex="-1"></a>AlarmC <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC00 <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC05 <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">+</span> <span class="dv">3</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC10 <span class="sc">==</span></span>
+<span id="cb8-20"><a href="ChapIntro.html#cb8-20" tabindex="-1"></a>    <span class="dv">1</span>) <span class="sc">+</span> <span class="dv">4</span> <span class="sc">*</span> (Insample<span class="sc">$</span>AC15 <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb8-21"><a href="ChapIntro.html#cb8-21" tabindex="-1"></a>ByVarCredit <span class="ot">&lt;-</span> <span class="cf">function</span>(ACnum) {</span>
+<span id="cb8-22"><a href="ChapIntro.html#cb8-22" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeVillage <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
+<span id="cb8-23"><a href="ChapIntro.html#cb8-23" tabindex="-1"></a>    t1 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb8-24"><a href="ChapIntro.html#cb8-24" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCity <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
+<span id="cb8-25"><a href="ChapIntro.html#cb8-25" tabindex="-1"></a>    t2 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb8-26"><a href="ChapIntro.html#cb8-26" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeCounty <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
+<span id="cb8-27"><a href="ChapIntro.html#cb8-27" tabindex="-1"></a>    t3 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb8-28"><a href="ChapIntro.html#cb8-28" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeMisc <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
+<span id="cb8-29"><a href="ChapIntro.html#cb8-29" tabindex="-1"></a>    t4 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb8-30"><a href="ChapIntro.html#cb8-30" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeSchool <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
+<span id="cb8-31"><a href="ChapIntro.html#cb8-31" tabindex="-1"></a>    t5 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb8-32"><a href="ChapIntro.html#cb8-32" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, TypeTown <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> AlarmC <span class="sc">==</span> ACnum)</span>
+<span id="cb8-33"><a href="ChapIntro.html#cb8-33" tabindex="-1"></a>    t6 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb8-34"><a href="ChapIntro.html#cb8-34" tabindex="-1"></a>    datasub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Insample, AlarmC <span class="sc">==</span> ACnum)</span>
+<span id="cb8-35"><a href="ChapIntro.html#cb8-35" tabindex="-1"></a>    t7 <span class="ot">&lt;-</span> <span class="fu">ByVarSumm</span>(datasub)</span>
+<span id="cb8-36"><a href="ChapIntro.html#cb8-36" tabindex="-1"></a>    Tablea <span class="ot">&lt;-</span> <span class="fu">rbind</span>(t1, t2, t3, t4, t5, t6, t7)</span>
+<span id="cb8-37"><a href="ChapIntro.html#cb8-37" tabindex="-1"></a>    Table4 <span class="ot">&lt;-</span> <span class="fu">round</span>(Tablea, <span class="dv">3</span>)</span>
+<span id="cb8-38"><a href="ChapIntro.html#cb8-38" tabindex="-1"></a>}</span>
+<span id="cb8-39"><a href="ChapIntro.html#cb8-39" tabindex="-1"></a>Table4a <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">1</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==00</span></span>
+<span id="cb8-40"><a href="ChapIntro.html#cb8-40" tabindex="-1"></a>Table4b <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">2</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==05 </span></span>
+<span id="cb8-41"><a href="ChapIntro.html#cb8-41" tabindex="-1"></a>Table4c <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">3</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==10</span></span>
+<span id="cb8-42"><a href="ChapIntro.html#cb8-42" tabindex="-1"></a>Table4d <span class="ot">&lt;-</span> <span class="fu">ByVarCredit</span>(<span class="dv">4</span>)  <span class="co">#Claims Summary by Entity Type and Alarm Credit==15</span></span>
+<span id="cb8-43"><a href="ChapIntro.html#cb8-43" tabindex="-1"></a></span>
+<span id="cb8-44"><a href="ChapIntro.html#cb8-44" tabindex="-1"></a>Table17A <span class="ot">&lt;-</span> <span class="fu">cbind</span>(Table4a, Table4b)</span>
+<span id="cb8-45"><a href="ChapIntro.html#cb8-45" tabindex="-1"></a>Table17A[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(Table17A[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)], <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb8-46"><a href="ChapIntro.html#cb8-46" tabindex="-1"></a><span class="fu">rownames</span>(Table17A) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Village&quot;</span>, <span class="st">&quot;City&quot;</span>, <span class="st">&quot;County&quot;</span>, <span class="st">&quot;Misc&quot;</span>, <span class="st">&quot;School&quot;</span>, <span class="st">&quot;Town&quot;</span>, <span class="st">&quot;Total&quot;</span>)</span>
+<span id="cb8-47"><a href="ChapIntro.html#cb8-47" tabindex="-1"></a><span class="fu">colnames</span>(Table17A) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;AC0 Claim Frequency&quot;</span>, <span class="st">&quot;AC0 Avg. Severity&quot;</span>, <span class="st">&quot;AC0 Num. Policies&quot;</span>,</span>
+<span id="cb8-48"><a href="ChapIntro.html#cb8-48" tabindex="-1"></a>    <span class="st">&quot;AC5 Claim Frequency&quot;</span>, <span class="st">&quot;AC5 Avg. Severity&quot;</span>, <span class="st">&quot;AC5 Num. Policies&quot;</span>)</span>
+<span id="cb8-49"><a href="ChapIntro.html#cb8-49" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> Table17A, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Entity Type and Alarm Credit (AC) Categories 0 and 5&quot;</span>,</span>
+<span id="cb8-50"><a href="ChapIntro.html#cb8-50" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">ColWidth =</span> ColWidth6)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="ChapIntro.html#cb9-1" tabindex="-1"></a>Table17B <span class="ot">&lt;-</span> <span class="fu">cbind</span>(Table4c, Table4d)</span>
+<span id="cb9-2"><a href="ChapIntro.html#cb9-2" tabindex="-1"></a>Table17B[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)] <span class="ot">&lt;-</span> <span class="fu">roundCom</span>(Table17B[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)], <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb9-3"><a href="ChapIntro.html#cb9-3" tabindex="-1"></a><span class="fu">rownames</span>(Table17B) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Village&quot;</span>, <span class="st">&quot;City&quot;</span>, <span class="st">&quot;County&quot;</span>, <span class="st">&quot;Misc&quot;</span>, <span class="st">&quot;School&quot;</span>, <span class="st">&quot;Town&quot;</span>, <span class="st">&quot;Total&quot;</span>)</span>
+<span id="cb9-4"><a href="ChapIntro.html#cb9-4" tabindex="-1"></a><span class="fu">colnames</span>(Table17B) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;AC10 Claim Frequency&quot;</span>, <span class="st">&quot;AC10 Avg. Severity&quot;</span>, <span class="st">&quot;AC10 Num. Policies&quot;</span>,</span>
+<span id="cb9-5"><a href="ChapIntro.html#cb9-5" tabindex="-1"></a>    <span class="st">&quot;AC15 Claim Frequency&quot;</span>, <span class="st">&quot;AC15 Avg. Severity&quot;</span>, <span class="st">&quot;AC15 Num. Policies&quot;</span>)</span>
+<span id="cb9-6"><a href="ChapIntro.html#cb9-6" tabindex="-1"></a><span class="fu">TableGen1</span>(<span class="at">TableData =</span> Table17B, <span class="at">TextTitle =</span> <span class="st">&quot;Claims Summary by Entity Type and Alarm Credit (AC)</span></span>
+<span id="cb9-7"><a href="ChapIntro.html#cb9-7" tabindex="-1"></a><span class="st">Categories 10 and 15&quot;</span>,</span>
+<span id="cb9-8"><a href="ChapIntro.html#cb9-8" tabindex="-1"></a>    <span class="at">Align =</span> <span class="st">&quot;c&quot;</span>, <span class="at">Digits =</span> <span class="dv">3</span>, <span class="at">ColumnSpec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">ColWidth =</span> ColWidth6)</span></code></pre></div>
 </div>
 <p>We will learn more about modeling count data in the Chapter <a href="ChapFrequency-Modeling.html#ChapFrequency-Modeling">3</a> and about severity data in Chapters <a href="ChapSeverity.html#ChapSeverity">4</a> and <a href="ChapAggLossModels.html#ChapAggLossModels">7</a>.</p>
 </div>
@@ -2928,281 +2920,162 @@ Figure 1.3: <strong>Distribution of Travel Losses by Year</strong>
 <a id="displayCode.TravelDataEx.1" href="javascript:togglecode('toggleCode.TravelDataEx.1','displayCode.TravelDataEx.1');"><i><strong>Solutions for the Travel Claims Exercise</strong></i></a>
 </h5>
 <div id="toggleCode.TravelDataEx.1" style="display: none">
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="ChapIntro.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a</span></span>
-<span id="cb10-2"><a href="ChapIntro.html#cb10-2" aria-hidden="true" tabindex="-1"></a>TravelClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/ANUTravelClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
-<span id="cb10-3"><a href="ChapIntro.html#cb10-3" aria-hidden="true" tabindex="-1"></a>tableTravel <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">table</span>(TravelClaims<span class="sc">$</span>UW.Year))</span>
-<span id="cb10-4"><a href="ChapIntro.html#cb10-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tableTravel, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Travel Claims Frequency**&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="ChapIntro.html#cb10-1" tabindex="-1"></a><span class="co"># a</span></span>
+<span id="cb10-2"><a href="ChapIntro.html#cb10-2" tabindex="-1"></a>TravelClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/ANUTravelClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
+<span id="cb10-3"><a href="ChapIntro.html#cb10-3" tabindex="-1"></a>tableTravel <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">table</span>(TravelClaims<span class="sc">$</span>UW.Year))</span>
+<span id="cb10-4"><a href="ChapIntro.html#cb10-4" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tableTravel, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Travel Claims Frequency**&quot;</span>)</span></code></pre></div>
 <table>
-<caption>
-<span id="tab:Exer11">Table 1.10: </span><strong>Travel Claims Frequency</strong>
-</caption>
+<caption><span id="tab:Exer11">Table 1.10: </span><strong>Travel Claims Frequency</strong></caption>
+<colgroup>
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
 <thead>
-<tr>
-<th style="text-align:center;">
-2006
-</th>
-<th style="text-align:center;">
-2007
-</th>
-<th style="text-align:center;">
-2008
-</th>
-<th style="text-align:center;">
-2009
-</th>
-<th style="text-align:center;">
-2010
-</th>
-<th style="text-align:center;">
-2011
-</th>
-<th style="text-align:center;">
-2012
-</th>
-<th style="text-align:center;">
-2013
-</th>
-<th style="text-align:center;">
-2014
-</th>
-<th style="text-align:center;">
-2015
-</th>
-<th style="text-align:center;">
-2016
-</th>
-<th style="text-align:center;">
-2017
-</th>
-<th style="text-align:center;">
-2018
-</th>
-<th style="text-align:center;">
-2019
-</th>
-<th style="text-align:center;">
-2020
-</th>
-<th style="text-align:center;">
-2021
-</th>
+<tr class="header">
+<th align="center">2006</th>
+<th align="center">2007</th>
+<th align="center">2008</th>
+<th align="center">2009</th>
+<th align="center">2010</th>
+<th align="center">2011</th>
+<th align="center">2012</th>
+<th align="center">2013</th>
+<th align="center">2014</th>
+<th align="center">2015</th>
+<th align="center">2016</th>
+<th align="center">2017</th>
+<th align="center">2018</th>
+<th align="center">2019</th>
+<th align="center">2020</th>
+<th align="center">2021</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-41
-</td>
-<td style="text-align:center;">
-74
-</td>
-<td style="text-align:center;">
-102
-</td>
-<td style="text-align:center;">
-166
-</td>
-<td style="text-align:center;">
-158
-</td>
-<td style="text-align:center;">
-141
-</td>
-<td style="text-align:center;">
-143
-</td>
-<td style="text-align:center;">
-161
-</td>
-<td style="text-align:center;">
-158
-</td>
-<td style="text-align:center;">
-158
-</td>
-<td style="text-align:center;">
-154
-</td>
-<td style="text-align:center;">
-139
-</td>
-<td style="text-align:center;">
-205
-</td>
-<td style="text-align:center;">
-274
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-32
-</td>
+<tr class="odd">
+<td align="center">41</td>
+<td align="center">74</td>
+<td align="center">102</td>
+<td align="center">166</td>
+<td align="center">158</td>
+<td align="center">141</td>
+<td align="center">143</td>
+<td align="center">161</td>
+<td align="center">158</td>
+<td align="center">158</td>
+<td align="center">154</td>
+<td align="center">139</td>
+<td align="center">205</td>
+<td align="center">274</td>
+<td align="center">1</td>
+<td align="center">32</td>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="ChapIntro.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># b</span></span>
-<span id="cb11-2"><a href="ChapIntro.html#cb11-2" aria-hidden="true" tabindex="-1"></a>TravelClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">subset</span>(TravelClaims, Incurred.Loss <span class="sc">&gt;=</span> <span class="dv">10</span>)</span>
-<span id="cb11-3"><a href="ChapIntro.html#cb11-3" aria-hidden="true" tabindex="-1"></a>tableTravel1 <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">table</span>(TravelClaimsGT10<span class="sc">$</span>UW.Year))</span>
-<span id="cb11-4"><a href="ChapIntro.html#cb11-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tableTravel1, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Travel Claims Frequency**&quot;</span>)</span></code></pre></div>
-<table>
-<caption>
-<span id="tab:Exer11">Table 1.10: </span><strong>Travel Claims Frequency</strong>
-</caption>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="ChapIntro.html#cb11-1" tabindex="-1"></a><span class="co"># b</span></span>
+<span id="cb11-2"><a href="ChapIntro.html#cb11-2" tabindex="-1"></a>TravelClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">subset</span>(TravelClaims, Incurred.Loss <span class="sc">&gt;=</span> <span class="dv">10</span>)</span>
+<span id="cb11-3"><a href="ChapIntro.html#cb11-3" tabindex="-1"></a>tableTravel1 <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">table</span>(TravelClaimsGT10<span class="sc">$</span>UW.Year))</span>
+<span id="cb11-4"><a href="ChapIntro.html#cb11-4" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tableTravel1, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Travel Claims Frequency**&quot;</span>)</span></code></pre></div>
+<table style="width:100%;">
+<caption><span id="tab:Exer11">Table 1.10: </span><strong>Travel Claims Frequency</strong></caption>
+<colgroup>
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
 <thead>
-<tr>
-<th style="text-align:center;">
-2006
-</th>
-<th style="text-align:center;">
-2007
-</th>
-<th style="text-align:center;">
-2008
-</th>
-<th style="text-align:center;">
-2009
-</th>
-<th style="text-align:center;">
-2010
-</th>
-<th style="text-align:center;">
-2011
-</th>
-<th style="text-align:center;">
-2012
-</th>
-<th style="text-align:center;">
-2013
-</th>
-<th style="text-align:center;">
-2014
-</th>
-<th style="text-align:center;">
-2015
-</th>
-<th style="text-align:center;">
-2016
-</th>
-<th style="text-align:center;">
-2017
-</th>
-<th style="text-align:center;">
-2018
-</th>
-<th style="text-align:center;">
-2019
-</th>
-<th style="text-align:center;">
-2021
-</th>
+<tr class="header">
+<th align="center">2006</th>
+<th align="center">2007</th>
+<th align="center">2008</th>
+<th align="center">2009</th>
+<th align="center">2010</th>
+<th align="center">2011</th>
+<th align="center">2012</th>
+<th align="center">2013</th>
+<th align="center">2014</th>
+<th align="center">2015</th>
+<th align="center">2016</th>
+<th align="center">2017</th>
+<th align="center">2018</th>
+<th align="center">2019</th>
+<th align="center">2021</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-31
-</td>
-<td style="text-align:center;">
-58
-</td>
-<td style="text-align:center;">
-86
-</td>
-<td style="text-align:center;">
-154
-</td>
-<td style="text-align:center;">
-153
-</td>
-<td style="text-align:center;">
-136
-</td>
-<td style="text-align:center;">
-135
-</td>
-<td style="text-align:center;">
-140
-</td>
-<td style="text-align:center;">
-132
-</td>
-<td style="text-align:center;">
-142
-</td>
-<td style="text-align:center;">
-132
-</td>
-<td style="text-align:center;">
-129
-</td>
-<td style="text-align:center;">
-170
-</td>
-<td style="text-align:center;">
-207
-</td>
-<td style="text-align:center;">
-30
-</td>
+<tr class="odd">
+<td align="center">31</td>
+<td align="center">58</td>
+<td align="center">86</td>
+<td align="center">154</td>
+<td align="center">153</td>
+<td align="center">136</td>
+<td align="center">135</td>
+<td align="center">140</td>
+<td align="center">132</td>
+<td align="center">142</td>
+<td align="center">132</td>
+<td align="center">129</td>
+<td align="center">170</td>
+<td align="center">207</td>
+<td align="center">30</td>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="ChapIntro.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># c</span></span>
-<span id="cb12-2"><a href="ChapIntro.html#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="ChapIntro.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> TravelClaimsGT10, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(UW.Year), <span class="at">y =</span> Incurred.Loss)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb12-4"><a href="ChapIntro.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">&quot;log10&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="ChapIntro.html#cb12-1" tabindex="-1"></a><span class="co"># c</span></span>
+<span id="cb12-2"><a href="ChapIntro.html#cb12-2" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="ChapIntro.html#cb12-3" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> TravelClaimsGT10, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(UW.Year), <span class="at">y =</span> Incurred.Loss)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb12-4"><a href="ChapIntro.html#cb12-4" tabindex="-1"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">&quot;log10&quot;</span>)</span></code></pre></div>
 <p><img src="LDAEd2_files/figure-html/Exer11-1.png" width="672" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="ChapIntro.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># d</span></span>
-<span id="cb13-2"><a href="ChapIntro.html#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="ChapIntro.html#cb13-3" aria-hidden="true" tabindex="-1"></a>sumTravelClaims <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">summary</span>(TravelClaimsGT10Short<span class="sc">$</span>Incurred.Loss))</span>
-<span id="cb13-4"><a href="ChapIntro.html#cb13-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(sumTravelClaims, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Travel Claims Summary Statistics**&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="ChapIntro.html#cb13-1" tabindex="-1"></a><span class="co"># d</span></span>
+<span id="cb13-2"><a href="ChapIntro.html#cb13-2" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="ChapIntro.html#cb13-3" tabindex="-1"></a>sumTravelClaims <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">summary</span>(TravelClaimsGT10Short<span class="sc">$</span>Incurred.Loss))</span>
+<span id="cb13-4"><a href="ChapIntro.html#cb13-4" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(sumTravelClaims, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Travel Claims Summary Statistics**&quot;</span>)</span></code></pre></div>
 <table>
-<caption>
-<span id="tab:Exer11">Table 1.10: </span><strong>Travel Claims Summary Statistics</strong>
-</caption>
+<caption><span id="tab:Exer11">Table 1.10: </span><strong>Travel Claims Summary Statistics</strong></caption>
 <thead>
-<tr>
-<th style="text-align:center;">
-Min.
-</th>
-<th style="text-align:center;">
-1st Qu.
-</th>
-<th style="text-align:center;">
-Median
-</th>
-<th style="text-align:center;">
-Mean
-</th>
-<th style="text-align:center;">
-3rd Qu.
-</th>
-<th style="text-align:center;">
-Max.
-</th>
+<tr class="header">
+<th align="center">Min.</th>
+<th align="center">1st Qu.</th>
+<th align="center">Median</th>
+<th align="center">Mean</th>
+<th align="center">3rd Qu.</th>
+<th align="center">Max.</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-17.16
-</td>
-<td style="text-align:center;">
-290.215
-</td>
-<td style="text-align:center;">
-631.49
-</td>
-<td style="text-align:center;">
-1701.953
-</td>
-<td style="text-align:center;">
-1528.44
-</td>
-<td style="text-align:center;">
-90727.64
-</td>
+<tr class="odd">
+<td align="center">17.16</td>
+<td align="center">290.215</td>
+<td align="center">631.49</td>
+<td align="center">1701.953</td>
+<td align="center">1528.44</td>
+<td align="center">90727.64</td>
 </tr>
 </tbody>
 </table>
@@ -3277,187 +3150,117 @@ Figure 1.5: <strong>Distribution of Group Personal Accident Losses by Year</stro
 <a id="displayCode.GPADataEx.1" href="javascript:togglecode('toggleCode.GPADataEx.1','displayCode.GPADataEx.1');"><i><strong>Solutions for the GPA Claims Exercise</strong></i></a>
 </h5>
 <div id="toggleCode.GPADataEx.1" style="display: none">
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="ChapIntro.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a</span></span>
-<span id="cb14-2"><a href="ChapIntro.html#cb14-2" aria-hidden="true" tabindex="-1"></a>GPAClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/ANUGroupPersonalAccidentClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
-<span id="cb14-3"><a href="ChapIntro.html#cb14-3" aria-hidden="true" tabindex="-1"></a>GPAClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">subset</span>(GPAClaims, Incurred.Loss <span class="sc">&gt;=</span> <span class="dv">10</span>)</span>
-<span id="cb14-4"><a href="ChapIntro.html#cb14-4" aria-hidden="true" tabindex="-1"></a>tableGPAFreq <span class="ot">&lt;-</span> <span class="fu">table</span>(GPAClaimsGT10<span class="sc">$</span>UW.Year)</span>
-<span id="cb14-5"><a href="ChapIntro.html#cb14-5" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">t</span>(tableGPAFreq), <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Group Personal Accident Claims Frequency**&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="ChapIntro.html#cb14-1" tabindex="-1"></a><span class="co"># a</span></span>
+<span id="cb14-2"><a href="ChapIntro.html#cb14-2" tabindex="-1"></a>GPAClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/ANUGroupPersonalAccidentClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
+<span id="cb14-3"><a href="ChapIntro.html#cb14-3" tabindex="-1"></a>GPAClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">subset</span>(GPAClaims, Incurred.Loss <span class="sc">&gt;=</span> <span class="dv">10</span>)</span>
+<span id="cb14-4"><a href="ChapIntro.html#cb14-4" tabindex="-1"></a>tableGPAFreq <span class="ot">&lt;-</span> <span class="fu">table</span>(GPAClaimsGT10<span class="sc">$</span>UW.Year)</span>
+<span id="cb14-5"><a href="ChapIntro.html#cb14-5" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">t</span>(tableGPAFreq), <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Group Personal Accident Claims Frequency**&quot;</span>)</span></code></pre></div>
 <table>
-<caption>
-<span id="tab:Exer122">Table 1.12: </span><strong>Group Personal Accident Claims Frequency</strong>
-</caption>
+<caption><span id="tab:Exer122">Table 1.12: </span><strong>Group Personal Accident Claims Frequency</strong></caption>
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
 <thead>
-<tr>
-<th style="text-align:center;">
-2010
-</th>
-<th style="text-align:center;">
-2011
-</th>
-<th style="text-align:center;">
-2012
-</th>
-<th style="text-align:center;">
-2013
-</th>
-<th style="text-align:center;">
-2014
-</th>
-<th style="text-align:center;">
-2015
-</th>
-<th style="text-align:center;">
-2016
-</th>
-<th style="text-align:center;">
-2017
-</th>
-<th style="text-align:center;">
-2018
-</th>
-<th style="text-align:center;">
-2019
-</th>
-<th style="text-align:center;">
-2020
-</th>
-<th style="text-align:center;">
-2021
-</th>
+<tr class="header">
+<th align="center">2010</th>
+<th align="center">2011</th>
+<th align="center">2012</th>
+<th align="center">2013</th>
+<th align="center">2014</th>
+<th align="center">2015</th>
+<th align="center">2016</th>
+<th align="center">2017</th>
+<th align="center">2018</th>
+<th align="center">2019</th>
+<th align="center">2020</th>
+<th align="center">2021</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-3
-</td>
-<td style="text-align:center;">
-5
-</td>
-<td style="text-align:center;">
-4
-</td>
-<td style="text-align:center;">
-8
-</td>
-<td style="text-align:center;">
-8
-</td>
-<td style="text-align:center;">
-4
-</td>
-<td style="text-align:center;">
-7
-</td>
-<td style="text-align:center;">
-16
-</td>
-<td style="text-align:center;">
-11
-</td>
-<td style="text-align:center;">
-9
-</td>
-<td style="text-align:center;">
-28
-</td>
-<td style="text-align:center;">
-9
-</td>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">5</td>
+<td align="center">4</td>
+<td align="center">8</td>
+<td align="center">8</td>
+<td align="center">4</td>
+<td align="center">7</td>
+<td align="center">16</td>
+<td align="center">11</td>
+<td align="center">9</td>
+<td align="center">28</td>
+<td align="center">9</td>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="ChapIntro.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># b</span></span>
-<span id="cb15-2"><a href="ChapIntro.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
-<span id="cb15-3"><a href="ChapIntro.html#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss, <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Inclurred Claims&quot;</span>)</span>
-<span id="cb15-4"><a href="ChapIntro.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(<span class="fu">log10</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss), <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Logarithmic Incurred Claims&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="ChapIntro.html#cb15-1" tabindex="-1"></a><span class="co"># b</span></span>
+<span id="cb15-2"><a href="ChapIntro.html#cb15-2" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb15-3"><a href="ChapIntro.html#cb15-3" tabindex="-1"></a><span class="fu">hist</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss, <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Inclurred Claims&quot;</span>)</span>
+<span id="cb15-4"><a href="ChapIntro.html#cb15-4" tabindex="-1"></a><span class="fu">hist</span>(<span class="fu">log10</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss), <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;Logarithmic Incurred Claims&quot;</span>)</span></code></pre></div>
 <p><img src="LDAEd2_files/figure-html/Exer122-1.png" width="672" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="ChapIntro.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># c</span></span>
-<span id="cb16-2"><a href="ChapIntro.html#cb16-2" aria-hidden="true" tabindex="-1"></a>sumGPAClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">summary</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss, <span class="at">digits =</span> <span class="dv">0</span>))</span>
-<span id="cb16-3"><a href="ChapIntro.html#cb16-3" aria-hidden="true" tabindex="-1"></a>LogsumGPAClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">summary</span>(<span class="fu">log10</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss), <span class="at">digits =</span> <span class="dv">4</span>))</span>
-<span id="cb16-4"><a href="ChapIntro.html#cb16-4" aria-hidden="true" tabindex="-1"></a>tabSumStats <span class="ot">&lt;-</span> <span class="fu">rbind</span>(sumGPAClaimsGT10, LogsumGPAClaimsGT10)</span>
-<span id="cb16-5"><a href="ChapIntro.html#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(tabSumStats) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claims&quot;</span>, <span class="st">&quot;Log Claims&quot;</span>)</span>
-<span id="cb16-6"><a href="ChapIntro.html#cb16-6" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tabSumStats, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Group Personal Accident Incurred Losses**&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="ChapIntro.html#cb16-1" tabindex="-1"></a><span class="co"># c</span></span>
+<span id="cb16-2"><a href="ChapIntro.html#cb16-2" tabindex="-1"></a>sumGPAClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">summary</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss, <span class="at">digits =</span> <span class="dv">0</span>))</span>
+<span id="cb16-3"><a href="ChapIntro.html#cb16-3" tabindex="-1"></a>LogsumGPAClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">summary</span>(<span class="fu">log10</span>(GPAClaimsGT10<span class="sc">$</span>Incurred.Loss), <span class="at">digits =</span> <span class="dv">4</span>))</span>
+<span id="cb16-4"><a href="ChapIntro.html#cb16-4" tabindex="-1"></a>tabSumStats <span class="ot">&lt;-</span> <span class="fu">rbind</span>(sumGPAClaimsGT10, LogsumGPAClaimsGT10)</span>
+<span id="cb16-5"><a href="ChapIntro.html#cb16-5" tabindex="-1"></a><span class="fu">rownames</span>(tabSumStats) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Claims&quot;</span>, <span class="st">&quot;Log Claims&quot;</span>)</span>
+<span id="cb16-6"><a href="ChapIntro.html#cb16-6" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tabSumStats, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Group Personal Accident Incurred Losses**&quot;</span>)</span></code></pre></div>
 <table>
-<caption>
-<span id="tab:Exer122">Table 1.12: </span><strong>Group Personal Accident Incurred Losses</strong>
-</caption>
+<caption><span id="tab:Exer122">Table 1.12: </span><strong>Group Personal Accident Incurred Losses</strong></caption>
+<colgroup>
+<col width="16%" />
+<col width="11%" />
+<col width="13%" />
+<col width="11%" />
+<col width="14%" />
+<col width="14%" />
+<col width="16%" />
+</colgroup>
 <thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:center;">
-Min.
-</th>
-<th style="text-align:center;">
-1st Qu.
-</th>
-<th style="text-align:center;">
-Median
-</th>
-<th style="text-align:center;">
-Mean
-</th>
-<th style="text-align:center;">
-3rd Qu.
-</th>
-<th style="text-align:center;">
-Max.
-</th>
+<tr class="header">
+<th align="left"></th>
+<th align="center">Min.</th>
+<th align="center">1st Qu.</th>
+<th align="center">Median</th>
+<th align="center">Mean</th>
+<th align="center">3rd Qu.</th>
+<th align="center">Max.</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Claims
-</td>
-<td style="text-align:center;">
-90.000
-</td>
-<td style="text-align:center;">
-500.000
-</td>
-<td style="text-align:center;">
-1000
-</td>
-<td style="text-align:center;">
-2000.000
-</td>
-<td style="text-align:center;">
-2000.000
-</td>
-<td style="text-align:center;">
-30000.000
-</td>
+<tr class="odd">
+<td align="left">Claims</td>
+<td align="center">90.000</td>
+<td align="center">500.000</td>
+<td align="center">1000</td>
+<td align="center">2000.000</td>
+<td align="center">2000.000</td>
+<td align="center">30000.000</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Log Claims
-</td>
-<td style="text-align:center;">
-1.954
-</td>
-<td style="text-align:center;">
-2.705
-</td>
-<td style="text-align:center;">
-3
-</td>
-<td style="text-align:center;">
-3.033
-</td>
-<td style="text-align:center;">
-3.389
-</td>
-<td style="text-align:center;">
-4.492
-</td>
+<tr class="even">
+<td align="left">Log Claims</td>
+<td align="center">1.954</td>
+<td align="center">2.705</td>
+<td align="center">3</td>
+<td align="center">3.033</td>
+<td align="center">3.389</td>
+<td align="center">4.492</td>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="ChapIntro.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># d</span></span>
-<span id="cb17-2"><a href="ChapIntro.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> GPAClaimsGT10, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(UW.Year), <span class="at">y =</span> Incurred.Loss)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb17-3"><a href="ChapIntro.html#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">&quot;log10&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="ChapIntro.html#cb17-1" tabindex="-1"></a><span class="co"># d</span></span>
+<span id="cb17-2"><a href="ChapIntro.html#cb17-2" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> GPAClaimsGT10, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(UW.Year), <span class="at">y =</span> Incurred.Loss)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb17-3"><a href="ChapIntro.html#cb17-3" tabindex="-1"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">&quot;log10&quot;</span>)</span></code></pre></div>
 <p><img src="LDAEd2_files/figure-html/Exer122-2.png" width="672" style="display: block; margin: auto;" /></p>
 <hr />
 </div>
@@ -3729,383 +3532,204 @@ Total
 <a id="displayCode.MotorDataEx.1" href="javascript:togglecode('toggleCode.MotorDataEx.1','displayCode.MotorDataEx.1');"><i><strong>Solutions for the Motor Vehicle Claims Exercise</strong></i></a>
 </h5>
 <div id="toggleCode.MotorDataEx.1" style="display: none">
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="ChapIntro.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a</span></span>
-<span id="cb18-2"><a href="ChapIntro.html#cb18-2" aria-hidden="true" tabindex="-1"></a>AutoClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/ANUMotorClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
-<span id="cb18-3"><a href="ChapIntro.html#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(AutoClaims<span class="sc">$</span>Motor.Net.Incurred)  <span class="co"># Number of incurred claims </span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="ChapIntro.html#cb18-1" tabindex="-1"></a><span class="co"># a</span></span>
+<span id="cb18-2"><a href="ChapIntro.html#cb18-2" tabindex="-1"></a>AutoClaims <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;Data/ANUMotorClaims2022.csv&quot;</span>, <span class="at">header =</span> T)</span>
+<span id="cb18-3"><a href="ChapIntro.html#cb18-3" tabindex="-1"></a><span class="fu">length</span>(AutoClaims<span class="sc">$</span>Motor.Net.Incurred)  <span class="co"># Number of incurred claims </span></span></code></pre></div>
 <pre><code>[1] 318</code></pre>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="ChapIntro.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(AutoClaims<span class="sc">$</span>Motor.Net.Incurred <span class="sc">==</span> <span class="dv">0</span>)  <span class="co"># Number of zeros and </span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="ChapIntro.html#cb20-1" tabindex="-1"></a><span class="fu">sum</span>(AutoClaims<span class="sc">$</span>Motor.Net.Incurred <span class="sc">==</span> <span class="dv">0</span>)  <span class="co"># Number of zeros and </span></span></code></pre></div>
 <pre><code>[1] 50</code></pre>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="ChapIntro.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>((AutoClaims<span class="sc">$</span>Motor.Net.Incurred <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">*</span> (AutoClaims<span class="sc">$</span>Motor.Net.Incurred <span class="sc">&lt;</span> <span class="dv">10</span>))  <span class="co"># Number of incurred claims  where the incurred claim is less than 10. </span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="ChapIntro.html#cb22-1" tabindex="-1"></a><span class="fu">sum</span>((AutoClaims<span class="sc">$</span>Motor.Net.Incurred <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">*</span> (AutoClaims<span class="sc">$</span>Motor.Net.Incurred <span class="sc">&lt;</span> <span class="dv">10</span>))  <span class="co"># Number of incurred claims  where the incurred claim is less than 10. </span></span></code></pre></div>
 <pre><code>[1] 0</code></pre>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="ChapIntro.html#cb24-1" aria-hidden="true" tabindex="-1"></a>AutoClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">subset</span>(AutoClaims, Motor.Net.Incurred <span class="sc">&gt;=</span> <span class="dv">10</span>)</span>
-<span id="cb24-2"><a href="ChapIntro.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(AutoClaimsGT10<span class="sc">$</span>Motor.Net.Incurred)  <span class="co"># length of the smaller dataset</span></span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="ChapIntro.html#cb24-1" tabindex="-1"></a>AutoClaimsGT10 <span class="ot">&lt;-</span> <span class="fu">subset</span>(AutoClaims, Motor.Net.Incurred <span class="sc">&gt;=</span> <span class="dv">10</span>)</span>
+<span id="cb24-2"><a href="ChapIntro.html#cb24-2" tabindex="-1"></a><span class="fu">length</span>(AutoClaimsGT10<span class="sc">$</span>Motor.Net.Incurred)  <span class="co"># length of the smaller dataset</span></span></code></pre></div>
 <pre><code>[1] 268</code></pre>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="ChapIntro.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># b</span></span>
-<span id="cb26-2"><a href="ChapIntro.html#cb26-2" aria-hidden="true" tabindex="-1"></a>UwYear <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(AutoClaimsGT10<span class="sc">$</span>Policy.Term.Start.Date, <span class="st">&quot;%d/%m/%Y&quot;</span>)</span>
-<span id="cb26-3"><a href="ChapIntro.html#cb26-3" aria-hidden="true" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>UW.Year <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">format</span>(UwYear, <span class="at">format =</span> <span class="st">&quot;%Y&quot;</span>))</span>
-<span id="cb26-4"><a href="ChapIntro.html#cb26-4" aria-hidden="true" tabindex="-1"></a>tableAutoClaims <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">table</span>(AutoClaimsGT10<span class="sc">$</span>UW.Year))</span>
-<span id="cb26-5"><a href="ChapIntro.html#cb26-5" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tableAutoClaims, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Motor Vehicle Claim Frequency**&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="ChapIntro.html#cb26-1" tabindex="-1"></a><span class="co"># b</span></span>
+<span id="cb26-2"><a href="ChapIntro.html#cb26-2" tabindex="-1"></a>UwYear <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(AutoClaimsGT10<span class="sc">$</span>Policy.Term.Start.Date, <span class="st">&quot;%d/%m/%Y&quot;</span>)</span>
+<span id="cb26-3"><a href="ChapIntro.html#cb26-3" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>UW.Year <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">format</span>(UwYear, <span class="at">format =</span> <span class="st">&quot;%Y&quot;</span>))</span>
+<span id="cb26-4"><a href="ChapIntro.html#cb26-4" tabindex="-1"></a>tableAutoClaims <span class="ot">&lt;-</span> <span class="fu">t</span>(<span class="fu">table</span>(AutoClaimsGT10<span class="sc">$</span>UW.Year))</span>
+<span id="cb26-5"><a href="ChapIntro.html#cb26-5" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tableAutoClaims, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Motor Vehicle Claim Frequency**&quot;</span>)</span></code></pre></div>
 <table>
-<caption>
-<span id="tab:Exer13B">Table 1.14: </span><strong>Motor Vehicle Claim Frequency</strong>
-</caption>
+<caption><span id="tab:Exer13B">Table 1.14: </span><strong>Motor Vehicle Claim Frequency</strong></caption>
+<colgroup>
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
 <thead>
-<tr>
-<th style="text-align:center;">
-2011
-</th>
-<th style="text-align:center;">
-2012
-</th>
-<th style="text-align:center;">
-2013
-</th>
-<th style="text-align:center;">
-2014
-</th>
-<th style="text-align:center;">
-2015
-</th>
-<th style="text-align:center;">
-2016
-</th>
-<th style="text-align:center;">
-2017
-</th>
-<th style="text-align:center;">
-2018
-</th>
-<th style="text-align:center;">
-2019
-</th>
-<th style="text-align:center;">
-2020
-</th>
-<th style="text-align:center;">
-2021
-</th>
+<tr class="header">
+<th align="center">2011</th>
+<th align="center">2012</th>
+<th align="center">2013</th>
+<th align="center">2014</th>
+<th align="center">2015</th>
+<th align="center">2016</th>
+<th align="center">2017</th>
+<th align="center">2018</th>
+<th align="center">2019</th>
+<th align="center">2020</th>
+<th align="center">2021</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-10
-</td>
-<td style="text-align:center;">
-17
-</td>
-<td style="text-align:center;">
-27
-</td>
-<td style="text-align:center;">
-11
-</td>
-<td style="text-align:center;">
-16
-</td>
-<td style="text-align:center;">
-26
-</td>
-<td style="text-align:center;">
-21
-</td>
-<td style="text-align:center;">
-20
-</td>
-<td style="text-align:center;">
-105
-</td>
-<td style="text-align:center;">
-5
-</td>
-<td style="text-align:center;">
-10
-</td>
+<tr class="odd">
+<td align="center">10</td>
+<td align="center">17</td>
+<td align="center">27</td>
+<td align="center">11</td>
+<td align="center">16</td>
+<td align="center">26</td>
+<td align="center">21</td>
+<td align="center">20</td>
+<td align="center">105</td>
+<td align="center">5</td>
+<td align="center">10</td>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="ChapIntro.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># c</span></span>
-<span id="cb27-2"><a href="ChapIntro.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> AutoClaimsGT10, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(UW.Year), <span class="at">y =</span> Motor.Net.Incurred)) <span class="sc">+</span></span>
-<span id="cb27-3"><a href="ChapIntro.html#cb27-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">&quot;log10&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="ChapIntro.html#cb27-1" tabindex="-1"></a><span class="co"># c</span></span>
+<span id="cb27-2"><a href="ChapIntro.html#cb27-2" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> AutoClaimsGT10, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(UW.Year), <span class="at">y =</span> Motor.Net.Incurred)) <span class="sc">+</span></span>
+<span id="cb27-3"><a href="ChapIntro.html#cb27-3" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Year&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">trans =</span> <span class="st">&quot;log10&quot;</span>)</span></code></pre></div>
 <p><img src="LDAEd2_files/figure-html/Exer13B-1.png" width="70%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="ChapIntro.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># d</span></span>
-<span id="cb28-2"><a href="ChapIntro.html#cb28-2" aria-hidden="true" tabindex="-1"></a>AutoClaims2019 <span class="ot">&lt;-</span> <span class="fu">subset</span>(AutoClaimsGT10, UW.Year <span class="sc">==</span> <span class="dv">2019</span>)</span>
-<span id="cb28-3"><a href="ChapIntro.html#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(AutoClaims2019<span class="sc">$</span>Motor.Net.Incurred, <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;2019 Motor Vehicle Claims&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="ChapIntro.html#cb28-1" tabindex="-1"></a><span class="co"># d</span></span>
+<span id="cb28-2"><a href="ChapIntro.html#cb28-2" tabindex="-1"></a>AutoClaims2019 <span class="ot">&lt;-</span> <span class="fu">subset</span>(AutoClaimsGT10, UW.Year <span class="sc">==</span> <span class="dv">2019</span>)</span>
+<span id="cb28-3"><a href="ChapIntro.html#cb28-3" tabindex="-1"></a><span class="fu">hist</span>(AutoClaims2019<span class="sc">$</span>Motor.Net.Incurred, <span class="at">main =</span> <span class="st">&quot;&quot;</span>, <span class="at">xlab =</span> <span class="st">&quot;2019 Motor Vehicle Claims&quot;</span>)</span></code></pre></div>
 <p><img src="LDAEd2_files/figure-html/Exer13B-2.png" width="70%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="ChapIntro.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># e</span></span>
-<span id="cb29-2"><a href="ChapIntro.html#cb29-2" aria-hidden="true" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>Excess0 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">==</span> <span class="dv">0</span>)</span>
-<span id="cb29-3"><a href="ChapIntro.html#cb29-3" aria-hidden="true" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>ExcessLT1000 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">&lt;</span> <span class="dv">1000</span>) <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">&gt;</span></span>
-<span id="cb29-4"><a href="ChapIntro.html#cb29-4" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>)</span>
-<span id="cb29-5"><a href="ChapIntro.html#cb29-5" aria-hidden="true" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>ExcessEq1000 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">==</span> <span class="dv">1000</span>)</span>
-<span id="cb29-6"><a href="ChapIntro.html#cb29-6" aria-hidden="true" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>ExcessGT1000 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">&gt;</span> <span class="dv">1000</span>)</span>
-<span id="cb29-7"><a href="ChapIntro.html#cb29-7" aria-hidden="true" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>Constant1 <span class="ot">&lt;-</span> AutoClaimsGT10<span class="sc">$</span>Excess0 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb29-8"><a href="ChapIntro.html#cb29-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(doBy)</span>
-<span id="cb29-9"><a href="ChapIntro.html#cb29-9" aria-hidden="true" tabindex="-1"></a>T1 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Excess0 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb29-10"><a href="ChapIntro.html#cb29-10" aria-hidden="true" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb29-11"><a href="ChapIntro.html#cb29-11" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb29-12"><a href="ChapIntro.html#cb29-12" aria-hidden="true" tabindex="-1"></a>T2 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(ExcessLT1000 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb29-13"><a href="ChapIntro.html#cb29-13" aria-hidden="true" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb29-14"><a href="ChapIntro.html#cb29-14" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb29-15"><a href="ChapIntro.html#cb29-15" aria-hidden="true" tabindex="-1"></a>T3 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(ExcessEq1000 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb29-16"><a href="ChapIntro.html#cb29-16" aria-hidden="true" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb29-17"><a href="ChapIntro.html#cb29-17" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb29-18"><a href="ChapIntro.html#cb29-18" aria-hidden="true" tabindex="-1"></a>T4 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(ExcessGT1000 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb29-19"><a href="ChapIntro.html#cb29-19" aria-hidden="true" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb29-20"><a href="ChapIntro.html#cb29-20" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb29-21"><a href="ChapIntro.html#cb29-21" aria-hidden="true" tabindex="-1"></a>T5 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Constant1 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
-<span id="cb29-22"><a href="ChapIntro.html#cb29-22" aria-hidden="true" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb29-23"><a href="ChapIntro.html#cb29-23" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb29-24"><a href="ChapIntro.html#cb29-24" aria-hidden="true" tabindex="-1"></a>TableOut <span class="ot">&lt;-</span> <span class="fu">cbind</span>(T1, T2[<span class="dv">2</span>], T3[<span class="dv">2</span>], T4[<span class="dv">2</span>], T5[<span class="dv">2</span>])</span>
-<span id="cb29-25"><a href="ChapIntro.html#cb29-25" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(TableOut) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;UW.Year&quot;</span>, <span class="st">&quot;Num 0&quot;</span>, <span class="st">&quot;Num 0-1000&quot;</span>, <span class="st">&quot;Num = 1000&quot;</span>, <span class="st">&quot;Num &gt;1000&quot;</span>,</span>
-<span id="cb29-26"><a href="ChapIntro.html#cb29-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Total&quot;</span>)</span>
-<span id="cb29-27"><a href="ChapIntro.html#cb29-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-28"><a href="ChapIntro.html#cb29-28" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(TableOut, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Motor Vehicle Excess by Year**&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="ChapIntro.html#cb29-1" tabindex="-1"></a><span class="co"># e</span></span>
+<span id="cb29-2"><a href="ChapIntro.html#cb29-2" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>Excess0 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb29-3"><a href="ChapIntro.html#cb29-3" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>ExcessLT1000 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">&lt;</span> <span class="dv">1000</span>) <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">&gt;</span></span>
+<span id="cb29-4"><a href="ChapIntro.html#cb29-4" tabindex="-1"></a>    <span class="dv">0</span>)</span>
+<span id="cb29-5"><a href="ChapIntro.html#cb29-5" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>ExcessEq1000 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">==</span> <span class="dv">1000</span>)</span>
+<span id="cb29-6"><a href="ChapIntro.html#cb29-6" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>ExcessGT1000 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> (AutoClaimsGT10<span class="sc">$</span>Excess <span class="sc">&gt;</span> <span class="dv">1000</span>)</span>
+<span id="cb29-7"><a href="ChapIntro.html#cb29-7" tabindex="-1"></a>AutoClaimsGT10<span class="sc">$</span>Constant1 <span class="ot">&lt;-</span> AutoClaimsGT10<span class="sc">$</span>Excess0 <span class="sc">*</span> <span class="dv">0</span> <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb29-8"><a href="ChapIntro.html#cb29-8" tabindex="-1"></a><span class="fu">library</span>(doBy)</span>
+<span id="cb29-9"><a href="ChapIntro.html#cb29-9" tabindex="-1"></a>T1 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Excess0 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb29-10"><a href="ChapIntro.html#cb29-10" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb29-11"><a href="ChapIntro.html#cb29-11" tabindex="-1"></a>})</span>
+<span id="cb29-12"><a href="ChapIntro.html#cb29-12" tabindex="-1"></a>T2 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(ExcessLT1000 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb29-13"><a href="ChapIntro.html#cb29-13" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb29-14"><a href="ChapIntro.html#cb29-14" tabindex="-1"></a>})</span>
+<span id="cb29-15"><a href="ChapIntro.html#cb29-15" tabindex="-1"></a>T3 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(ExcessEq1000 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb29-16"><a href="ChapIntro.html#cb29-16" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb29-17"><a href="ChapIntro.html#cb29-17" tabindex="-1"></a>})</span>
+<span id="cb29-18"><a href="ChapIntro.html#cb29-18" tabindex="-1"></a>T4 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(ExcessGT1000 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb29-19"><a href="ChapIntro.html#cb29-19" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb29-20"><a href="ChapIntro.html#cb29-20" tabindex="-1"></a>})</span>
+<span id="cb29-21"><a href="ChapIntro.html#cb29-21" tabindex="-1"></a>T5 <span class="ot">&lt;-</span> <span class="fu">summaryBy</span>(Constant1 <span class="sc">~</span> UW.Year, <span class="at">data =</span> AutoClaimsGT10, <span class="at">FUN =</span> <span class="cf">function</span>(x) {</span>
+<span id="cb29-22"><a href="ChapIntro.html#cb29-22" tabindex="-1"></a>    m <span class="ot">=</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb29-23"><a href="ChapIntro.html#cb29-23" tabindex="-1"></a>})</span>
+<span id="cb29-24"><a href="ChapIntro.html#cb29-24" tabindex="-1"></a>TableOut <span class="ot">&lt;-</span> <span class="fu">cbind</span>(T1, T2[<span class="dv">2</span>], T3[<span class="dv">2</span>], T4[<span class="dv">2</span>], T5[<span class="dv">2</span>])</span>
+<span id="cb29-25"><a href="ChapIntro.html#cb29-25" tabindex="-1"></a><span class="fu">colnames</span>(TableOut) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;UW.Year&quot;</span>, <span class="st">&quot;Num 0&quot;</span>, <span class="st">&quot;Num 0-1000&quot;</span>, <span class="st">&quot;Num = 1000&quot;</span>, <span class="st">&quot;Num &gt;1000&quot;</span>,</span>
+<span id="cb29-26"><a href="ChapIntro.html#cb29-26" tabindex="-1"></a>    <span class="st">&quot;Total&quot;</span>)</span>
+<span id="cb29-27"><a href="ChapIntro.html#cb29-27" tabindex="-1"></a></span>
+<span id="cb29-28"><a href="ChapIntro.html#cb29-28" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(TableOut, <span class="at">align =</span> <span class="st">&quot;cccccccc&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;**Motor Vehicle Excess by Year**&quot;</span>)</span></code></pre></div>
 <table>
-<caption>
-<span id="tab:Exer13B">Table 1.14: </span><strong>Motor Vehicle Excess by Year</strong>
-</caption>
+<caption><span id="tab:Exer13B">Table 1.14: </span><strong>Motor Vehicle Excess by Year</strong></caption>
 <thead>
-<tr>
-<th style="text-align:center;">
-UW.Year
-</th>
-<th style="text-align:center;">
-Num 0
-</th>
-<th style="text-align:center;">
-Num 0-1000
-</th>
-<th style="text-align:center;">
-Num = 1000
-</th>
-<th style="text-align:center;">
-Num &gt;1000
-</th>
-<th style="text-align:center;">
-Total
-</th>
+<tr class="header">
+<th align="center">UW.Year</th>
+<th align="center">Num 0</th>
+<th align="center">Num 0-1000</th>
+<th align="center">Num = 1000</th>
+<th align="center">Num &gt;1000</th>
+<th align="center">Total</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:center;">
-2011
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-7
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-9
-</td>
+<tr class="odd">
+<td align="center">2011</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">7</td>
+<td align="center">0</td>
+<td align="center">9</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2012
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-2
-</td>
-<td style="text-align:center;">
-13
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-16
-</td>
+<tr class="even">
+<td align="center">2012</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">13</td>
+<td align="center">0</td>
+<td align="center">16</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2013
-</td>
-<td style="text-align:center;">
-4
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-22
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-27
-</td>
+<tr class="odd">
+<td align="center">2013</td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">22</td>
+<td align="center">0</td>
+<td align="center">27</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2014
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-11
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-11
-</td>
+<tr class="even">
+<td align="center">2014</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">11</td>
+<td align="center">0</td>
+<td align="center">11</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2015
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-14
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-16
-</td>
+<tr class="odd">
+<td align="center">2015</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">14</td>
+<td align="center">0</td>
+<td align="center">16</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2016
-</td>
-<td style="text-align:center;">
-6
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-19
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-26
-</td>
+<tr class="even">
+<td align="center">2016</td>
+<td align="center">6</td>
+<td align="center">1</td>
+<td align="center">19</td>
+<td align="center">0</td>
+<td align="center">26</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2017
-</td>
-<td style="text-align:center;">
-16
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-4
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-21
-</td>
+<tr class="odd">
+<td align="center">2017</td>
+<td align="center">16</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">1</td>
+<td align="center">21</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2018
-</td>
-<td style="text-align:center;">
-19
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-1
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-20
-</td>
+<tr class="even">
+<td align="center">2018</td>
+<td align="center">19</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">20</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2019
-</td>
-<td style="text-align:center;">
-99
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-6
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-105
-</td>
+<tr class="odd">
+<td align="center">2019</td>
+<td align="center">99</td>
+<td align="center">0</td>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">105</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2020
-</td>
-<td style="text-align:center;">
-5
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-5
-</td>
+<tr class="even">
+<td align="center">2020</td>
+<td align="center">5</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">5</td>
 </tr>
-<tr>
-<td style="text-align:center;">
-2021
-</td>
-<td style="text-align:center;">
-10
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-0
-</td>
-<td style="text-align:center;">
-10
-</td>
+<tr class="odd">
+<td align="center">2021</td>
+<td align="center">10</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">10</td>
 </tr>
 </tbody>
 </table>
@@ -4121,7 +3745,7 @@ Total
 <li><strong>Edward (Jed) Frees</strong>, University of Wisconsin-Madison and Australian National University, is the principal author of the initial version and second edition of this chapter. Email: <a href="mailto:jfrees@bus.wisc.edu" class="email">jfrees@bus.wisc.edu</a> for chapter comments and suggested improvements.</li>
 <li>Chapter reviewers include: Yair Babad, Chunsheng Ban, Aaron Bruhn, Gordon Enderle, Hirokazu (Iwahiro) Iwasawa, Dalia Khalil, Bell Ouelega, Michelle Xia.</li>
 </ul>
-<p>This book introduces loss data analytic tools that are most relevant to actuaries and other financial risk analysts. We have also introduced you to many new insurance terms; more terms can be found at the <span class="citation">NAIC Glossary (<a href="bibliography.html#ref-NAICGlossary" role="doc-biblioref">2018</a>)</span>.</p>
+<p>This book introduces loss data analytic tools that are most relevant to actuaries and other financial risk analysts. We have also introduced you to many new insurance terms; more terms can be found at the <span class="citation">NAIC Glossary (<a href="bibliography.html#ref-NAICGlossary">2018</a>)</span>.</p>
 <hr />
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 
